@@ -241,7 +241,7 @@ def plot_severity_curves(results, save_path=None):
 if __name__ == "__main__":
     
     # ===== CONFIGURATION =====
-    REFCOCO_PATH = 'rq1_datasets/refcoco/'
+    REFCOCO_PATH = 'rq1_datasets/refcoco/refer/data/refcoco'
     COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'
     OUTPUT_DIR = 'results/severity_study'
     
@@ -269,20 +269,20 @@ if __name__ == "__main__":
     # ===== OPTIONAL: Full severity evaluation =====
     # Uncomment below to run full evaluation (takes longer)
     
-    # print("\nLoading grounding model...")
-    # from grounding_model import GroundingModel
-    # model = GroundingModel()
-    # 
-    # print("\nRunning severity evaluation...")
-    # results = run_severity_evaluation(
-    #     RefCOCODegradationDataset,
-    #     REFCOCO_PATH,
-    #     COCO_IMAGES_PATH,
-    #     model,
-    #     num_samples=50,
-    #     severities=[0.0, 0.25, 0.5, 0.75, 1.0]
-    # )
-    # 
-    # plot_severity_curves(results, save_path=os.path.join(OUTPUT_DIR, 'severity_curves.png'))
+    print("\nLoading grounding model...")
+    from grounding_model import GroundingModel
+    model = GroundingModel()
+    
+    print("\nRunning severity evaluation...")
+    results = run_severity_evaluation(
+    RefCOCODegradationDataset,
+    REFCOCO_PATH,
+    COCO_IMAGES_PATH,
+    model,
+    num_samples=200,
+    severities=[0.0, 0.25, 0.5, 0.75, 1.0]
+    )
+    
+    plot_severity_curves(results, save_path=os.path.join(OUTPUT_DIR, 'severity_curves.png'))
     
     print(f"\n✓ Done! Check {OUTPUT_DIR} for outputs.")

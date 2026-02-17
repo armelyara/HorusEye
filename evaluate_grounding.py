@@ -259,7 +259,7 @@ class GroundingEvaluator:
 if __name__ == "__main__":
     
     # ===== CONFIGURATION =====
-    REFCOCO_PATH = 'rq1_datasets/refcoco/'
+    REFCOCO_PATH = 'rq1_datasets/refcoco/refer/data/refcoco'
     COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'
     NUM_SAMPLES = 100  # Start small, increase later
     SEVERITY = 0.5
