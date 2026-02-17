@@ -2,6 +2,7 @@
 RefCOCO Degradation Pipeline
 Applies fog, smoke, and thermal effects to clean images
 No external refer package needed - standalone version
+No imgaug dependency - uses physics-based methods only
 """
 
 import os
@@ -11,14 +12,6 @@ import pickle
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
-
-# Try to import imgaug, if not available use only physics-based fog
-try:
-    import imgaug.augmenters as iaa
-    HAS_IMGAUG = True
-except ImportError:
-    HAS_IMGAUG = False
-    print("Warning: imgaug not installed. Using physics-based fog only.")
 
 
 # ==================== STANDALONE REFCOCO LOADER ====================
@@ -116,7 +109,7 @@ class RefCOCOLoader:
 
 # ==================== DEGRADATION PIPELINE ====================
 class DegradationPipeline:
-    """Apply various degradations to images"""
+    """Apply various degradations to images using physics-based methods"""
     
     def __init__(self, severity=0.5):
         """
@@ -126,25 +119,7 @@ class DegradationPipeline:
         self.severity = np.clip(severity, 0.0, 1.0)
     
     # ==================== FOG ====================
-    def add_fog(self, image):
-        """
-        Apply synthetic fog using imgaug (if available) or physics model
-        
-        Args:
-            image: numpy array (H, W, 3) BGR format
-        Returns:
-            foggy image
-        """
-        if HAS_IMGAUG:
-            # Convert severity to imgaug format (1-5 scale)
-            imgaug_severity = int(self.severity * 4) + 1
-            fog_augmenter = iaa.Fog()
-            foggy = fog_augmenter(image=image)
-            return foggy
-        else:
-            return self.add_fog_physics(image)
-    
-    def add_fog_physics(self, image, depth_map=None):
+    def add_fog(self, image, depth_map=None):
         """
         Apply fog using atmospheric scattering model
         I_fog = I_clean * t + A * (1 - t)
@@ -159,13 +134,13 @@ class DegradationPipeline:
         h, w = image.shape[:2]
         
         # If no depth map, create synthetic one
-        # Assumes distance increases from top to bottom (typical for outdoor scenes)
         if depth_map is None:
+            # Distance increases from top to bottom (typical outdoor scene)
             depth_map = np.tile(
                 np.linspace(0.3, 1.0, h).reshape(h, 1),
                 (1, w)
             )
-            # Add some random variation
+            # Add random variation for realism
             noise = cv2.GaussianBlur(
                 np.random.rand(h, w).astype(np.float32) * 0.2,
                 (21, 21), 0
@@ -199,15 +174,15 @@ class DegradationPipeline:
         h, w = image.shape[:2]
         image_float = image.astype(np.float32) / 255.0
         
-        # Generate smoke texture using multiple noise layers
+        # Generate smoke texture
         smoke = self._generate_smoke_texture(h, w)
         
-        # Smoke color (gray-white with slight blue tint)
-        smoke_color = np.array([0.75, 0.78, 0.82])  # BGR format
+        # Smoke color (gray-white with slight blue tint) in BGR
+        smoke_color = np.array([0.75, 0.78, 0.82])
         smoke_rgb = np.stack([smoke] * 3, axis=-1) * smoke_color
         
-        # Blend based on severity and smoke density
-        alpha = smoke * self.severity * 0.9  # max 90% opacity
+        # Blend based on severity
+        alpha = smoke * self.severity * 0.9
         alpha = np.stack([alpha] * 3, axis=-1)
         
         smoky = image_float * (1 - alpha) + smoke_rgb * alpha
@@ -219,21 +194,21 @@ class DegradationPipeline:
         """Generate procedural smoke using multi-scale noise"""
         smoke = np.zeros((h, w), dtype=np.float32)
         
-        # Add multiple scales of noise for realistic smoke
+        # Add multiple scales of noise
         for scale in [4, 8, 16, 32, 64]:
             noise_h = max(h // scale + 1, 2)
             noise_w = max(w // scale + 1, 2)
             noise = np.random.rand(noise_h, noise_w).astype(np.float32)
             noise = cv2.resize(noise, (w, h), interpolation=cv2.INTER_CUBIC)
-            smoke += noise * (scale / 64.0)  # weight by scale
+            smoke += noise * (scale / 64.0)
         
-        # Normalize to 0-1
+        # Normalize
         smoke = (smoke - smoke.min()) / (smoke.max() - smoke.min() + 1e-8)
         
-        # Apply non-linear transform for more realistic smoke patches
+        # Create patches
         smoke = np.clip(smoke * 1.5 - 0.3, 0, 1)
         
-        # Smooth the result
+        # Smooth
         smoke = cv2.GaussianBlur(smoke, (15, 15), 0)
         
         return smoke
@@ -248,26 +223,21 @@ class DegradationPipeline:
         Returns:
             thermal-style image
         """
-        # Convert to grayscale (approximates heat signature)
+        # Convert to grayscale
         if len(image.shape) == 3:
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         else:
             gray = image
         
-        # Invert so brighter areas appear "hotter"
-        # This is a simplification - real thermal depends on material properties
+        # Simulate heat signature (invert so bright = hot)
         gray_inverted = 255 - gray
-        
-        # Blend original and inverted based on intensity
-        # Simulates that some objects emit more heat
         gray_thermal = cv2.addWeighted(gray, 0.3, gray_inverted, 0.7, 0)
         
         # Apply thermal colormap
-        # Options: COLORMAP_INFERNO, COLORMAP_HOT, COLORMAP_JET
         thermal = cv2.applyColorMap(gray_thermal, cv2.COLORMAP_INFERNO)
         
-        # Reduce detail (thermal cameras have lower resolution)
-        blur_amount = int(3 * self.severity) * 2 + 1  # must be odd: 1, 3, 5, 7
+        # Reduce detail (thermal has lower resolution)
+        blur_amount = int(3 * self.severity) * 2 + 1
         if blur_amount > 1:
             thermal = cv2.GaussianBlur(thermal, (blur_amount, blur_amount), 0)
         
@@ -281,33 +251,18 @@ class DegradationPipeline:
     
     # ==================== APPLY ALL ====================
     def apply_all(self, image):
-        """
-        Apply all degradations and return dictionary
-        
-        Args:
-            image: numpy array (H, W, 3)
-        Returns:
-            dict with 'clean', 'fog', 'smoke', 'thermal' keys
-        """
+        """Apply all degradations"""
         return {
             'clean': image.copy(),
-            'fog': self.add_fog_physics(image),
+            'fog': self.add_fog(image),
             'smoke': self.add_smoke(image),
             'thermal': self.add_thermal(image)
         }
     
     def apply_single(self, image, degradation_type):
-        """
-        Apply a single degradation type
-        
-        Args:
-            image: numpy array (H, W, 3)
-            degradation_type: 'fog', 'smoke', or 'thermal'
-        Returns:
-            degraded image
-        """
+        """Apply a single degradation type"""
         if degradation_type == 'fog':
-            return self.add_fog_physics(image)
+            return self.add_fog(image)
         elif degradation_type == 'smoke':
             return self.add_smoke(image)
         elif degradation_type == 'thermal':
@@ -338,22 +293,8 @@ class RefCOCODegradationDataset:
         return len(self.loader)
     
     def __getitem__(self, idx):
-        """
-        Get one sample with all degradations
-        
-        Returns:
-            dict with:
-                - 'images': dict of clean/fog/smoke/thermal images
-                - 'expression': referring expression text
-                - 'all_expressions': list of all expressions for this region
-                - 'bbox': ground truth bounding box [x, y, width, height]
-                - 'ref_id': reference id
-                - 'image_id': COCO image id
-        """
-        # Load from RefCOCO
+        """Get one sample with all degradations"""
         sample = self.loader[idx]
-        
-        # Apply all degradations
         images = self.degradation.apply_all(sample['image'])
         
         return {
@@ -365,130 +306,108 @@ class RefCOCODegradationDataset:
             'image_id': sample['image_id']
         }
     
-    def get_degraded_image(self, idx, degradation_type):
-        """
-        Get a single degraded image
-        
-        Args:
-            idx: sample index
-            degradation_type: 'clean', 'fog', 'smoke', or 'thermal'
-        """
-        sample = self.loader[idx]
-        degraded = self.degradation.apply_single(sample['image'], degradation_type)
-        
-        return {
-            'image': degraded,
-            'expression': sample['expression'],
-            'bbox': sample['bbox']
-        }
-    
     def visualize_sample(self, idx, save_path=None, show=True):
-        """
-        Visualize one sample with all degradations
-        
-        Args:
-            idx: sample index
-            save_path: optional path to save the figure
-            show: whether to display the figure
-        """
+        """Visualize one sample with all degradations"""
         sample = self[idx]
         images = sample['images']
         expression = sample['expression']
         bbox = sample['bbox']
         
-        # Create figure
         fig, axes = plt.subplots(1, 4, figsize=(16, 4))
         
         for ax, (name, img) in zip(axes, images.items()):
-            # Draw bounding box
             img_vis = img.copy()
             x, y, w, h = [int(v) for v in bbox]
             cv2.rectangle(img_vis, (x, y), (x+w, y+h), (0, 255, 0), 3)
-            
-            # Convert BGR to RGB for display
             img_vis = cv2.cvtColor(img_vis, cv2.COLOR_BGR2RGB)
             
             ax.imshow(img_vis)
             ax.set_title(name.capitalize(), fontsize=14)
             ax.axis('off')
         
-        # Truncate long expressions
         display_expr = expression if len(expression) < 60 else expression[:57] + "..."
         plt.suptitle(f'Expression: "{display_expr}"', fontsize=12)
         plt.tight_layout()
         
         if save_path:
             plt.savefig(save_path, dpi=150, bbox_inches='tight')
-            print(f"Saved visualization to {save_path}")
+            print(f"Saved: {save_path}")
         
         if show:
             plt.show()
         else:
             plt.close()
     
-    def visualize_severity_comparison(self, idx, save_path=None, show=True):
+    def save_degraded_dataset(self, output_root, max_samples=None):
         """
-        Show how different severity levels affect the image
+        Save all degraded images to disk
         
-        Args:
-            idx: sample index
+        Creates:
+        output_root/
+        ├── clean/
+        ├── fog/
+        ├── smoke/
+        ├── thermal/
+        └── annotations.json
         """
-        sample = self.loader[idx]
-        image = sample['image']
-        expression = sample['expression']
+        degradation_types = ['clean', 'fog', 'smoke', 'thermal']
         
-        severities = [0.2, 0.4, 0.6, 0.8]
-        degradation_types = ['fog', 'smoke', 'thermal']
+        for deg_type in degradation_types:
+            os.makedirs(os.path.join(output_root, deg_type), exist_ok=True)
         
-        fig, axes = plt.subplots(3, 5, figsize=(20, 12))
+        n_samples = len(self) if max_samples is None else min(max_samples, len(self))
+        annotations = []
         
-        for row, deg_type in enumerate(degradation_types):
-            # Show clean image in first column
-            axes[row, 0].imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-            axes[row, 0].set_title('Clean' if row == 0 else '')
-            axes[row, 0].set_ylabel(deg_type.capitalize(), fontsize=12)
-            axes[row, 0].axis('off')
+        print(f"Saving {n_samples} samples to {output_root}")
+        
+        for idx in range(n_samples):
+            if idx % 100 == 0:
+                print(f"  Progress: {idx}/{n_samples}")
             
-            # Show different severities
-            for col, sev in enumerate(severities):
-                pipeline = DegradationPipeline(severity=sev)
-                degraded = pipeline.apply_single(image, deg_type)
-                
-                axes[row, col+1].imshow(cv2.cvtColor(degraded, cv2.COLOR_BGR2RGB))
-                axes[row, col+1].set_title(f'Severity: {sev}' if row == 0 else '')
-                axes[row, col+1].axis('off')
+            sample = self[idx]
+            images = sample['images']
+            filename = f"{idx:06d}.jpg"
+            
+            for deg_type in degradation_types:
+                save_path = os.path.join(output_root, deg_type, filename)
+                cv2.imwrite(save_path, images[deg_type])
+            
+            annotations.append({
+                'index': idx,
+                'filename': filename,
+                'expression': sample['expression'],
+                'all_expressions': sample['all_expressions'],
+                'bbox': sample['bbox'],
+                'ref_id': sample['ref_id'],
+                'image_id': sample['image_id']
+            })
         
-        plt.suptitle(f'Expression: "{expression}"', fontsize=12)
-        plt.tight_layout()
+        annotations_path = os.path.join(output_root, 'annotations.json')
+        with open(annotations_path, 'w') as f:
+            json.dump(annotations, f, indent=2)
         
-        if save_path:
-            plt.savefig(save_path, dpi=150, bbox_inches='tight')
-        
-        if show:
-            plt.show()
-        else:
-            plt.close()
+        print(f"✓ Done! Saved {n_samples} samples")
 
 
-# ==================== MAIN USAGE ====================
+# ==================== MAIN ====================
 if __name__ == "__main__":
     
-    # ===== CONFIGURE THESE PATHS =====
-    REFCOCO_PATH = 'rq1_datasets/refcoco/'          # folder with refs(unc).p and instances.json
-    COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'  # folder with COCO images
+    # ===== UPDATE THESE PATHS =====
+    REFCOCO_PATH = 'rq1_datasets/refcoco/refer/'
+    COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'
     
-    # Check if paths exist
+    # Check paths
     if not os.path.exists(REFCOCO_PATH):
-        print(f"ERROR: RefCOCO path not found: {REFCOCO_PATH}")
-        print("Please update REFCOCO_PATH to point to your refcoco annotations folder")
+        print(f"ERROR: RefCOCO not found at {REFCOCO_PATH}")
+        print("Update REFCOCO_PATH in the script")
         exit(1)
     
     if not os.path.exists(COCO_IMAGES_PATH):
-        print(f"ERROR: COCO images path not found: {COCO_IMAGES_PATH}")
-        print("Please update COCO_IMAGES_PATH to point to your COCO train2014 folder")
+        print(f"ERROR: COCO images not found at {COCO_IMAGES_PATH}")
+        print("Update COCO_IMAGES_PATH in the script")
         exit(1)
     
-    # Initialize dataset
+    # Initialize
     print("Loading dataset...")
     dataset = RefCOCODegradationDataset(
         refcoco_path=REFCOCO_PATH,
@@ -497,29 +416,21 @@ if __name__ == "__main__":
         severity=0.5
     )
     
-    print(f"\nDataset size: {len(dataset)} samples")
+    print(f"Dataset size: {len(dataset)} samples")
     
-    # Visualize a few samples
-    print("\nGenerating visualizations...")
+    # Create output folder
     os.makedirs('outputs', exist_ok=True)
     
+    # Visualize samples
+    print("\nGenerating visualizations...")
     for i in range(3):
-        print(f"  Processing sample {i}...")
         dataset.visualize_sample(i, save_path=f'outputs/sample_{i}.png', show=False)
     
-    # Show severity comparison for one sample
-    print("\nGenerating severity comparison...")
-    dataset.visualize_severity_comparison(0, save_path='outputs/severity_comparison.png', show=False)
-    
-    # Get one sample programmatically
-    print("\n" + "="*50)
-    print("Sample data structure:")
-    print("="*50)
+    # Print sample info
     sample = dataset[0]
-    print(f"Expression: {sample['expression']}")
-    print(f"All expressions: {sample['all_expressions']}")
-    print(f"Bbox: {sample['bbox']}")
-    print(f"Available images: {list(sample['images'].keys())}")
-    print(f"Image shape: {sample['images']['clean'].shape}")
+    print(f"\nSample info:")
+    print(f"  Expression: {sample['expression']}")
+    print(f"  Bbox: {sample['bbox']}")
+    print(f"  Image keys: {list(sample['images'].keys())}")
     
-    print("\n✓ Done! Check the 'outputs' folder for visualizations.")
+    print("\n✓ Done! Check 'outputs' folder")
