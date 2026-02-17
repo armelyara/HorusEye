@@ -393,7 +393,7 @@ class RefCOCODegradationDataset:
 if __name__ == "__main__":
     
     # ===== UPDATE THESE PATHS =====
-    REFCOCO_PATH = 'rq1_datasets/refcoco/refer/'
+    REFCOCO_PATH = 'rq1_datasets/refcoco/refer/data/refcoco'
     COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'
     
     # Check paths
