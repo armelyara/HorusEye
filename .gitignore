@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+.venv311/
+venv/
+ENV/
+env/
+
+# Dataset directories
+rq1_datasets/
+rq1_dataset/
+datasets/
+
+# Large files
+*.zip
+*.tar.gz
+*.h5
+*.pkl
+*.pth
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+degradation_test_results.png
+*.png
+*.jpg
+*.jpeg
+
+# Backup files
+*.bak
+*.backup
