@@ -16,7 +16,7 @@ env/
 rq1_datasets/
 rq1_dataset/
 datasets/
-
+rq1_dataset/refcoco/refer/
 # Large files
 *.zip
 *.tar.gz
