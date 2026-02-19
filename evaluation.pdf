@@ -402,7 +402,7 @@ if __name__ == "__main__":
     # Start with small test
     results, summary = run_evaluation(
         dataset_path=DATASET_PATH,
-        num_samples=10,          # Start with 50 samples for testing
+        num_samples=50,          # Start with 50 samples for testing
         conditions=['clean', 'fog_0.5', 'smoke_0.5', 'thermal_0.5'],  # Main conditions
         requests_per_minute=30   # Conservative rate limit
     )
