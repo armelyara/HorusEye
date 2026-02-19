@@ -343,7 +343,7 @@ if __name__ == "__main__":
     
     # Dataset options
     SPLIT = 'val'                           # Use validation split
-    SEVERITIES = [0.25, 0.5, 0.75, 1.0]          # Three severity levels
+    SEVERITIES = [0.25, 0.5, 0.75, 1.0]          # Four severity levels
     DEGRADATION_TYPES = ['fog', 'smoke', 'thermal']
     MAX_SAMPLES = None                       # None = all samples, or set number like 500
     
