@@ -137,21 +137,21 @@ class DegradationPipeline:
         if depth_map is None:
             # Distance increases from top to bottom (typical outdoor scene)
             depth_map = np.tile(
-                np.linspace(0.3, 1.0, h).reshape(h, 1),
+                np.linspace(1.0, 0.0, h).reshape(h, 1),
                 (1, w)
             )
             # Add random variation for realism
             noise = cv2.GaussianBlur(
-                np.random.rand(h, w).astype(np.float32) * 0.2,
-                (21, 21), 0
+                np.random.rand(h, w).astype(np.float32) * 0.15,
+                (51, 51), 0
             )
             depth_map = np.clip(depth_map + noise, 0, 1)
         
         # Atmospheric light (white/gray fog)
-        A = 0.8
+        A = 0.95
         
         # Transmission map: t = exp(-beta * d)
-        beta = self.severity * 3.0  # fog density
+        beta = self.severity * 2.0  # fog density
         t = np.exp(-beta * depth_map)
         t = np.stack([t] * 3, axis=-1)  # expand to 3 channels
         
@@ -178,17 +178,19 @@ class DegradationPipeline:
         smoke = self._generate_smoke_texture(h, w)
         
         # Smoke color (gray-white with slight blue tint) in BGR
-        smoke_color = np.array([0.75, 0.78, 0.82])
+        smoke_color = np.array([0.9, 0.9, 0.92])
         smoke_rgb = np.stack([smoke] * 3, axis=-1) * smoke_color
         
         # Blend based on severity
-        alpha = smoke * self.severity * 0.9
-        alpha = np.stack([alpha] * 3, axis=-1)
+        alpha = smoke * self.severity * 1.2
+        alpha = np.stack([alpha]*3, axis=-1)
+
+        smoke_layer = np.ones_like(image_float) * smoke_color
         
-        smoky = image_float * (1 - alpha) + smoke_rgb * alpha
-        smoky = np.clip(smoky * 255, 0, 255).astype(np.uint8)
+        smoky = image_float * (1 - alpha) + smoke_layer * alpha
+        return np.clip(smoky * 255, 0, 255).astype(np.uint8)
         
-        return smoky
+        
     
     def _generate_smoke_texture(self, h, w):
         """Generate procedural smoke using multi-scale noise"""
@@ -206,10 +208,11 @@ class DegradationPipeline:
         smoke = (smoke - smoke.min()) / (smoke.max() - smoke.min() + 1e-8)
         
         # Create patches
-        smoke = np.clip(smoke * 1.5 - 0.3, 0, 1)
+        smoke = np.clip(smoke * 2.0, 0, 1)
         
         # Smooth
-        smoke = cv2.GaussianBlur(smoke, (15, 15), 0)
+        smoke = np.power(smoke, 2.5) #increase contrast
+        smoke = cv2.GaussianBlur(smoke, (41, 41), 0) #increase blur
         
         return smoke
     
@@ -223,6 +226,9 @@ class DegradationPipeline:
         Returns:
             thermal-style image
         """
+        # Get dimensions
+        h, w = image.shape[:2]
+        
         # Convert to grayscale
         if len(image.shape) == 3:
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -230,21 +236,26 @@ class DegradationPipeline:
             gray = image
         
         # Simulate heat signature (invert so bright = hot)
-        gray_inverted = 255 - gray
-        gray_thermal = cv2.addWeighted(gray, 0.3, gray_inverted, 0.7, 0)
+        gray_thermal = cv2.equalizeHist(gray)
         
         # Apply thermal colormap
-        thermal = cv2.applyColorMap(gray_thermal, cv2.COLORMAP_INFERNO)
+        thermal = cv2.applyColorMap(gray_thermal, cv2.COLORMAP_JET)
         
         # Reduce detail (thermal has lower resolution)
         blur_amount = int(3 * self.severity) * 2 + 1
         if blur_amount > 1:
             thermal = cv2.GaussianBlur(thermal, (blur_amount, blur_amount), 0)
         
+        # pixelisation effect
+        if self.severity > 0.2:
+            f = 4 # Facteur de réduction
+            small = cv2.resize(thermal, (w//f, h//f), interpolation=cv2.INTER_NEAREST)
+            thermal = cv2.resize(small, (w, h), interpolation=cv2.INTER_NEAREST)
+        
         # Add sensor noise
-        noise_level = 8 * self.severity
+        noise_level = 15 * self.severity
         if noise_level > 0:
-            noise = np.random.normal(0, noise_level, thermal.shape)
+            noise = np.random.normal(0, noise_level, thermal.shape).astype(np.float32)
             thermal = np.clip(thermal.astype(np.float32) + noise, 0, 255).astype(np.uint8)
         
         return thermal

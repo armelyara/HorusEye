@@ -7,6 +7,8 @@ import os
 import json
 import re
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import numpy as np
 from PIL import Image
 from tqdm import tqdm
@@ -44,53 +46,59 @@ def calculate_iou(box1, box2):
     return intersection / union if union > 0 else 0.0
 
 
-def extract_bbox(text):
-    if text is None:
-        return None
+def extract_bbox_normalized(text, img_w, img_h):
+    """
+    Converts Gemini's [ymin, xmin, ymax, xmax] (0-1000) 
+    back to RefCOCO's [x, y, w, h] (pixels).
+    """
+    if not text: return None
+    # Look for Gemini's typical bracketed output: [ymin, xmin, ymax, xmax]
+    pattern = r'\[(\d+),\s*(\d+),\s*(\d+),\s*(\d+)\]'
+    match = re.search(pattern, text)
     
-    patterns = [
-        r'\[(\d+\.?\d*),\s*(\d+\.?\d*),\s*(\d+\.?\d*),\s*(\d+\.?\d*)\]',
-        r'\((\d+\.?\d*),\s*(\d+\.?\d*),\s*(\d+\.?\d*),\s*(\d+\.?\d*)\)',
-    ]
-    
-    for pattern in patterns:
-        match = re.search(pattern, text)
-        if match:
-            try:
-                coords = [float(x) for x in match.groups()]
-                if coords[2] > 0 and coords[3] > 0:
-                    return coords
-            except:
-                continue
+    if match:
+        try:
+            ymin, xmin, ymax, xmax = [int(v) for v in match.groups()]
+            
+            # 1. Scale normalized 1000-scale back to pixels
+            px_xmin = (xmin / 1000.0) * img_w
+            px_ymin = (ymin / 1000.0) * img_h
+            px_xmax = (xmax / 1000.0) * img_w
+            px_ymax = (ymax / 1000.0) * img_h
+            
+            # 2. Convert to RefCOCO format [x, y, width, height]
+            return [px_xmin, px_ymin, px_xmax - px_xmin, px_ymax - px_ymin]
+        except:
+            return None
     return None
-
 
 class GeminiEvaluator:
     """Gemini evaluator with proper rate limiting"""
     
-    def __init__(self, api_key=None, requests_per_minute=30):
+    def __init__(self, api_key=None, requests_per_minute=15):
         """
         Args:
             api_key: Google API key
-            requests_per_minute: Rate limit (free tier = ~60, use 30 to be safe)
+            requests_per_minute: Rate limit (free tier = ~60, use 15 to be safe)
         """
         self.api_key = api_key or os.getenv('GOOGLE_API_KEY')
         
         if not self.api_key:
             raise ValueError("Set GOOGLE_API_KEY environment variable")
         
-        # Rate limiting
+        # Rate limiting (thread-safe)
         self.requests_per_minute = requests_per_minute
         self.min_delay = 60.0 / requests_per_minute  # Seconds between requests
         self.last_request_time = 0
+        self._rate_lock = threading.Lock()  # Protects last_request_time across threads
         
         # Initialize API
         if USE_NEW_API:
             self.client = genai.Client(api_key=self.api_key)
-            self.model_name = 'gemini-1.5-flash'
+            self.model_name = 'gemini-2.0-flash'
         else:
             genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel('gemini-1.5-flash')
+            self.model = genai.GenerativeModel('gemini-2.0-flash')
         
         # Stats
         self.total_requests = 0
@@ -99,40 +107,40 @@ class GeminiEvaluator:
         print(f"Gemini initialized (rate limit: {requests_per_minute} req/min)")
     
     def _wait_for_rate_limit(self):
-        """Wait if needed to respect rate limit"""
-        elapsed = time.time() - self.last_request_time
-        if elapsed < self.min_delay:
-            time.sleep(self.min_delay - elapsed)
-        self.last_request_time = time.time()
+        """Thread-safe rate limiter: serialises all threads through the delay."""
+        with self._rate_lock:
+            elapsed = time.time() - self.last_request_time
+            if elapsed < self.min_delay:
+                time.sleep(self.min_delay - elapsed)
+            self.last_request_time = time.time()
     
     def evaluate(self, image_path, expression, max_retries=3):
         """Evaluate grounding with rate limiting"""
         
-        prompt = f"Locate '{expression}' in this image. Return ONLY [x, y, width, height] in pixels."
-        
+        prompt = (f"Identify the object described as '{expression}'. "
+          f"Even if the image is degraded (fog, smoke, or thermal), "
+          f"provide your best estimate of its bounding box in [ymin, xmin, ymax, xmax] format. "
+          f"Use a normalized scale of 0-1000. Output ONLY the list.")
+
         for attempt in range(max_retries):
             try:
-                # Wait for rate limit
                 self._wait_for_rate_limit()
-                
-                image = Image.open(image_path)
+                img = Image.open(image_path)
+                w, h = img.size
                 
                 if USE_NEW_API:
                     response = self.client.models.generate_content(
                         model=self.model_name,
-                        contents=[prompt, image]
+                        contents=[prompt, img]
                     )
                     text = response.text
                 else:
-                    response = self.model.generate_content([prompt, image])
-                    text = response.text
-                
-                self.total_requests += 1
-                self.total_cost += 0.00025
+                    response = self.model.generate_content([prompt, img])
+                    text = response.text.strip()
                 
                 return {
                     'response': text,
-                    'bbox': extract_bbox(text),
+                    'bbox': extract_bbox_normalized(text, w, h),
                     'success': True
                 }
                 
@@ -152,98 +160,116 @@ class GeminiEvaluator:
         return {'response': 'Max retries', 'bbox': None, 'success': False}
 
 
-def run_evaluation(dataset_path, num_samples=None, conditions=None, requests_per_minute=30):
+def _load_checkpoint(results_dir, conditions):
+    """Resume from the latest checkpoint if it exists. Returns (results, start_idx)."""
+    checkpoint_path = os.path.join(results_dir, 'checkpoint_latest.json')
+    if not os.path.exists(checkpoint_path):
+        return {c: {'ious': [], 'detected': []} for c in conditions}, 0
+    with open(checkpoint_path) as f:
+        ckpt = json.load(f)
+    print(f"  Resuming from checkpoint at sample {ckpt['n_done']}")
+    return ckpt['results'], ckpt['n_done']
+
+
+def run_evaluation(dataset_path, num_samples=None, conditions=None,
+                  requests_per_minute=15, max_workers=None):
     """
-    Run evaluation with rate limiting
-    
+    Run evaluation with rate limiting and parallel condition evaluation.
+
     Args:
         dataset_path: Path to dataset
         num_samples: Number of samples (None = all)
         conditions: Conditions to test (None = main conditions only)
         requests_per_minute: API rate limit
+        max_workers: Threads for parallel conditions (default = nb of conditions)
     """
-    
+
     # Load data
     print("Loading dataset...")
     with open(os.path.join(dataset_path, 'annotations', 'annotations.json')) as f:
         data = json.load(f)
-    
+
     annotations = data['annotations']
     all_conditions = data['info']['conditions']
-    
+
     # Set defaults
     if num_samples is None:
         num_samples = len(annotations)
     annotations = annotations[:num_samples]
-    
+
     if conditions is None:
-        # Use main conditions for faster evaluation
         conditions = ['clean', 'fog_0.5', 'smoke_0.5', 'thermal_0.5']
         conditions = [c for c in conditions if c in all_conditions]
-    
+
+    if max_workers is None:
+        max_workers = len(conditions)  # One thread per condition
+
     total_calls = num_samples * len(conditions)
-    estimated_time = total_calls * (60 / requests_per_minute) / 60  # minutes
+    # With parallel conditions each sample only occupies 1 rate-limit slot per
+    # condition, but they overlap in time → effective throughput ≈ RPM / 1
+    estimated_time = total_calls / requests_per_minute  # minutes
     estimated_cost = total_calls * 0.00025
-    
+
     print(f"\nConfiguration:")
-    print(f"  Samples: {num_samples}")
-    print(f"  Conditions: {conditions}")
+    print(f"  Samples        : {num_samples}")
+    print(f"  Conditions     : {conditions}")
     print(f"  Total API calls: {total_calls}")
-    print(f"  Rate limit: {requests_per_minute} req/min")
-    print(f"  Estimated time: {estimated_time:.0f} minutes")
-    print(f"  Estimated cost: ${estimated_cost:.2f}")
-    
+    print(f"  Rate limit     : {requests_per_minute} req/min")
+    print(f"  Parallel workers: {max_workers}")
+    print(f"  Estimated time : {estimated_time:.0f} minutes")
+    print(f"  Estimated cost : ${estimated_cost:.2f}")
+
     input("\nPress Enter to start (or Ctrl+C to cancel)...")
-    
+
     # Initialize
     evaluator = GeminiEvaluator(requests_per_minute=requests_per_minute)
-    
-    results = {c: {'ious': [], 'detected': []} for c in conditions}
     results_dir = os.path.join(dataset_path, 'results')
     os.makedirs(results_dir, exist_ok=True)
-    
+
+    # Resume from checkpoint if available
+    results, start_idx = _load_checkpoint(results_dir, conditions)
+    annotations = annotations[start_idx:]   # Skip already-done samples
+
     start_time = time.time()
+    errors_lock = threading.Lock()
     errors = 0
-    
+
     print(f"\n{'='*60}")
-    print("EVALUATION STARTED")
+    print(f"EVALUATION STARTED (from sample {start_idx})")
     print(f"{'='*60}\n")
-    
-    # Progress bar with rate info
-    pbar = tqdm(total=total_calls, desc="Evaluating")
-    
+
+    pbar = tqdm(total=len(annotations) * len(conditions), desc="Evaluating")
+
+    def eval_condition(ann, condition):
+        """Evaluate one (sample, condition) pair — runs in a thread."""
+        image_path = os.path.join(dataset_path, 'images', condition, ann['filename'])
+        if not os.path.exists(image_path):
+            return condition, 0.0, False, False   # iou, detected, success
+        result = evaluator.evaluate(image_path, ann['expression'])
+        iou = calculate_iou(result['bbox'], ann['bbox'])
+        return condition, iou, result['bbox'] is not None, result['success']
+
     for idx, ann in enumerate(annotations):
-        expression = ann['expression']
-        gt_bbox = ann['bbox']
-        filename = ann['filename']
-        
-        for condition in conditions:
-            image_path = os.path.join(dataset_path, 'images', condition, filename)
-            
-            if not os.path.exists(image_path):
-                results[condition]['ious'].append(0.0)
-                results[condition]['detected'].append(False)
+        global_idx = start_idx + idx
+
+        # Submit all conditions for this sample in parallel
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures = {pool.submit(eval_condition, ann, cond): cond
+                       for cond in conditions}
+            for fut in as_completed(futures):
+                cond, iou, detected, success = fut.result()
+                results[cond]['ious'].append(iou)
+                results[cond]['detected'].append(detected)
+                if not success:
+                    with errors_lock:
+                        errors += 1
                 pbar.update(1)
-                continue
-            
-            result = evaluator.evaluate(image_path, expression)
-            
-            iou = calculate_iou(result['bbox'], gt_bbox)
-            results[condition]['ious'].append(iou)
-            results[condition]['detected'].append(result['bbox'] is not None)
-            
-            if not result['success']:
-                errors += 1
-            
-            pbar.update(1)
-            pbar.set_postfix({
-                'cost': f"${evaluator.total_cost:.2f}",
-                'errors': errors
-            })
-        
-        # Save checkpoint every 100 samples
-        if (idx + 1) % 100 == 0:
-            save_checkpoint(results, conditions, results_dir, idx + 1, evaluator.total_cost)
+                pbar.set_postfix({'errors': errors})
+
+        # Checkpoint every 10 samples (more frequent since runs are faster)
+        if (global_idx + 1) % 10 == 0:
+            save_checkpoint(results, conditions, results_dir,
+                            global_idx + 1, evaluator.total_cost)
     
     pbar.close()
     
@@ -259,6 +285,12 @@ def run_evaluation(dataset_path, num_samples=None, conditions=None, requests_per
     
     # Plot
     plot_results(summary, conditions, results_dir)
+    print("\n--- Quick Performance Summary (Prec@0.5) ---")
+    for cond in conditions:
+        if cond in results and results[cond]['ious']:
+            ious = np.array(results[cond]['ious'])
+            prec_05 = np.mean(ious >= 0.5) * 100
+            print(f"Condition {cond:12}: Prec@0.5 = {prec_05:>6.2f}%")
     
     return results, summary
 
@@ -318,11 +350,16 @@ def print_results(summary, conditions, cost, elapsed, n_samples, errors):
 
 
 def save_checkpoint(results, conditions, results_dir, n, cost):
-    """Save intermediate results"""
+    """Save intermediate results and update the resume checkpoint."""
     summary = calculate_summary(results, conditions)
+    # Numbered snapshot (for history)
     path = os.path.join(results_dir, f'checkpoint_{n}.json')
     with open(path, 'w') as f:
         json.dump({'n': n, 'cost': cost, 'summary': summary}, f, indent=2)
+    # Latest checkpoint for resume (includes full raw results)
+    latest_path = os.path.join(results_dir, 'checkpoint_latest.json')
+    with open(latest_path, 'w') as f:
+        json.dump({'n_done': n, 'cost': cost, 'results': results}, f, indent=2)
 
 
 def save_results(results, summary, conditions, results_dir, cost, elapsed, n_samples):
@@ -331,7 +368,7 @@ def save_results(results, summary, conditions, results_dir, cost, elapsed, n_sam
     with open(path, 'w') as f:
         json.dump({
             'metadata': {
-                'model': 'gemini-1.5-flash',
+                'model': 'gemini-2.0-flash',
                 'timestamp': datetime.now().isoformat(),
                 'samples': n_samples,
                 'conditions': conditions,
@@ -350,15 +387,16 @@ def plot_results(summary, conditions, results_dir):
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
     
     colors = {'clean': '#27ae60', 'fog_0.5': '#3498db', 'smoke_0.5': '#9b59b6', 'thermal_0.5': '#e74c3c'}
-    
+
     # Plot 1: Mean IoU
     ax1 = axes[0]
     conds = [c for c in conditions if c in summary]
+    color = [colors.get(c, '#95a5a6') for c in conds]  # Utilise un gris moyen si la clé n'existe pas
     means = [summary[c]['mean_iou'] for c in conds]
     stds = [summary[c]['std_iou'] for c in conds]
     
     bars = ax1.bar(range(len(conds)), means, yerr=stds, capsize=5,
-                   color=[colors.get(c, '#888') for c in conds], alpha=0.8)
+                   color=color, alpha=0.8)
     ax1.set_xticks(range(len(conds)))
     ax1.set_xticklabels([c.replace('_0.5', '') for c in conds])
     ax1.set_ylabel('Mean IoU')
@@ -374,8 +412,9 @@ def plot_results(summary, conditions, results_dir):
     degraded = [c for c in conds if c != 'clean']
     drops = [summary[c]['drop'] for c in degraded]
     
+    color_degraded = [colors.get(c, '#95a5a6') for c in degraded]
     bars = ax2.bar(range(len(degraded)), drops,
-                   color=[colors.get(c, '#888') for c in degraded], alpha=0.8)
+                   color=color_degraded, alpha=0.8)
     ax2.set_xticks(range(len(degraded)))
     ax2.set_xticklabels([c.replace('_0.5', '') for c in degraded])
     ax2.set_ylabel('Performance Drop (%)')
@@ -402,9 +441,9 @@ if __name__ == "__main__":
     # Start with small test
     results, summary = run_evaluation(
         dataset_path=DATASET_PATH,
-        num_samples=10,          # Start with 50 samples for testing
+        num_samples=None,          # Start with 50 samples for testing
         conditions=['clean', 'fog_0.5', 'smoke_0.5', 'thermal_0.5'],  # Main conditions
-        requests_per_minute=30   # Conservative rate limit
+        requests_per_minute=15   # Conservative rate limit
     )
     
     print("\n✓ Done!")
