@@ -219,41 +219,38 @@ class DegradationPipeline:
     # ==================== THERMAL ====================
     def add_thermal(self, image):
         """
-        Simulate thermal/infrared appearance
-        
-        Args:
-            image: numpy array (H, W, 3) BGR format
-        Returns:
-            thermal-style image
+        Simulate realistic thermal/infrared appearance based on reference photo
         """
-        # Get dimensions
         h, w = image.shape[:2]
         
-        # Convert to grayscale
-        if len(image.shape) == 3:
-            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        else:
-            gray = image
+        # 1. Conversion en luminance
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY).astype(np.float32) / 255.0
         
-        # Simulate heat signature (invert so bright = hot)
-        gray_thermal = cv2.equalizeHist(gray)
+        # 2. SEUIL DE CHALEUR (Physique) : On "pousse" les hautes lumières
+        # Contrairement à equalizeHist qui aplatit tout, on utilise une puissance
+        # pour que seules les zones vraiment claires (corps, lampes) "brûlent" en jaune/blanc.
+        power = 1.5 + (self.severity * 1.5) 
+        gray_thermal = np.power(gray, power)
+        gray_thermal = (gray_thermal * 255).astype(np.uint8)
         
-        # Apply thermal colormap
-        thermal = cv2.applyColorMap(gray_thermal, cv2.COLORMAP_JET)
+        # 3. PALETTE : On remplace JET par MAGMA (Violet -> Orange -> Jaune)
+        # C'est la palette exacte de ta photo de référence.
+        thermal = cv2.applyColorMap(gray_thermal, cv2.COLORMAP_MAGMA)
         
-        # Reduce detail (thermal has lower resolution)
-        blur_amount = int(3 * self.severity) * 2 + 1
-        if blur_amount > 1:
-            thermal = cv2.GaussianBlur(thermal, (blur_amount, blur_amount), 0)
-        
-        # pixelisation effect
+        # 4. EFFET DE HALO (Bloom) : La chaleur "déborde" un peu
+        blur_size = int(3 * self.severity) * 2 + 1
+        if blur_size > 1:
+            bloom = cv2.GaussianBlur(thermal, (blur_size, blur_size), 0)
+            thermal = cv2.addWeighted(thermal, 0.8, bloom, 0.2 * self.severity, 0)
+
+        # 5. PIXELISATION (Basse résolution IR)
         if self.severity > 0.2:
-            f = 4 # Facteur de réduction
-            small = cv2.resize(thermal, (w//f, h//f), interpolation=cv2.INTER_NEAREST)
+            f = int(3 + (self.severity * 4)) # Facteur de 3 à 7 selon sévérité
+            small = cv2.resize(thermal, (w//f, h//f), interpolation=cv2.INTER_LINEAR)
             thermal = cv2.resize(small, (w, h), interpolation=cv2.INTER_NEAREST)
         
-        # Add sensor noise
-        noise_level = 15 * self.severity
+        # 6. BRUIT DE CAPTEUR
+        noise_level = 20 * self.severity
         if noise_level > 0:
             noise = np.random.normal(0, noise_level, thermal.shape).astype(np.float32)
             thermal = np.clip(thermal.astype(np.float32) + noise, 0, 255).astype(np.uint8)

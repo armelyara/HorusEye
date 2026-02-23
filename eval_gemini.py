@@ -1,6 +1,5 @@
 """
 Evaluate RefCOCO-Degraded with Gemini
-With proper rate limiting for free tier
 """
 
 import os
@@ -73,7 +72,7 @@ def extract_bbox_normalized(text, img_w, img_h):
     return None
 
 class GeminiEvaluator:
-    """Gemini evaluator with proper rate limiting"""
+    """Gemini evaluator"""
     
     def __init__(self, api_key=None, requests_per_minute=15):
         """
