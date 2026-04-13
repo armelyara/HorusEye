@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "experiment": "RQ3 Cross-Model Thermal Robustness Test",
+    "models": [
+      "Gemini 2.0 Flash",
+      "Qwen2-VL-2B-Instruct"
+    ],
+    "timestamp": "2026-03-09T15:09:41.503208",
+    "num_samples": 16
+  },
+  "summary": {
+    "gemini_accuracy": 0.0,
+    "qwen_accuracy": 31.25
+  },
+  "results": [
+    {
+      "filename": "000002.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000009.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000019.jpg",
+      "gt": "SITTING",
+      "gemini_cropped": "LYING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": true,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000020.jpg",
+      "gt": "SITTING",
+      "gemini_cropped": "STANDING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": true,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000022.jpg",
+      "gt": "LYING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000025.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000035.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000049.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000055.jpg",
+      "gt": "SITTING",
+      "gemini_cropped": "STANDING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": true,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000098.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000118.jpg",
+      "gt": "SITTING",
+      "gemini_cropped": "STANDING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": true,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000131.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000143.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000151.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000173.jpg",
+      "gt": "STANDING",
+      "gemini_cropped": "SITTING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": false,
+      "raw_response": "SITTING"
+    },
+    {
+      "filename": "000200.jpg",
+      "gt": "SITTING",
+      "gemini_cropped": "LYING",
+      "qwen_cropped": "SITTING",
+      "gemini_correct": false,
+      "qwen_correct": true,
+      "raw_response": "SITTING"
+    }
+  ]
+}

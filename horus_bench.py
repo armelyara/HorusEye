@@ -311,41 +311,20 @@ If you use this dataset, please cite:
         for f in files:
             total_size += os.path.getsize(os.path.join(root, f))
     
-    # Final summary
-    print("\n" + "=" * 70)
-    print("DATASET CREATION COMPLETE")
-    print("=" * 70)
-    print(f"\nLocation: {output_path}")
-    print(f"\nContents:")
-    print(f"  - Samples: {len(annotations)}")
-    print(f"  - Conditions: {len(conditions)}")
-    print(f"  - Total images: {len(annotations) * len(conditions)}")
-    print(f"  - Failed samples: {len(failed_samples)}")
-    print(f"  - Total size: {total_size / (1024**3):.2f} GB")
-    print(f"\nFiles created:")
-    print(f"  - annotations/annotations.json")
-    print(f"  - annotations/evaluation_prompts.json")
-    print(f"  - annotations/{split}_split.json")
-    print(f"  - README.md")
-    print(f"  - images/ ({len(conditions)} folders)")
-    print("=" * 70)
-    
     return dataset_info
 
-
-# ==================== MAIN ====================
 if __name__ == "__main__":
     
-    # ===== CONFIGURATION =====
+    # Configuration
     REFCOCO_PATH = 'rq1_datasets/refcoco/refer/data/refcoco'
     COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'
     OUTPUT_PATH = 'datasets/refcoco_degraded_benchmark/'
     
     # Dataset options
-    SPLIT = 'val'                           # Use validation split
-    SEVERITIES = [0.25, 0.5, 0.75, 1.0]          # Four severity levels
+    SPLIT = 'val'                           
+    SEVERITIES = [0.25, 0.5, 0.75, 1.0]             
     DEGRADATION_TYPES = ['fog', 'smoke', 'thermal']
-    MAX_SAMPLES = None                       # None = all samples, or set number like 500
+    MAX_SAMPLES = None                       
     
     # Create dataset
     create_full_dataset(

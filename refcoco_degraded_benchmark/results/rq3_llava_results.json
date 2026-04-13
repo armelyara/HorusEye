@@ -1,0 +1,1985 @@
+{
+  "metadata": {
+    "model": "LLaVA-1.5-7B",
+    "experiment": "RQ3 - Health VQA Posture Classification",
+    "timestamp": "2026-03-31T05:29:09.299069"
+  },
+  "summary": {
+    "clean": {
+      "full_accuracy": 88.0,
+      "crop_accuracy": 72.0,
+      "gain": -16.0,
+      "total": 50
+    },
+    "fog_0.5": {
+      "full_accuracy": 84.0,
+      "crop_accuracy": 66.0,
+      "gain": -18.0,
+      "total": 50
+    },
+    "smoke_0.5": {
+      "full_accuracy": 90.0,
+      "crop_accuracy": 70.0,
+      "gain": -20.0,
+      "total": 50
+    },
+    "thermal_0.5": {
+      "full_accuracy": 70.0,
+      "crop_accuracy": 50.0,
+      "gain": -20.0,
+      "total": 50
+    }
+  },
+  "samples": [
+    {
+      "sample_id": 2,
+      "filename": "000002.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 3,
+      "filename": "000003.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 4,
+      "filename": "000004.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 5,
+      "filename": "000005.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 6,
+      "filename": "000006.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 7,
+      "filename": "000007.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 8,
+      "filename": "000008.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 9,
+      "filename": "000009.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 10,
+      "filename": "000010.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 13,
+      "filename": "000013.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 14,
+      "filename": "000014.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 15,
+      "filename": "000015.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 16,
+      "filename": "000016.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 17,
+      "filename": "000017.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 18,
+      "filename": "000018.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 19,
+      "filename": "000019.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 20,
+      "filename": "000020.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 21,
+      "filename": "000021.jpg",
+      "gt_posture": "LYING",
+      "conditions": {
+        "clean": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "LYING",
+          "resp_crop": "Lying",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 22,
+      "filename": "000022.jpg",
+      "gt_posture": "LYING",
+      "conditions": {
+        "clean": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "LYING",
+          "resp_crop": "Lying",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "LYING",
+          "resp_crop": "Lying",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "LYING",
+          "resp_crop": "Lying",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "Lying",
+          "pred_crop": "LYING",
+          "resp_crop": "Lying",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 25,
+      "filename": "000025.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 26,
+      "filename": "000026.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 31,
+      "filename": "000031.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 32,
+      "filename": "000032.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 33,
+      "filename": "000033.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 34,
+      "filename": "000034.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 35,
+      "filename": "000035.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 36,
+      "filename": "000036.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 47,
+      "filename": "000047.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 48,
+      "filename": "000048.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 49,
+      "filename": "000049.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 51,
+      "filename": "000051.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 52,
+      "filename": "000052.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 53,
+      "filename": "000053.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 55,
+      "filename": "000055.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 59,
+      "filename": "000059.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 60,
+      "filename": "000060.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 66,
+      "filename": "000066.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 67,
+      "filename": "000067.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 72,
+      "filename": "000072.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 98,
+      "filename": "000098.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 118,
+      "filename": "000118.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 127,
+      "filename": "000127.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 131,
+      "filename": "000131.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 143,
+      "filename": "000143.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 144,
+      "filename": "000144.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 151,
+      "filename": "000151.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 173,
+      "filename": "000173.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 200,
+      "filename": "000200.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 211,
+      "filename": "000211.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "Sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "Sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 215,
+      "filename": "000215.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    }
+  ]
+}

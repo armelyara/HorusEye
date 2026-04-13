@@ -1,0 +1,43 @@
+{
+  "model": "LLaVA-1.5-7B",
+  "timestamp": "2026-03-30T04:15:01.493967",
+  "summary": {
+    "clean": {
+      "fabrication": 2.06,
+      "uncertainty": 1.22,
+      "overconfidence": 0.0,
+      "color_mentions": 1.62,
+      "h_score": 1.6939999999999997,
+      "avg_word_count": 72.2
+    },
+    "fog_0.5": {
+      "fabrication": 2.08,
+      "uncertainty": 1.27,
+      "overconfidence": 0.0,
+      "color_mentions": 1.64,
+      "h_score": 1.6989999999999998,
+      "avg_word_count": 71.41
+    },
+    "smoke_0.5": {
+      "fabrication": 2.11,
+      "uncertainty": 1.27,
+      "overconfidence": 0.0,
+      "color_mentions": 1.53,
+      "h_score": 1.7289999999999999,
+      "avg_word_count": 71.91
+    },
+    "thermal_0.5": {
+      "fabrication": 1.79,
+      "uncertainty": 1.29,
+      "overconfidence": 0.0,
+      "color_mentions": 1.37,
+      "h_score": 1.4029999999999996,
+      "avg_word_count": 69.3
+    }
+  },
+  "findings": {
+    "clean_to_thermal_h_change": -0.29100000000000015,
+    "clean_to_thermal_color_change": -0.25,
+    "avg_word_count": 71.205
+  }
+}

@@ -1,8 +1,6 @@
 """
 RefCOCO Degradation Pipeline
 Applies fog, smoke, and thermal effects to clean images
-No external refer package needed - standalone version
-No imgaug dependency - uses physics-based methods only
 """
 
 import os
@@ -14,11 +12,10 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 
-# ==================== STANDALONE REFCOCO LOADER ====================
+# Standalone RefCOCO loader
 class RefCOCOLoader:
     """
     Simple RefCOCO loader without external dependencies
-    Replaces the need for 'pip install refer'
     """
     
     def __init__(self, refcoco_path, coco_images_path, split='train'):
@@ -81,7 +78,7 @@ class RefCOCOLoader:
         
         image = cv2.imread(image_path)
         
-        # Get expression (first sentence)
+        # Get expression
         expression = ref['sentences'][0]['sent']
         
         # Get all sentences
@@ -90,9 +87,9 @@ class RefCOCOLoader:
         # Get bounding box
         ann_id = ref['ann_id']
         ann = self.annotations[ann_id]
-        bbox = ann['bbox']  # [x, y, width, height]
+        bbox = ann['bbox']
         
-        # Get segmentation if available
+        # Get segmentation
         segmentation = ann.get('segmentation', None)
         
         return {
@@ -107,7 +104,7 @@ class RefCOCOLoader:
         }
 
 
-# ==================== DEGRADATION PIPELINE ====================
+# Degradation Pipeline
 class DegradationPipeline:
     """Apply various degradations to images using physics-based methods"""
     
@@ -118,7 +115,7 @@ class DegradationPipeline:
         """
         self.severity = np.clip(severity, 0.0, 1.0)
     
-    # ==================== FOG ====================
+    # Fog
     def add_fog(self, image, depth_map=None):
         """
         Apply fog using atmospheric scattering model
@@ -133,14 +130,11 @@ class DegradationPipeline:
         image_float = image.astype(np.float32) / 255.0
         h, w = image.shape[:2]
         
-        # If no depth map, create synthetic one
         if depth_map is None:
-            # Distance increases from top to bottom (typical outdoor scene)
             depth_map = np.tile(
                 np.linspace(1.0, 0.0, h).reshape(h, 1),
                 (1, w)
             )
-            # Add random variation for realism
             noise = cv2.GaussianBlur(
                 np.random.rand(h, w).astype(np.float32) * 0.15,
                 (51, 51), 0
@@ -153,15 +147,12 @@ class DegradationPipeline:
         # Transmission map: t = exp(-beta * d)
         beta = self.severity * 2.0  # fog density
         t = np.exp(-beta * depth_map)
-        t = np.stack([t] * 3, axis=-1)  # expand to 3 channels
-        
-        # Apply atmospheric scattering model
+        t = np.stack([t] * 3, axis=-1) 
         foggy = image_float * t + A * (1 - t)
         foggy = np.clip(foggy * 255, 0, 255).astype(np.uint8)
-        
         return foggy
     
-    # ==================== SMOKE ====================
+    # Smoke
     def add_smoke(self, image):
         """
         Apply synthetic smoke using procedural noise
@@ -177,7 +168,7 @@ class DegradationPipeline:
         # Generate smoke texture
         smoke = self._generate_smoke_texture(h, w)
         
-        # Smoke color (gray-white with slight blue tint) in BGR
+        # Smoke color in BGR
         smoke_color = np.array([0.9, 0.9, 0.92])
         smoke_rgb = np.stack([smoke] * 3, axis=-1) * smoke_color
         
@@ -211,45 +202,44 @@ class DegradationPipeline:
         smoke = np.clip(smoke * 2.0, 0, 1)
         
         # Smooth
-        smoke = np.power(smoke, 2.5) #increase contrast
-        smoke = cv2.GaussianBlur(smoke, (41, 41), 0) #increase blur
+        smoke = np.power(smoke, 2.5) 
+        smoke = cv2.GaussianBlur(smoke, (41, 41), 0) 
         
         return smoke
     
-    # ==================== THERMAL ====================
+    # Thermal
     def add_thermal(self, image):
         """
         Simulate realistic thermal/infrared appearance based on reference photo
         """
         h, w = image.shape[:2]
         
-        # 1. Conversion en luminance
+        # Convert to grayscale
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY).astype(np.float32) / 255.0
         
-        # 2. SEUIL DE CHALEUR (Physique) : On "pousse" les hautes lumières
-        # Contrairement à equalizeHist qui aplatit tout, on utilise une puissance
-        # pour que seules les zones vraiment claires (corps, lampes) "brûlent" en jaune/blanc.
+        # Heat threshold (Physique) : We "push" the highlights
+        # Unlike equalizeHist which flattens everything, we use a power
+        # so that only the really bright areas (bodies, lamps) "burn" in yellow/white.
         power = 1.5 + (self.severity * 1.5) 
         gray_thermal = np.power(gray, power)
         gray_thermal = (gray_thermal * 255).astype(np.uint8)
         
-        # 3. PALETTE : On remplace JET par MAGMA (Violet -> Orange -> Jaune)
-        # C'est la palette exacte de ta photo de référence.
+        # Palette : Replace JET with MAGMA (Violet -> Orange -> Yellow) 
         thermal = cv2.applyColorMap(gray_thermal, cv2.COLORMAP_MAGMA)
         
-        # 4. EFFET DE HALO (Bloom) : La chaleur "déborde" un peu
+        # Heat halo (Bloom)
         blur_size = int(3 * self.severity) * 2 + 1
         if blur_size > 1:
             bloom = cv2.GaussianBlur(thermal, (blur_size, blur_size), 0)
             thermal = cv2.addWeighted(thermal, 0.8, bloom, 0.2 * self.severity, 0)
 
-        # 5. PIXELISATION (Basse résolution IR)
+        # Pixelisation (Low resolution IR)
         if self.severity > 0.2:
-            f = int(3 + (self.severity * 4)) # Facteur de 3 à 7 selon sévérité
+            f = int(3 + (self.severity * 4))
             small = cv2.resize(thermal, (w//f, h//f), interpolation=cv2.INTER_LINEAR)
             thermal = cv2.resize(small, (w, h), interpolation=cv2.INTER_NEAREST)
         
-        # 6. BRUIT DE CAPTEUR
+        # Sensor noise
         noise_level = 20 * self.severity
         if noise_level > 0:
             noise = np.random.normal(0, noise_level, thermal.shape).astype(np.float32)
@@ -257,7 +247,7 @@ class DegradationPipeline:
         
         return thermal
     
-    # ==================== APPLY ALL ====================
+    # Apply all
     def apply_all(self, image):
         """Apply all degradations"""
         return {
@@ -281,7 +271,7 @@ class DegradationPipeline:
             raise ValueError(f"Unknown degradation type: {degradation_type}")
 
 
-# ==================== MAIN DATASET CLASS ====================
+# Main class dataset
 class RefCOCODegradationDataset:
     """Load RefCOCO and apply degradations"""
     
@@ -396,11 +386,7 @@ class RefCOCODegradationDataset:
         
         print(f"✓ Done! Saved {n_samples} samples")
 
-
-# ==================== MAIN ====================
 if __name__ == "__main__":
-    
-    # ===== UPDATE THESE PATHS =====
     REFCOCO_PATH = 'rq1_datasets/refcoco/refer/data/refcoco'
     COCO_IMAGES_PATH = 'rq1_datasets/coco/images/train2014/'
     
@@ -440,5 +426,3 @@ if __name__ == "__main__":
     print(f"  Expression: {sample['expression']}")
     print(f"  Bbox: {sample['bbox']}")
     print(f"  Image keys: {list(sample['images'].keys())}")
-    
-    print("\n✓ Done! Check 'outputs' folder")

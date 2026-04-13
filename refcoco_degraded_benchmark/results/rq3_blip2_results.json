@@ -1,0 +1,1985 @@
+{
+  "metadata": {
+    "model": "BLIP-2-OPT-2.7B",
+    "experiment": "RQ3 - Health VQA Posture Classification",
+    "timestamp": "2026-03-30T17:05:28.634001"
+  },
+  "summary": {
+    "clean": {
+      "full_accuracy": 76.0,
+      "crop_accuracy": 92.0,
+      "gain": 16.0,
+      "total": 50
+    },
+    "fog_0.5": {
+      "full_accuracy": 82.0,
+      "crop_accuracy": 92.0,
+      "gain": 10.0,
+      "total": 50
+    },
+    "smoke_0.5": {
+      "full_accuracy": 80.0,
+      "crop_accuracy": 96.0,
+      "gain": 16.0,
+      "total": 50
+    },
+    "thermal_0.5": {
+      "full_accuracy": 57.99999999999999,
+      "crop_accuracy": 70.0,
+      "gain": 12.000000000000007,
+      "total": 50
+    }
+  },
+  "samples": [
+    {
+      "sample_id": 2,
+      "filename": "000002.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 3,
+      "filename": "000003.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 4,
+      "filename": "000004.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "It's a thermal image of a person sitting in a chair",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 5,
+      "filename": "000005.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "It's a thermal image of a person sitting in a chair",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 6,
+      "filename": "000006.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "UNKNOWN",
+          "resp_crop": "It's a person",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 7,
+      "filename": "000007.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "It's a person playing a video game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 8,
+      "filename": "000008.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "It's a person playing a video game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 9,
+      "filename": "000009.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "It's a person playing a video game",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 10,
+      "filename": "000010.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a game",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "It's a person playing a video game",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 13,
+      "filename": "000013.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "Infrared",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 14,
+      "filename": "000014.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "Infrared",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 15,
+      "filename": "000015.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "She is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "She is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "She is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "It's a person standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 16,
+      "filename": "000016.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a question that can be answered in many ways, but the answer is always the same:",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "It's a person standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 17,
+      "filename": "000017.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "the person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "the person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 18,
+      "filename": "000018.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "the person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 19,
+      "filename": "000019.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 20,
+      "filename": "000020.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "standing",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing, sitting, or lying down",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 21,
+      "filename": "000021.jpg",
+      "gt_posture": "LYING",
+      "conditions": {
+        "clean": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "Sleeping",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It depends on the person",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person sleeping",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person sleeping",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing, sitting, or lying down",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 22,
+      "filename": "000022.jpg",
+      "gt_posture": "LYING",
+      "conditions": {
+        "clean": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "Sleeping",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It depends on the person",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person sleeping",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person sleeping",
+          "pred_crop": "LYING",
+          "resp_crop": "The person is lying down",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 25,
+      "filename": "000025.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 26,
+      "filename": "000026.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 31,
+      "filename": "000031.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 32,
+      "filename": "000032.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 33,
+      "filename": "000033.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "Infrared",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 34,
+      "filename": "000034.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 35,
+      "filename": "000035.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The posture of the man and woman is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The posture of the man is standing, the posture of the woman is sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 36,
+      "filename": "000036.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The posture of the man and woman is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "The posture of the man and woman is unknown",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "UNKNOWN",
+          "resp_crop": "It's a person",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 47,
+      "filename": "000047.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "he's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "It's a person standing on a bicycle",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 48,
+      "filename": "000048.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "he's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "It's a person standing on a bicycle",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 49,
+      "filename": "000049.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He's standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It depends on the person",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": false,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "It's a person standing on a bicycle",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing, sitting, or lying down",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 51,
+      "filename": "000051.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 52,
+      "filename": "000052.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 53,
+      "filename": "000053.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 55,
+      "filename": "000055.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 59,
+      "filename": "000059.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "He's sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 60,
+      "filename": "000060.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "UNKNOWN",
+          "resp_crop": "It's a person",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "UNKNOWN",
+          "resp_crop": "It's a person",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 66,
+      "filename": "000066.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The posture of person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "UNKNOWN",
+          "resp_crop": "It's a person",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 67,
+      "filename": "000067.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 72,
+      "filename": "000072.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing stock photography",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 98,
+      "filename": "000098.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "Standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a thermal image",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 118,
+      "filename": "000118.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 127,
+      "filename": "000127.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 131,
+      "filename": "000131.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing stock photography",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 143,
+      "filename": "000143.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing, sitting, or lying down",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing, sitting, or lying down",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing, sitting, or lying down",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It is a giraffe",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 144,
+      "filename": "000144.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 151,
+      "filename": "000151.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "Standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 173,
+      "filename": "000173.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "It's a person standing up",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        }
+      }
+    },
+    {
+      "sample_id": 200,
+      "filename": "000200.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "LYING",
+          "resp_full": "He is lying down",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "fog_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "He is lying down",
+          "pred_crop": "STANDING",
+          "resp_crop": "He's standing",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "smoke_0.5": {
+          "pred_full": "LYING",
+          "resp_full": "He is lying down",
+          "pred_crop": "STANDING",
+          "resp_crop": "He is standing",
+          "full_correct": false,
+          "crop_correct": false
+        },
+        "thermal_0.5": {
+          "pred_full": "UNKNOWN",
+          "resp_full": "It's a person",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": false,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 211,
+      "filename": "000211.jpg",
+      "gt_posture": "SITTING",
+      "conditions": {
+        "clean": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "He is sitting",
+          "pred_crop": "SITTING",
+          "resp_crop": "The person is sitting",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "SITTING",
+          "resp_full": "The person is sitting",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    },
+    {
+      "sample_id": 215,
+      "filename": "000215.jpg",
+      "gt_posture": "STANDING",
+      "conditions": {
+        "clean": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "fog_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "smoke_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "He is standing",
+          "pred_crop": "STANDING",
+          "resp_crop": "The person is standing",
+          "full_correct": true,
+          "crop_correct": true
+        },
+        "thermal_0.5": {
+          "pred_full": "STANDING",
+          "resp_full": "The person is standing",
+          "pred_crop": "UNKNOWN",
+          "resp_crop": "It's a person",
+          "full_correct": true,
+          "crop_correct": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "experiment": "RQ4 - Hallucination Risk Analysis",
+    "timestamp": "2026-03-14T19:40:49.889778"
+  },
+  "gemini": {
+    "clean": {
+      "fabrication": 0.81,
+      "uncertainty": 1.24,
+      "overconfidence": 0.0,
+      "color_mentions": 2.84,
+      "h_score": 0.4380000000000001
+    },
+    "fog_0.5": {
+      "fabrication": 0.82,
+      "uncertainty": 1.34,
+      "overconfidence": 0.02,
+      "color_mentions": 2.57,
+      "h_score": 0.4280000000000001
+    },
+    "smoke_0.5": {
+      "fabrication": 0.85,
+      "uncertainty": 1.4,
+      "overconfidence": 0.02,
+      "color_mentions": 2.58,
+      "h_score": 0.44000000000000017
+    },
+    "thermal_0.5": {
+      "fabrication": 0.46,
+      "uncertainty": 1.74,
+      "overconfidence": 0.03,
+      "color_mentions": 2.25,
+      "h_score": -0.04699999999999997
+    }
+  },
+  "qwen": {
+    "clean": {
+      "fabrication": 0.52,
+      "uncertainty": 1.19,
+      "overconfidence": 0.02,
+      "color_mentions": 2.13,
+      "h_score": 0.17299999999999993
+    },
+    "fog_0.5": {
+      "fabrication": 0.53,
+      "uncertainty": 1.22,
+      "overconfidence": 0.06,
+      "color_mentions": 1.92,
+      "h_score": 0.19399999999999998
+    },
+    "smoke_0.5": {
+      "fabrication": 0.5,
+      "uncertainty": 1.34,
+      "overconfidence": 0.06,
+      "color_mentions": 1.75,
+      "h_score": 0.128
+    },
+    "thermal_0.5": {
+      "fabrication": 0.23,
+      "uncertainty": 1.65,
+      "overconfidence": 0.05,
+      "color_mentions": 1.62,
+      "h_score": -0.23999999999999996
+    }
+  },
+  "findings": {
+    "gemini_clean_to_thermal": -0.4850000000000001,
+    "qwen_clean_to_thermal": -0.4129999999999999,
+    "gemini_avg_h_score": 0.31475000000000014,
+    "qwen_avg_h_score": 0.06374999999999997
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "Gemini": {
+    "clean": {
+      "posture": {
+        "full_accuracy": 94.0,
+        "cropped_accuracy": 98.0,
+        "gain": 4.0,
+        "n": 50
+      },
+      "face_visible": {
+        "full_accuracy": 57.99999999999999,
+        "cropped_accuracy": 50.0,
+        "gain": -7.999999999999993
+      }
+    },
+    "fog_0.5": {
+      "posture": {
+        "full_accuracy": 94.0,
+        "cropped_accuracy": 98.0,
+        "gain": 4.0,
+        "n": 50
+      },
+      "face_visible": {
+        "full_accuracy": 48.0,
+        "cropped_accuracy": 38.0,
+        "gain": -10.0
+      }
+    },
+    "smoke_0.5": {
+      "posture": {
+        "full_accuracy": 94.0,
+        "cropped_accuracy": 96.0,
+        "gain": 2.0,
+        "n": 50
+      },
+      "face_visible": {
+        "full_accuracy": 36.0,
+        "cropped_accuracy": 38.0,
+        "gain": 2.0
+      }
+    },
+    "thermal_0.5": {
+      "posture": {
+        "full_accuracy": 94.0,
+        "cropped_accuracy": 68.0,
+        "gain": -26.0,
+        "n": 50
+      },
+      "face_visible": {
+        "full_accuracy": 22.0,
+        "cropped_accuracy": 16.0,
+        "gain": -6.0
+      }
+    },
+    "average": {
+      "posture": {
+        "full_accuracy": 94.0,
+        "cropped_accuracy": 90.0,
+        "gain": -4.0
+      }
+    }
+  },
+  "BLIP-2": {
+    "clean": {
+      "full_accuracy": 76.0,
+      "crop_accuracy": 92.0,
+      "gain": 16.0,
+      "total": 50
+    },
+    "fog_0.5": {
+      "full_accuracy": 82.0,
+      "crop_accuracy": 92.0,
+      "gain": 10.0,
+      "total": 50
+    },
+    "smoke_0.5": {
+      "full_accuracy": 80.0,
+      "crop_accuracy": 96.0,
+      "gain": 16.0,
+      "total": 50
+    },
+    "thermal_0.5": {
+      "full_accuracy": 57.99999999999999,
+      "crop_accuracy": 70.0,
+      "gain": 12.000000000000007,
+      "total": 50
+    }
+  },
+  "LLaVA": {
+    "clean": {
+      "full_accuracy": 88.0,
+      "crop_accuracy": 72.0,
+      "gain": -16.0,
+      "total": 50
+    },
+    "fog_0.5": {
+      "full_accuracy": 84.0,
+      "crop_accuracy": 66.0,
+      "gain": -18.0,
+      "total": 50
+    },
+    "smoke_0.5": {
+      "full_accuracy": 90.0,
+      "crop_accuracy": 70.0,
+      "gain": -20.0,
+      "total": 50
+    },
+    "thermal_0.5": {
+      "full_accuracy": 70.0,
+      "crop_accuracy": 50.0,
+      "gain": -20.0,
+      "total": 50
+    }
+  }
+}
