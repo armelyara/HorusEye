@@ -639,5 +639,4 @@ def compare_rq2_models(dataset_path):
 # Run comparison
 compare_rq2_models(DATASET_PATH)
 
-
 print("RQ2 QWEN2-VL COMPLETE!")
