@@ -1,10 +1,7 @@
-# SETUP & INSTALL
-
-#!pip install transformers accelerate pillow tqdm bitsandbytes qwen-vl-utils -q
-
+#  SETUP & INSTALL
 import os
+import shutil
 import json
-import re
 import torch
 import numpy as np
 from PIL import Image
@@ -12,34 +9,38 @@ from tqdm import tqdm
 from datetime import datetime
 from transformers import Qwen2VLForConditionalGeneration, AutoProcessor, BitsAndBytesConfig
 
+#!pip install transformers accelerate pillow tqdm bitsandbytes qwen-vl-utils -q
+
 print("✓ Packages installed")
 print(f"  PyTorch: {torch.__version__}")
 print(f"  CUDA available: {torch.cuda.is_available()}")
 if torch.cuda.is_available():
     print(f"  GPU: {torch.cuda.get_device_name(0)}")
 
-
 # CONFIGURATION
 
-DATASET_PATH = 'HorusEye/horuseye_VLM/refcoco_degraded_benchmark'
+DATASET_PATH = '/content/refcoco_degraded_benchmark'
 CONDITIONS = ['clean', 'fog_0.5', 'smoke_0.5', 'thermal_0.5']
-NUM_SAMPLES = 100  # Use subset for RQ2 (feedback is slow)
-CHECKPOINT_EVERY = 20
 MODEL_NAME = "qwen2vl"
-NUM_ROUNDS = 3  # Number of feedback rounds
+NUM_SAMPLES = None  # ALL samples (3,811 images × 4 conditions = 15,244 total)
+NUM_ROUNDS = 3
+
+# Output paths
+OUTPUT_DIR = '/content/refcoco_degraded_benchmark/results'
+CHECKPOINT_PATH = f'{OUTPUT_DIR}/rq2_qwen2vl_checkpoint.json'
+RESULTS_PATH = f'{OUTPUT_DIR}/rq2_qwen2vl_fixed_results.json'
+CHECKPOINT_EVERY = 10
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 print(f"✓ Configuration set")
 print(f"  Dataset: {DATASET_PATH}")
-print(f"  Samples: {NUM_SAMPLES}")
-print(f"  Feedback rounds: {NUM_ROUNDS}")
-
+print(f"  Output: {OUTPUT_DIR}")
+print(f"  Samples: ALL, Rounds: {NUM_ROUNDS}")
+print(f"  Checkpoint every: {CHECKPOINT_EVERY} samples")
 
 # LOAD MODEL
-
-print("Loading Qwen2-VL model...")
-print("  This may take 3-5 minutes...")
-
-# 4-bit quantization for T4 GPU
+# 4-bit quantization
 quantization_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_compute_dtype=torch.float16,
@@ -49,137 +50,150 @@ quantization_config = BitsAndBytesConfig(
 
 model = Qwen2VLForConditionalGeneration.from_pretrained(
     "Qwen/Qwen2-VL-2B-Instruct",
-    quantization_config=quantization_config,
+    torch_dtype=torch.float16,
     device_map="auto",
-    torch_dtype=torch.float16
+    quantization_config=quantization_config
 )
 
-processor = AutoProcessor.from_pretrained(
-    "Qwen/Qwen2-VL-2B-Instruct",
-    trust_remote_code=True
-)
+processor = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct")
 
 model.eval()
-print("✓ Qwen2-VL loaded!")
 
+#  HELPER FUNCTIONS
+import re
 
-# DEFINE FUNCTIONS
+def calculate_iou(bbox1, bbox2):
+    """Calculate IoU between two [x, y, w, h] bboxes."""
+    if not bbox1 or not bbox2:
+        return 0.0
 
-def calculate_iou(box1, box2):
-    """Calculate IoU between two boxes [x, y, w, h]."""
-    x1, y1, w1, h1 = box1
-    x2, y2, w2, h2 = box2
+    x1, y1, w1, h1 = bbox1
+    x2, y2, w2, h2 = bbox2
 
-    box1_x2, box1_y2 = x1 + w1, y1 + h1
-    box2_x2, box2_y2 = x2 + w2, y2 + h2
+    # Convert to corners
+    x1_min, y1_min = x1, y1
+    x1_max, y1_max = x1 + w1, y1 + h1
+    x2_min, y2_min = x2, y2
+    x2_max, y2_max = x2 + w2, y2 + h2
 
-    inter_x1 = max(x1, x2)
-    inter_y1 = max(y1, y2)
-    inter_x2 = min(box1_x2, box2_x2)
-    inter_y2 = min(box1_y2, box2_y2)
+    # Intersection
+    inter_x_min = max(x1_min, x2_min)
+    inter_y_min = max(y1_min, y2_min)
+    inter_x_max = min(x1_max, x2_max)
+    inter_y_max = min(y1_max, y2_max)
 
-    inter_w = max(0, inter_x2 - inter_x1)
-    inter_h = max(0, inter_y2 - inter_y1)
-    inter_area = inter_w * inter_h
+    if inter_x_max <= inter_x_min or inter_y_max <= inter_y_min:
+        return 0.0
 
+    inter_area = (inter_x_max - inter_x_min) * (inter_y_max - inter_y_min)
     area1 = w1 * h1
     area2 = w2 * h2
     union_area = area1 + area2 - inter_area
 
-    if union_area == 0:
-        return 0.0
-
-    return inter_area / union_area
+    return inter_area / union_area if union_area > 0 else 0.0
 
 
 def parse_bbox_from_response(response, img_width, img_height):
     """
     Parse bounding box from Qwen2-VL response.
-    Qwen2-VL returns bbox in format: <|box_start|>(x1,y1),(x2,y2)<|box_end|>
-    Coordinates are normalized 0-1000.
+    Handles formats: <|box_start|>(x1,y1),(x2,y2)<|box_end|> or just (x1,y1),(x2,y2)
+    Returns [x, y, w, h] in pixel coordinates.
     """
-    # Pattern 1: <|box_start|>(x1,y1),(x2,y2)<|box_end|>
-    pattern1 = r'<\|box_start\|>\((\d+),(\d+)\),\((\d+),(\d+)\)<\|box_end\|>'
+    response = response.strip()
+
+    # Pattern 1: With box tokens - <|box_start|>(x1,y1),(x2,y2)<|box_end|>
+    pattern1 = r'\((\d+),(\d+)\),\((\d+),(\d+)\)'
+
+    # Pattern 2: Plain coordinates
+    pattern2 = r'\[(\d+),\s*(\d+),\s*(\d+),\s*(\d+)\]'
+
+    # Try pattern 1 first
     match = re.search(pattern1, response)
-
     if match:
         x1, y1, x2, y2 = map(int, match.groups())
-        x1 = x1 / 1000 * img_width
-        y1 = y1 / 1000 * img_height
-        x2 = x2 / 1000 * img_width
-        y2 = y2 / 1000 * img_height
+        # Convert from 0-1000 normalized to pixels
+        x1 = x1 * img_width / 1000
+        y1 = y1 * img_height / 1000
+        x2 = x2 * img_width / 1000
+        y2 = y2 * img_height / 1000
         return [x1, y1, x2 - x1, y2 - y1]
 
-    # Pattern 2: [x1, y1, x2, y2] or (x1, y1, x2, y2)
-    pattern2 = r'[\[\(](\d+)[,\s]+(\d+)[,\s]+(\d+)[,\s]+(\d+)[\]\)]'
+    # Try pattern 2
     match = re.search(pattern2, response)
-
     if match:
-        x1, y1, x2, y2 = map(int, match.groups())
-        if max(x1, y1, x2, y2) <= 1000:
-            x1 = x1 / 1000 * img_width
-            y1 = y1 / 1000 * img_height
-            x2 = x2 / 1000 * img_width
-            y2 = y2 / 1000 * img_height
-        return [x1, y1, x2 - x1, y2 - y1]
+        coords = list(map(int, match.groups()))
+        return coords
 
     return None
 
-
 def generate_feedback(pred_bbox, gt_bbox, img_width, img_height):
-    """
-    Generate natural language feedback about the prediction error.
-    """
-    if pred_bbox is None:
-        return "I couldn't find a bounding box in your response. Please provide coordinates in the format (x1,y1),(x2,y2)."
+    """Generate language feedback comparing predicted bbox to ground truth."""
+    if not pred_bbox:
+        return "I couldn't detect the bounding box. Please look more carefully at the image and provide coordinates in the format (x1,y1),(x2,y2)."
 
     px, py, pw, ph = pred_bbox
     gx, gy, gw, gh = gt_bbox
 
-    # Calculate center points
+    # Calculate centers
     pred_cx, pred_cy = px + pw/2, py + ph/2
     gt_cx, gt_cy = gx + gw/2, gy + gh/2
 
     feedback_parts = []
 
-    # Position feedback
-    dx = gt_cx - pred_cx
-    dy = gt_cy - pred_cy
+    # Horizontal feedback
+    x_diff = gt_cx - pred_cx
+    threshold = img_width * 0.05  # 5% threshold
 
-    if abs(dx) > img_width * 0.1:
-        direction = "right" if dx > 0 else "left"
-        feedback_parts.append(f"The box should be more to the {direction}")
+    if x_diff > threshold:
+        feedback_parts.append("The box should be more to the RIGHT")
+    elif x_diff < -threshold:
+        feedback_parts.append("The box should be more to the LEFT")
 
-    if abs(dy) > img_height * 0.1:
-        direction = "down" if dy > 0 else "up"
-        feedback_parts.append(f"The box should be more {direction}")
+    # Vertical feedback
+    y_diff = gt_cy - pred_cy
+    threshold = img_height * 0.05
+
+    if y_diff > threshold:
+        feedback_parts.append("The box should be more DOWN")
+    elif y_diff < -threshold:
+        feedback_parts.append("The box should be more UP")
 
     # Size feedback
-    size_ratio_w = gw / (pw + 1e-6)
-    size_ratio_h = gh / (ph + 1e-6)
+    pred_area = pw * ph
+    gt_area = gw * gh
+    area_ratio = pred_area / gt_area if gt_area > 0 else 1
 
-    if size_ratio_w > 1.2:
-        feedback_parts.append("The box should be wider")
-    elif size_ratio_w < 0.8:
-        feedback_parts.append("The box should be narrower")
-
-    if size_ratio_h > 1.2:
-        feedback_parts.append("The box should be taller")
-    elif size_ratio_h < 0.8:
-        feedback_parts.append("The box should be shorter")
+    if area_ratio < 0.7:
+        feedback_parts.append("The box should be LARGER")
+    elif area_ratio > 1.4:
+        feedback_parts.append("The box should be SMALLER")
 
     if not feedback_parts:
-        return "The box is close but can be more precise. Please refine the bounding box."
+        feedback_parts.append("The box is close but can be more precise")
 
-    return ". ".join(feedback_parts) + ". Please provide a corrected bounding box."
+    feedback = ". ".join(feedback_parts) + ". Please provide a corrected bounding box."
+    return feedback
 
 
-def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num_rounds=3):
+print("✓ Helper functions defined")
+
+#  PREDIC WITH FEEDBACK FUNCTION
+
+def predict_with_feedback_fixed(image_path, expression, gt_bbox, model, processor, num_rounds=3, iou_threshold=0.5):
     """
     Run multi-round prediction with language feedback.
 
+    1. Image passed in ALL rounds
+    2. Proper conversation history maintained
+    3. Decode only NEW tokens
+    4. last_response properly initialized
+    5. Filter: Only run feedback if R1 IoU < threshold
+
+    Args:
+        iou_threshold: Skip feedback rounds if R1 IoU >= this value (default 0.5)
+
     Returns:
-        dict with IoU for each round and final bbox
+        dict with IoU for each round, final bbox, and 'skipped' flag
     """
     image = Image.open(image_path).convert('RGB')
     img_width, img_height = image.size
@@ -187,32 +201,22 @@ def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num
     results = {
         'rounds': [],
         'final_bbox': None,
-        'final_iou': 0.0
+        'final_iou': 0.0,
+        'skipped': False  # True if R1 IoU >= threshold
     }
 
-    conversation_history = []
     current_bbox = None
+    last_response = ""
+
+    # Maintain full conversation history
+    full_conversation = []  # Proper history tracking
 
     for round_num in range(num_rounds):
         if round_num == 0:
             # Round 1: Initial prediction
-            prompt = f"Locate '{expression}' in the image and provide the bounding box coordinates."
-        else:
-            # Round 2+: Feedback-based correction
-            feedback = generate_feedback(current_bbox, gt_bbox, img_width, img_height)
-            prompt = f"{feedback}"
+            prompt = f"Locate '{expression}' in the image and provide the bounding box coordinates in format (x1,y1),(x2,y2)."
 
-        # Build conversation
-        conversation_history.append({
-            "role": "user",
-            "content": [
-                {"type": "image", "image": image} if round_num == 0 else {"type": "text", "text": ""},
-                {"type": "text", "text": prompt}
-            ]
-        })
-
-        # For Qwen2-VL, we need to handle the conversation format
-        if round_num == 0:
+            # First message includes image
             messages = [
                 {
                     "role": "user",
@@ -223,19 +227,27 @@ def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num
                 }
             ]
         else:
-            # Continue conversation with feedback
+            # Round 2+: Feedback-based correction
+            feedback = generate_feedback(current_bbox, gt_bbox, img_width, img_height)
+            prompt = feedback
+
+            # Build PROPER multi-turn conversation
+            # Include image in first user message, then continue conversation
             messages = [
+                # Original user message with image
                 {
                     "role": "user",
                     "content": [
                         {"type": "image", "image": image},
-                        {"type": "text", "text": f"Locate '{expression}' in the image and provide the bounding box coordinates."}
+                        {"type": "text", "text": f"Locate '{expression}' in the image and provide the bounding box coordinates in format (x1,y1),(x2,y2)."}
                     ]
                 },
+                # Assistant's previous response
                 {
                     "role": "assistant",
                     "content": [{"type": "text", "text": last_response}]
                 },
+                # User's feedback
                 {
                     "role": "user",
                     "content": [{"type": "text", "text": prompt}]
@@ -245,13 +257,16 @@ def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num
         # Apply chat template
         text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-        # Process inputs
+        # ALWAYS pass the image
         inputs = processor(
             text=[text],
-            images=[image] if round_num == 0 else None,
+            images=[image],  # Always include image!
             padding=True,
             return_tensors="pt"
         ).to(model.device)
+
+        # Store input length
+        input_length = inputs['input_ids'].shape[1]
 
         # Generate
         with torch.no_grad():
@@ -261,8 +276,11 @@ def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num
                 do_sample=False
             )
 
-        # Decode response
-        response = processor.decode(outputs[0], skip_special_tokens=True)
+        # Decode only new tokens (not the prompt)
+        generated_ids = outputs[0][input_length:]
+        response = processor.decode(generated_ids, skip_special_tokens=True).strip()
+
+        # Store for next round
         last_response = response
 
         # Parse bbox
@@ -282,6 +300,20 @@ def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num
             'iou': float(iou)
         })
 
+        # Debug output for first few samples
+        if round_num == 0:
+            print(f"R1: IoU={iou:.3f}, bbox={current_bbox}")
+
+            # FILTER: Skip feedback rounds if R1 IoU >= threshold
+            if iou >= iou_threshold:
+                print(f"SKIPPED: R1 IoU ({iou:.3f}) >= {iou_threshold} threshold")
+                results['skipped'] = True
+                results['final_bbox'] = current_bbox
+                results['final_iou'] = iou
+                return results
+        else:
+            print(f"    R{round_num+1}: IoU={iou:.3f}, feedback='{prompt[:50]}...'")
+
     # Set final results
     if current_bbox:
         results['final_bbox'] = current_bbox
@@ -290,6 +322,9 @@ def predict_with_feedback(image_path, expression, gt_bbox, model, processor, num
     return results
 
 
+print("✓ predict_with_feedback function defined")
+
+# LOAD DATASET
 def load_dataset(dataset_path, num_samples=None):
     """Load dataset from RQ1 results file."""
     rq1_path = os.path.join(dataset_path, 'results', 'rq1_with_bboxes.json')
@@ -299,6 +334,7 @@ def load_dataset(dataset_path, num_samples=None):
 
     samples = rq1_data['samples']
 
+    # Ensure bbox field exists
     for s in samples:
         if 'gt_bbox' in s and 'bbox' not in s:
             s['bbox'] = s['gt_bbox']
@@ -309,334 +345,308 @@ def load_dataset(dataset_path, num_samples=None):
     print(f"✓ Loaded {len(samples)} samples")
     return samples
 
-
-print("✓ Functions defined")
-
-
 # TEST BEFORE FULL RUN
+print("Filter: R1 IoU < 0.5 will get feedback, R1 IoU >= 0.5 will be skipped")
 
-print("="*70)
-print("Testing Qwen2-VL RQ2 Feedback Loop on 2 samples...")
-print("="*70)
+samples = load_dataset(DATASET_PATH, num_samples=5)
 
-samples = load_dataset(DATASET_PATH, num_samples=2)
-
+# Test on first 2 samples
 for i, sample in enumerate(samples[:2]):
     filename = sample['filename']
     expression = sample['expression']
-    gt_bbox = sample.get('bbox') or sample.get('gt_bbox')
+    gt_bbox = sample['bbox']
 
     # Test on clean condition
     image_path = f"{DATASET_PATH}/images/clean/{filename}"
 
     if os.path.exists(image_path):
         print(f"\n[Test {i+1}] {filename}")
-        print(f"  Expression: {expression}")
+        print(f"  Expression: '{expression}'")
         print(f"  GT bbox: {gt_bbox}")
 
-        result = predict_with_feedback(
+        result = predict_with_feedback_fixed(
             image_path, expression, gt_bbox,
-            model, processor, num_rounds=NUM_ROUNDS
+            model, processor, num_rounds=NUM_ROUNDS,
+            iou_threshold=0.5
         )
 
-        for r in result['rounds']:
-            print(f"  Round {r['round']}: IoU = {r['iou']:.3f}")
+        if result.get('skipped', False):
+            print(f"\n SKIPPED (R1 IoU >= 0.5)")
+            print(f" R1 IoU: {result['rounds'][0]['iou']:.3f}")
+        else:
+            print(f"\n  Round IoUs: {[r['iou'] for r in result['rounds']]}")
+            print(f"  Improvement: R1={result['rounds'][0]['iou']:.3f} → R3={result['rounds'][-1]['iou']:.3f}")
 
-        print(f"  Final IoU: {result['final_iou']:.3f}")
+            # Check if rounds are different
+            ious = [r['iou'] for r in result['rounds']]
+            if len(ious) == 3 and ious[0] == ious[1] == ious[2]:
+                print(f" WARNING: All rounds identical! Feedback may not be working.")
+            else:
+                print(f"  ✓ Rounds show variation - feedback is working!")
 
-print("\n" + "="*70)
-print("If feedback loop is working, proceed to Cell 6 for full evaluation.")
-print("="*70)
+# RUN FULL EVALUATION
+def save_checkpoint(checkpoint_data):
+    """Save checkpoint to Google Drive for persistence."""
+    # Save checkpoint
+    with open(CHECKPOINT_PATH, 'w') as f:
+        json.dump(checkpoint_data, f, indent=2, default=float)
+    # Also save intermediate results
+    with open(RESULTS_PATH, 'w') as f:
+        json.dump(checkpoint_data['all_results'], f, indent=2, default=float)
+    print(f" Saved: {checkpoint_data['current_condition']} - {checkpoint_data['current_idx']}/{checkpoint_data['total_samples']}")
 
+def load_checkpoint():
+    """Load checkpoint if exists. Falls back to results file."""
+    if os.path.exists(CHECKPOINT_PATH):
+        print(f" Found checkpoint: {CHECKPOINT_PATH}")
+        try:
+            with open(CHECKPOINT_PATH) as f:
+                checkpoint_data = json.load(f)
+            # Validate essential keys
+            if 'current_condition' in checkpoint_data and \
+               'current_idx' in checkpoint_data and \
+               'total_samples' in checkpoint_data and \
+               'all_results' in checkpoint_data:
+                return checkpoint_data
+            else:
+                print(f" Warning: Checkpoint file at {CHECKPOINT_PATH} is incomplete or corrupted. Starting fresh.")
+                return None
+        except json.JSONDecodeError:
+            print(f" Warning: Checkpoint file at {CHECKPOINT_PATH} is malformed. Starting fresh.")
+            return None
+    elif os.path.exists(RESULTS_PATH):
+        print(f" No checkpoint, but found results file: {RESULTS_PATH}")
+        with open(RESULTS_PATH) as f:
+            all_results = json.load(f)
+        if all_results.get('samples'):
+            last_sample = all_results['samples'][-1]
+            last_condition = last_sample.get('condition', 'clean')
+            condition_samples = [s for s in all_results['samples'] if s.get('condition') == last_condition]
+            completed_conditions = list(all_results.get('summary', {}).keys())
+            if last_condition in completed_conditions:
+                completed_conditions.remove(last_condition)
+            return {
+                'current_condition': last_condition,
+                'current_idx': len(condition_samples),
+                'total_samples': all_results['metadata'].get('num_samples', 3811),
+                'completed_conditions': completed_conditions,
+                'all_results': all_results
+            }
+    return None
 
-# RUN EVALUATION
-
-def run_rq2_evaluation(dataset_path, conditions, num_samples=None, num_rounds=3, checkpoint_every=20):
-    """Run RQ2 feedback evaluation with Qwen2-VL."""
-
-    print(f"RQ2: Language Feedback with Qwen2-VL ({num_rounds} rounds)")
-
-    results_dir = os.path.join(dataset_path, 'results')
-    os.makedirs(results_dir, exist_ok=True)
-
-    checkpoint_path = os.path.join(results_dir, f'rq2_{MODEL_NAME}_checkpoint.json')
-
-    # Load checkpoint if exists
-    start_idx = 0
-    round_ious = {cond: {f'round_{r+1}': [] for r in range(num_rounds)} for cond in conditions}
-    processed_samples = []
-
-    if os.path.exists(checkpoint_path):
-        print("\n✓ Found checkpoint, resuming...")
-        with open(checkpoint_path) as f:
-            checkpoint = json.load(f)
-        start_idx = checkpoint.get('last_index', 0) + 1
-        round_ious = checkpoint.get('round_ious', round_ious)
-        processed_samples = checkpoint.get('samples', [])
-        print(f"  Resuming from sample {start_idx}")
+def run_rq2_evaluation(dataset_path, conditions, model, processor, num_samples, num_rounds):
+    """Run RQ2 feedback evaluation across all conditions with checkpointing."""
 
     samples = load_dataset(dataset_path, num_samples)
 
-    print(f"\n  Total samples: {len(samples)}")
-    print(f"  Remaining: {len(samples) - start_idx}")
+    # Check for existing checkpoint
+    checkpoint = load_checkpoint()
+    if checkpoint:
+        print(f"\n RESUMING from checkpoint:")
+        print(f"   Condition: {checkpoint['current_condition']}")
+        print(f"   Sample: {checkpoint['current_idx']}/{checkpoint['total_samples']}")
+        all_results = checkpoint['all_results']
+        start_condition_idx = conditions.index(checkpoint['current_condition'])
+        start_sample_idx = checkpoint['current_idx']
+        completed_conditions = checkpoint.get('completed_conditions', [])
+    else:
+        print("\n Starting fresh evaluation...")
+        all_results = {
+            'metadata': {
+                'model': 'Qwen2-VL-2B-Instruct',
+                'num_samples': len(samples),
+                'num_rounds': num_rounds,
+                'timestamp': datetime.now().isoformat(),
+                'iou_filter_threshold': 0.5,
+                'filter_description': 'Feedback rounds (R2, R3) only run on samples with R1 IoU < 0.5',
+                'fixes_applied': [
+                    'Image passed in ALL rounds',
+                    'Proper conversation history',
+                    'Decode only NEW tokens',
+                    'last_response initialized',
+                    'Filter: Skip feedback if R1 IoU >= 0.5'
+                ]
+            },
+            'summary': {},
+            'samples': []
+        }
+        start_condition_idx = 0
+        start_sample_idx = 0
+        completed_conditions = []
 
-    total = len(samples) * len(conditions)
-    completed = start_idx * len(conditions)
-    pbar = tqdm(total=total, initial=completed, desc=f"RQ2 {MODEL_NAME}")
-
-    errors = 0
-
-    for idx, sample in enumerate(samples):
-        if idx < start_idx:
+    for cond_idx, condition in enumerate(conditions):
+        # Skip already completed conditions
+        if condition in completed_conditions:
+            print(f"\n⏭ Skipping {condition} (already completed)")
             continue
 
-        sample_id = sample['sample_id']
-        filename = sample['filename']
-        expression = sample['expression']
-        gt_bbox = sample.get('bbox') or sample.get('gt_bbox')
+        # Skip conditions before resume point
+        if cond_idx < start_condition_idx:
+            continue
 
-        sample_result = {
-            'sample_id': sample_id,
-            'filename': filename,
-            'expression': expression,
-            'gt_bbox': gt_bbox,
-            'conditions': {}
-        }
+        print(f"Processing condition: {condition}")
 
-        for condition in conditions:
+        # Initialize or load from checkpoint
+        if cond_idx == start_condition_idx and start_sample_idx > 0:
+            # Resuming mid-condition: load existing results
+            condition_results = [s for s in all_results['samples'] if s.get('condition') == condition]
+            round_ious = {r: [] for r in range(1, num_rounds + 1)}
+            skipped_count = 0
+            processed_count = 0
+            # Rebuild stats from existing results
+            for r in condition_results:
+                if r.get('skipped', False):
+                    skipped_count += 1
+                    round_ious[1].append(r['rounds'][0]['iou'])
+                else:
+                    processed_count += 1
+                    for rnd in r['rounds']:
+                        round_ious[rnd['round']].append(rnd['iou'])
+            print(f"  📂 Loaded {len(condition_results)} existing results, resuming from sample {start_sample_idx}")
+        else:
+            condition_results = []
+            round_ious = {r: [] for r in range(1, num_rounds + 1)}
+            skipped_count = 0
+            processed_count = 0
+
+        for idx, sample in enumerate(tqdm(samples, desc=condition)):
+            # Skip samples before resume point
+            if cond_idx == start_condition_idx and idx < start_sample_idx:
+                continue
+
+            filename = sample['filename']
+            expression = sample['expression']
+            gt_bbox = sample['bbox']
+
             image_path = os.path.join(dataset_path, 'images', condition, filename)
 
             if not os.path.exists(image_path):
-                pbar.update(1)
                 continue
 
             try:
-                result = predict_with_feedback(
+                result = predict_with_feedback_fixed(
                     image_path, expression, gt_bbox,
-                    model, processor, num_rounds=num_rounds
+                    model, processor, num_rounds,
+                    iou_threshold=0.5  # Filter: only run feedback if R1 IoU < 0.5
                 )
 
-                sample_result['conditions'][condition] = result
+                # Track skipped vs processed
+                if result.get('skipped', False):
+                    skipped_count += 1
+                    # Only R1 exists for skipped samples
+                    round_ious[1].append(result['rounds'][0]['iou'])
+                else:
+                    processed_count += 1
+                    # Track all round IoUs for processed samples
+                    for r in result['rounds']:
+                        round_ious[r['round']].append(r['iou'])
 
-                # Track IoU by round
-                for r in result['rounds']:
-                    round_key = f"round_{r['round']}"
-                    round_ious[condition][round_key].append(r['iou'])
+                sample_result = {
+                    'sample_id': sample.get('sample_id', idx),
+                    'filename': filename,
+                    'expression': expression,
+                    'gt_bbox': gt_bbox,
+                    'rounds': result['rounds'],
+                    'final_iou': result['final_iou'],
+                    'skipped': result.get('skipped', False),
+                    'condition': condition  # Add condition early for checkpoint
+                }
+                condition_results.append(sample_result)
+                all_results['samples'].append(sample_result)
+
+                # Save checkpoint every N samples
+                if (idx + 1) % CHECKPOINT_EVERY == 0:
+                    save_checkpoint({
+                        'current_condition': condition,
+                        'current_idx': idx + 1,
+                        'total_samples': len(samples),
+                        'completed_conditions': completed_conditions,
+                        'all_results': all_results
+                    })
 
             except Exception as e:
-                errors += 1
-                sample_result['conditions'][condition] = {
-                    'error': str(e),
-                    'rounds': [],
-                    'final_iou': 0.0
-                }
+                print(f"Error on {filename}: {e}")
+                continue
 
-            pbar.update(1)
+        # Calculate summary for this condition
+        if condition_results:
+            # R1 includes ALL samples, R2/R3 only processed (non-skipped)
+            r1_mean = np.mean(round_ious[1]) if round_ious[1] else 0
+            r2_mean = np.mean(round_ious[2]) if round_ious[2] else 0
+            r3_mean = np.mean(round_ious[3]) if round_ious[3] else 0
 
-            # Show progress
-            if len(round_ious[condition]['round_1']) > 0:
-                r1_avg = np.mean(round_ious[condition]['round_1'])
-                r3_avg = np.mean(round_ious[condition][f'round_{num_rounds}'])
-                pbar.set_postfix({'cond': condition[:6], 'R1': f'{r1_avg:.3f}', f'R{num_rounds}': f'{r3_avg:.3f}'})
+            # For improvement calculation, use only processed samples
+            processed_r1_ious = [r['rounds'][0]['iou'] for r in condition_results if not r.get('skipped', False)]
+            processed_r1_mean = np.mean(processed_r1_ious) if processed_r1_ious else 0
 
-        processed_samples.append(sample_result)
-
-        # Save checkpoint
-        if (idx + 1) % checkpoint_every == 0:
-            checkpoint = {
-                'last_index': idx,
-                'round_ious': {
-                    cond: {k: [float(v) for v in vals] for k, vals in cond_rounds.items()}
-                    for cond, cond_rounds in round_ious.items()
-                },
-                'samples': processed_samples,
-                'timestamp': datetime.now().isoformat()
+            all_results['summary'][condition] = {
+                'round_1': {'mean_iou': float(r1_mean), 'count': len(round_ious[1])},
+                'round_2': {'mean_iou': float(r2_mean), 'count': len(round_ious[2])},
+                'round_3': {'mean_iou': float(r3_mean), 'count': len(round_ious[3])},
+                'processed_r1_mean': float(processed_r1_mean),  # R1 mean for samples that got feedback
+                'improvement_r1_to_r3': float(r3_mean - processed_r1_mean) if processed_r1_mean > 0 else 0,
+                'improvement_pct': float((r3_mean - processed_r1_mean) / processed_r1_mean * 100) if processed_r1_mean > 0 else 0,
+                'total_samples': len(condition_results),
+                'processed_samples': processed_count,
+                'skipped_samples': skipped_count,
+                'skip_rate': float(skipped_count / len(condition_results) * 100) if condition_results else 0
             }
-            with open(checkpoint_path, 'w') as f:
-                json.dump(checkpoint, f)
-            f.flush()
-            os.fsync(f.fileno())
-            tqdm.write(f"  ✓ Checkpoint saved at sample {idx + 1}")
 
-    pbar.close()
+            print(f"\n{condition} Summary:")
+            print(f"  Total: {len(condition_results)} | Processed: {processed_count} | Skipped (IoU≥0.5): {skipped_count}")
+            print(f"  R1 (all): {r1_mean:.4f}")
+            print(f"  R1 (processed only): {processed_r1_mean:.4f}")
+            print(f"  R2 (processed): {r2_mean:.4f}")
+            print(f"  R3 (processed): {r3_mean:.4f}")
+            if processed_r1_mean > 0:
+                print(f"  Improvement: {r3_mean - processed_r1_mean:+.4f} ({(r3_mean - processed_r1_mean) / processed_r1_mean * 100:+.1f}%) Kishan)")
 
-    # Print results
-    print(f"RQ2 RESULTS: Qwen2-VL")
+        # Mark condition as completed
+        completed_conditions.append(condition)
 
-    summary = {}
+        # Save checkpoint after completing condition
+        save_checkpoint({
+            'current_condition': condition,
+            'current_idx': len(samples),  # Completed
+            'total_samples': len(samples),
+            'completed_conditions': completed_conditions,
+            'all_results': all_results
+        })
+        print(f"  {condition} completed!")
 
-    # Header
-    header = f"{'Condition':<15}"
-    for r in range(num_rounds):
-        header += f"{'Round '+str(r+1):<12}"
-    header += f"{'Δ(R1→R3)':<12}"
-    print(f"\n{header}")
-    print("-"*len(header))
+        # Reset start_sample_idx for next conditions
+        start_sample_idx = 0
+
+    # All done - remove checkpoint file
+    if os.path.exists(CHECKPOINT_PATH):
+        os.remove(CHECKPOINT_PATH)
+        print("\n Checkpoint file removed (evaluation complete)")
+
+    # Print final summary
+    print("FINAL SUMMARY: RQ2 Qwen2-VL")
+
+
+    print(f"\n{'Condition':<15} {'R1 IoU':<10} {'R2 IoU':<10} {'R3 IoU':<10} {'Δ (R1→R3)':<12}")
 
     for condition in conditions:
-        summary[condition] = {}
-        row = f"{condition:<15}"
-
-        round_avgs = []
-        for r in range(num_rounds):
-            round_key = f"round_{r+1}"
-            ious = round_ious[condition][round_key]
-            if len(ious) > 0:
-                avg = np.mean(ious)
-                round_avgs.append(avg)
-                summary[condition][round_key] = {
-                    'mean_iou': float(avg),
-                    'std': float(np.std(ious)),
-                    'n': len(ious)
-                }
-                row += f"{avg:<12.4f}"
-            else:
-                round_avgs.append(0)
-                row += f"{'N/A':<12}"
-
-        # Calculate improvement
-        if len(round_avgs) >= 2 and round_avgs[0] > 0:
-            delta = round_avgs[-1] - round_avgs[0]
-            delta_pct = delta / round_avgs[0] * 100
-            summary[condition]['improvement'] = {
-                'absolute': float(delta),
-                'relative_pct': float(delta_pct)
-            }
-            row += f"{delta:+.4f} ({delta_pct:+.1f}%)"
-        else:
-            row += "N/A"
-
-        print(row)
-
-    print("-"*len(header))
-
-    # Key findings
-    print("KEY FINDINGS")
-
-    for condition in conditions:
-        if 'improvement' in summary.get(condition, {}):
-            imp = summary[condition]['improvement']
-            print(f"  {condition}: {imp['absolute']:+.4f} IoU ({imp['relative_pct']:+.1f}%)")
+        if condition in all_results['summary']:
+            s = all_results['summary'][condition]
+            delta = s['improvement_r1_to_r3']
+            print(f"{condition:<15} {s['round_1']['mean_iou']:<10.4f} {s['round_2']['mean_iou']:<10.4f} {s['round_3']['mean_iou']:<10.4f} {delta:+.4f} ({s['improvement_pct']:+.1f}%)")
 
     # Save results
-    output = {
-        'metadata': {
-            'model': 'Qwen2-VL-2B-Instruct',
-            'experiment': 'RQ2 - Language Feedback Loop',
-            'num_rounds': num_rounds,
-            'timestamp': datetime.now().isoformat(),
-            'num_samples': len(processed_samples)
-        },
-        'summary': summary,
-        'samples': processed_samples
-    }
+    with open(RESULTS_PATH, 'w') as f:
+        json.dump(all_results, f, indent=2, default=float)
 
-    save_path = os.path.join(results_dir, f'rq2_{MODEL_NAME}_results.json')
-    with open(save_path, 'w') as f:
-        json.dump(output, f, indent=2)
+    print(f"\n✓ Results saved to {RESULTS_PATH}")
 
-    print(f"\n✓ Results saved to {save_path}")
-
-    # Delete checkpoint
-    if os.path.exists(checkpoint_path):
-        os.remove(checkpoint_path)
-        print("✓ Checkpoint deleted")
-
-    return output, summary
+    return all_results
 
 
 # Run evaluation
 print("Starting RQ2 evaluation with Qwen2-VL...")
-results, summary = run_rq2_evaluation(
-    dataset_path=DATASET_PATH,
-    conditions=CONDITIONS,
-    num_samples=NUM_SAMPLES,
-    num_rounds=NUM_ROUNDS,
-    checkpoint_every=CHECKPOINT_EVERY
+results = run_rq2_evaluation(
+    DATASET_PATH, CONDITIONS, model, processor,
+    NUM_SAMPLES, NUM_ROUNDS
 )
 
-
-# COMPARE WITH GEMINI RQ2
-
-def compare_rq2_models(dataset_path):
-    """Compare RQ2 results across models."""
-
-    print("RQ2: MODEL COMPARISON")
-
-    results_dir = os.path.join(dataset_path, 'results')
-
-    models = {
-        'Gemini': 'rq2_complete_results_combined.json',
-        'Qwen2-VL': 'rq2_qwen2vl_results.json'
-    }
-
-    conditions = ['clean', 'fog_0.5', 'smoke_0.5', 'thermal_0.5']
-
-    model_results = {}
-
-    for model_name, filename in models.items():
-        filepath = os.path.join(results_dir, filename)
-        if os.path.exists(filepath):
-            with open(filepath) as f:
-                data = json.load(f)
-
-            if 'summary' in data:
-                model_results[model_name] = data['summary']
-                print(f"✓ Loaded {model_name}")
-            else:
-                print(f"⚠ {model_name} has no summary")
-        else:
-            print(f"✗ {model_name} not found")
-
-    if not model_results:
-        print("No model results found!")
-        return
-
-    # Print Round 1 IoU comparison
-    print("ROUND 1 IoU (Initial Prediction)")
-
-    header = f"{'Condition':<15}" + "".join(f"{m:<15}" for m in model_results.keys())
-    print(f"\n{header}")
-    print("-"*len(header))
-
-    for cond in conditions:
-        row = f"{cond:<15}"
-        for model_name in model_results.keys():
-            if cond in model_results[model_name]:
-                r1 = model_results[model_name][cond].get('round_1', {}).get('mean_iou', 0)
-                row += f"{r1:<15.4f}"
-            else:
-                row += f"{'N/A':<15}"
-        print(row)
-
-    # Print Improvement comparison
-    print("IMPROVEMENT (Round 1 → Round 3)")
-
-    print(f"\n{header}")
-    print("-"*len(header))
-
-    for cond in conditions:
-        row = f"{cond:<15}"
-        for model_name in model_results.keys():
-            if cond in model_results[model_name]:
-                imp = model_results[model_name][cond].get('improvement', {})
-                if 'relative_pct' in imp:
-                    row += f"{imp['relative_pct']:+.1f}%".ljust(15)
-                else:
-                    row += f"{'N/A':<15}"
-            else:
-                row += f"{'N/A':<15}"
-        print(row)
-
-    # Save comparison
-    comparison_path = os.path.join(results_dir, 'rq2_all_models_comparison.json')
-    with open(comparison_path, 'w') as f:
-        json.dump(model_results, f, indent=2, default=float)
-
-    print(f"\n✓ Comparison saved to {comparison_path}")
-
-
-# Run comparison
-compare_rq2_models(DATASET_PATH)
-
-print("RQ2 QWEN2-VL COMPLETE!")
