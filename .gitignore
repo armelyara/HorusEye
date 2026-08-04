@@ -41,6 +41,10 @@ degradation_test_results.png
 *.jpg
 *.jpeg
 
+# Allow assets/ images for README
+!assets/
+!assets/**
+
 # Backup files
 *.bak
 *.backup
