@@ -7,9 +7,19 @@
 
 > **Can natural language feedback serve as a dynamic attention mechanism to refine visual tasks under degraded emergency conditions?**
 
+<p align="center">
+  <img src="assets/scene6.jpeg" alt="Emergency scene example" width="70%"/>
+</p>
+
 We investigate this question across four research questions, evaluating five Vision-Language Models (Gemini, Qwen2-VL, BLIP-2, LLaVA, Kosmos-2) on visual grounding, language feedback recovery, health VQA, and hallucination analysis under fog, smoke, and thermal degradation.
 
 **Paper**: [arXiv:2606.14741](https://arxiv.org/abs/2606.14741) — Armel Yara, IFT6765, Mila / Université de Montréal
+
+📎 **Slides**: [Google Slides Presentation](https://docs.google.com/presentation/d/19xKly7EtyxvV5UXuAUsE_jN86wQEsfsp/edit?usp=sharing&ouid=106043540914542772736&rtpof=true&sd=true)
+
+<p align="center">
+  <img src="assets/poster_horuseye.jpg" alt="HorusEye Poster — IFT6765, Mila / Université de Montréal" width="90%"/>
+</p>
 
 ---
 
