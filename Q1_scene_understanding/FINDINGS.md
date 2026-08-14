@@ -36,7 +36,7 @@ Because the class sets differ, **raw cross-condition comparisons mix the veil ef
 | smoke | 150 | 0.859 | 0.886 | 0.068 | 0.818 |
 | **global** | **550** | **≈0.936** | — | **0.042** | **0.847** |
 
-![Reliability by condition](results/q1_reliability_by_condition_EN.png)
+![Reliability by condition](results/q1_results/q1_reliability_by_condition_EN.png)
 
 ## 4. Headline finding — the veil flips the *sign* of miscalibration
 
@@ -48,7 +48,7 @@ Aggregate ECE (an absolute value) hides the key result. The **signed** gap (mean
 | fog | **−0.022** (near-calibrated) | +0.044 |
 | smoke | **+0.042** (over-confident) | **+0.173** |
 
-![Signed calibration gap](results/q1_signed_gap_EN.png)
+![Signed calibration gap](results/q1_results/q1_signed_gap_EN.png)
 
 On clean and under fog the model is *more* accurate than it claims (under-confident). Under smoke it flips: confidence stays high while accuracy collapses.
 
@@ -97,4 +97,4 @@ Q1 level 2 — danger localization + victim detection/counting/localization + ca
 
 ## Files
 
-`results/q1_all_records.json` (550 records), `q1_summary.json`, `q1_reliability_by_condition_EN.png`, `q1_signed_gap_EN.png`. Run script: `q1_classification_kaggle.py`. Analysis script: `q1_calibration.py`.
+`results/q1_results/q1_all_records.json` (550 records), `q1_results/q1_summary.json`, `q1_results/q1_reliability_by_condition_EN.png`, `q1_results/q1_signed_gap_EN.png`. Run script: `q1_classification_kaggle.py`. Analysis script: `q1_calibration.py`.
