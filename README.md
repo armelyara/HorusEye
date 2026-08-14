@@ -1,17 +1,17 @@
-# HorusEye: Language as Dynamic Attention for Emergency Visual Analysis
+# HorusEye: A Real-Time Conversational Agent for Closed-Loop Emergency Rescue with Calibrated Perception under Degraded Visibility
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.14741-b31b1b.svg)](https://arxiv.org/abs/2606.14741)
 [![Dataset](https://img.shields.io/badge/Dataset-Kaggle-20BEFF.svg)](https://www.kaggle.com/datasets/armelyara/refcoco-degraded)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 
-> **Can natural language feedback serve as a dynamic attention mechanism to refine visual tasks under degraded emergency conditions?**
-
 <p align="center">
   <img src="assets/scene6.jpeg" alt="Emergency scene example" width="70%"/>
 </p>
 
-We investigate this question across four research questions, evaluating five Vision-Language Models (Gemini, Qwen2-VL, BLIP-2, LLaVA, Kosmos-2) on visual grounding, language feedback recovery, health VQA, and hallucination analysis under fog, smoke, and thermal degradation.
+HorusEye is a dialogue-driven agent embedded in a rescue drone. Rather than producing a single report, it runs a continuous loop with responders — understanding the scene, locating victims, assessing their state on demand, planning extraction under human constraints, and continuously monitoring both the emergency **and the responders' own safety** ("I'll keep an eye on you").
+
+The system is organized as functions **Q1–Q5 + F6**, chained by dialogue. We follow a **measure-before-build** method: each function is benchmarked with existing models first; fine-tuning is only spent on the empirically weakest link.
 
 **Paper**: [arXiv:2606.14741](https://arxiv.org/abs/2606.14741) — Armel Yara, IFT6765, Mila / Université de Montréal
 
@@ -23,11 +23,95 @@ We investigate this question across four research questions, evaluating five Vis
 
 ---
 
-## Key Findings
+## ⚠️ Naming: repo `RSQ*` folders vs system `Q*` functions
 
-- **Language feedback is model-dependent**: Gemini achieves **+47.3%** IoU recovery under thermal via iterative language feedback; Qwen2-VL shows **-5.1%** degradation under the same protocol
-- **Thermal Paradox**: Cropping strategies that improve RGB performance catastrophically fail in thermal imagery (-26% accuracy)
-- **BLIP-2 is unsafe for emergency deployment**: It is the only model whose hallucination score *increases* under degradation — fabricating colors in grayscale images
+Two different numbering schemes live here — do not confuse them:
+
+| In this repo | Meaning |
+|---|---|
+| `RSQ1_… RSQ4_…` folders | The **four research Sub-questions of the published Q2 paper** (visual grounding, language feedback, health VQA, hallucination). |
+| **Q1, Q2, … Q5, F6** | The **HorusEye system functions** (scene understanding, medical assessment, planning, timing, coordination, safety monitoring). |
+
+The paper's `RSQ1–RSQ4` all belong to the HorusEye function **Q2** (medical/perception brick). The new **Q1** work (scene understanding) is a *separate* function, added in its own folder.
+
+---
+
+## HorusEye functions
+
+| Function | What it does | Status |
+|---|---|---|
+| **Q1** | Scene understanding under degraded visibility — level 1: emergency-type classification + **calibrated uncertainty**; level 2: danger + victim localization | 🟡 level 1 benchmarked (this repo) |
+| **Q2** | On-demand medical assessment (language as dynamic attention) | ✅ **published** — arXiv:2606.14741 |
+| **Q3** | Constraint-aware tactical planning ("the baby is priority") | ⚪ planned |
+| **Q4** | Action-window prediction ("3 minutes") | ⚪ planned |
+| **Q5** | Multi-party coordination (field ↔ HQ) | ⚪ planned |
+| **F6** | Real-time monitoring + **rescuer safety** (cross-cutting) | ⚪ planned |
+
+---
+
+## Published brick — Q2 (`RSQ1_…`–`RSQ4_…`)
+
+*Language as Dynamic Attention for Emergency Visual Analysis* — does natural-language feedback act as a dynamic attention mechanism for VLMs under degraded emergency conditions?
+
+- **Benchmark:** RefCOCO-Degraded — 15,244 images (3,811 base × clean/fog/smoke/thermal). See `refcoco_degraded_benchmark/` and `download_refcoco.sh`.
+- **Models:** Gemini 2.0 Flash, Qwen2-VL-2B, BLIP-2, LLaVA-1.6, Kosmos-2.
+- **Key results:** language feedback is **model-dependent** (Gemini +47.3% under thermal via 3-round feedback; Qwen2-VL −5.1% under the same protocol); the **"Thermal Paradox"** (cropping helps RGB, harms thermal); **BLIP-2 hallucinates more under degradation** (H-Score +0.69) → unsafe to deploy.
+- **Folders:** `RSQ1_visual_grounding/`, `RSQ2_language_feedback/`, `RSQ3_health_vqa/`, `RSQ4_hallucination/`, `results/`, `assets/`.
+
+---
+
+## New brick — Q1 (scene understanding under degraded visibility)
+
+**Level 1 — emergency-type classification with calibrated uncertainty.** Real AIDER images (fire, flood, collapsed_building, traffic_accident, normal). Veils (fog/smoke) are applied **only where physically plausible**; the simulated "thermal" colormap is abandoned (it confused simulated fire with a veil). Model: **Qwen2.5-VL-7B**, free and reproducible.
+
+**Headline finding — the veil flips the *sign* of miscalibration.** Aggregate ECE hides it; the *signed* gap (confidence − accuracy) reveals it:
+
+| Condition | F1 macro | signed gap (all classes) | signed gap (`normal`, matched) |
+|:---:|:---:|:---:|:---:|
+| clean | 0.976 | −0.046 (under-confident) | −0.004 |
+| fog | 0.956 | −0.022 | +0.044 |
+| smoke | 0.886 | **+0.042 (over-confident)** | **+0.173** |
+
+Under smoke the model stays confident while accuracy collapses. The effect **survives a class-composition control** (measured on the `normal` class, present in all conditions) and is even sharper there. Operational reading: under degraded visibility, a prediction ≤ 0.8 confidence should trigger human review; ≥ 0.95 is reliable. Emergency false alarms on `normal` scenes double per veil step (8% → 14% → 28%).
+
+Full write-up: [`Q1_scene_understanding/FINDINGS.md`](Q1_scene_understanding/FINDINGS.md). Level 2 (danger + victim localization, real thermal / VTSaR) is next.
+
+---
+
+## Repository layout
+
+```
+HorusEye/
+├── RSQ1_visual_grounding/        # Q2 paper — research sub-question 1
+├── RSQ2_language_feedback/       # Q2 paper — research sub-question 2
+├── RSQ3_health_vqa/              # Q2 paper — research sub-question 3
+├── RSQ4_hallucination/           # Q2 paper — research sub-question 4
+├── refcoco_degraded_benchmark/  # Q2 dataset builder
+├── results/                     # Q2 outputs
+├── assets/                      # slides, poster, figures
+├── Q1_scene_understanding/      # NEW — HorusEye function Q1
+│   ├── q1_classification_kaggle.py   # run: classification + calibration (Kaggle T4)
+│   ├── q1_calibration.py             # reproduce metrics + figures from raw records
+│   ├── FINDINGS.md                   # Q1 calibration write-up
+│   └── results/
+│       ├── q1_all_records.json       # 550 per-prediction records
+│       ├── q1_summary.json
+│       ├── q1_reliability_by_condition_EN.png
+│       └── q1_signed_gap_EN.png
+├── download_refcoco.sh
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Reproduce the Q1 calibration analysis
+
+```bash
+cd Q1_scene_understanding
+python q1_calibration.py results/q1_all_records.json
+```
+
 
 ---
 
@@ -234,6 +318,18 @@ H-Score = fabricated_objects + (overconfidence × 0.5) − (uncertainty × 0.3)
 
 Higher H-Score = more hallucination. A model that expresses uncertainty is penalized less than one that fabricates confidently.
 
+
+---
+
+## Reproduce the Q1 calibration analysis
+
+```bash
+cd Q1_scene_understanding
+python q1_calibration.py results/q1_all_records.json
+```
+
+Prints per-condition accuracy, F1 macro, ECE, AUROC, and the signed gap (global + `normal`-matched), and writes both figures. ECE / AUROC / F1 are implemented from scratch — no sklearn.
+
 ---
 
 ## Citation
@@ -251,11 +347,11 @@ Higher H-Score = more hallucination. A model that expresses uncertainty is penal
 
 ## Acknowledgments
 
-This work was conducted as part of course IFT6765 at Mila / Université de Montréal. The RefCOCO-Degraded benchmark builds upon RefCOCO (Yu et al., 2016) and MS COCO (Lin et al., 2014).
+The Q2 of the work was conducted as part of a class project for course IFT6765 at Mila / Université de Montréal. The RefCOCO-Degraded benchmark builds upon RefCOCO (Yu et al., 2016) and MS COCO (Lin et al., 2014).
 
 ---
 
 ## License
 
 Code: [MIT License](LICENSE)
-Dataset: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Dataset: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - AIDER images used in Q1 are GNU GPL v3.0 — respect their upstream terms.
