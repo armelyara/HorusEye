@@ -1,0 +1,1752 @@
+[
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0270.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0280.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1144.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1922.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0133.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1270.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0310.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.85,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"potential fuel spill\"],\n  \"confidence\": 0.85\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3488.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0255.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"search_and_rescue_operations\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0250.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"damaged guardrail\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0372.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0283.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"vehicle overturned\", \"roadway obstructed\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0277.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"injured_persons\", \"damaged_cars\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0436.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3471.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0057.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_areas\", \"structures_partially_submerged\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0212.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicle\", \"damaged building\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0261.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning area\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0332.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning trees\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0330.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0250.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0310.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"submerged vehicles\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0039.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered around\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0451.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"obstructed lanes\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0381.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3007.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0462.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0175.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"cranes\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0349.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"structural damage\", \"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0272.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"vehicles stranded\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0332.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0269.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0226.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0370.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"burning vehicle\", \"debris scattered on road\", \"emergency responders present\"],\n  \"con"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3486.jpg",
+    "true_label": "normal",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"explosion\", \"fireworks\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0349.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"black smoke rising from a building\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4043.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2885.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0383.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burnt area\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2460.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0214.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1568.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0379.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0257.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"debris scattered on road\", \"damaged vehicles\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0030.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water accumulation\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0224.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"heavy traffic congestion\", \"potential for accidents due to congestion\"],\n  \"confidenc"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0356.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"structural damage\", \"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3962.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0053.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"spilled liquid\", \"injured individuals\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0253.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"derailed train cars\", \"potential chemical or electrical hazards\"],\n  \"confidence\": 0."
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2113.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0397.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0075.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"debris\", \"injured_persons\", \"damaged_vehicles\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0428.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0035.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0508.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0478.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"smoke\", \"burning vehicle\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0196.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burned structures\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0126.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"snow on ground\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2981.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0300.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0351.jpg",
+    "true_label": "fire",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"smoke\", \"debris\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3668.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0273.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"emergency vehicles present\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0471.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0494.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0192.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicle\", \"damaged road barrier\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0187.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering large areas, potentially affecting structures and vehicles\"],\n  \"confidence\": 0.9"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0462.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0124.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering road\", \"potential for vehicle damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0227.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\", \"water spray\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0420.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0115.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"damaged vehicle\", \"people standing nearby\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0140.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0320.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"possible injury\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0463.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3114.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0356.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0083.jpg",
+    "true_label": "fire",
+    "pred_label": "unknown",
+    "confidence": 0.0,
+    "raw": "ERROR: OOM"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4210.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0045.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooded roads\", \"moving vehicles in water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0357.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0303.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4180.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0470.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3337.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0151.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"waterlogged roads\", \"submerged vehicles\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0048.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0095.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"road submerged\", \"trees submerged\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0098.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0528.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0405.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2753.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0364.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning trees\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0410.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads and structures\"],\n  \"confidence\": 0.95\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0173.jpg",
+    "true_label": "flood",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0436.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0293.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0334.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"debris scattered on road\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0052.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"immersed vehicle\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0168.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"upside-down truck\", \"spilled cargo\", \"emergency responders\"],\n  \"confidence\": 0.95\n}\n"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3910.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0281.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"damaged infrastructure\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0378.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0331.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning trees\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1567.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0018.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"burnt vehicle\", \"debris scattered\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0312.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0015.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding houses\", \"rescue operations\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0466.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"burnt vehicle\", \"firefighters at scene\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0070.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"potential fuel spill\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0400.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0162.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.85,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"potential fuel leaks\"],\n  \"confidence\": 0.85\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0731.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0468.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0419.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0122.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0485.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0374.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0357.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding water covering roads and structures\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0342.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0142.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0208.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4298.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1220.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0100.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0066.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"emergency vehicles present\"],\n  \"confidence\": 0.95\n}\n``"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0040.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning area\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0313.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0333.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads and buildings\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0340.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"damaged vehicles\", \"smoke\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0121.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"debris scattered on road\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0656.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0040.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0107.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0150.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0090.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"debris\", \"damaged vehicles\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1096.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1670.jpg",
+    "true_label": "normal",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "raw": "{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"waterlogged areas\", \"possible structural damage\"],\n  \"confidence\": 0.8\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2409.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0358.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0055.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"damaged vehicles\", \"emergency responders at scene\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0010.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"fire truck present\", \"fire hose laid out\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3291.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2435.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0213.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_properties\", \"potential_structural_damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0402.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"boats navigating through water\"],\n  \"confidence\": 0.9\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0483.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0209.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"potential fuel spill\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2796.jpg",
+    "true_label": "normal",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"standing water\", \"potential structural damage\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0549.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0438.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2803.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0147.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1018.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0328.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0925.jpg",
+    "true_label": "normal",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"hippos in water\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0437.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural instability\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0459.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0034.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0138.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning trees\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0356.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"debris scattered on road\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0159.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"injured individuals\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0415.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_buildings\", \"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0156.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding water covering large areas, submerged trees, potential structural damage from water pre"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0168.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0012.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0049.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1724.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0222.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning trees\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0246.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"dumpster fire\", \"debris\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0229.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0344.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"large flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0016.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"burning trees\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0385.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0423.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0417.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_structures\", \"damaged_buildings\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0130.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_houses\", \"trees_in_flood_water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0206.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads, vehicles submerged\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0404.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"injured individuals\", \"damaged vehicles\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0356.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"submerged vehicles\", \"waterlogged streets\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0028.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"vehicle submerged in water\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0181.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered on the ground\", \"structural damage to buildings\"],\n  \"confidence\":"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0376.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered across the area\", \"potential structural instability\"],\n  \"confiden"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0405.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"submerged houses\"],\n  \"confidence\": 0.95\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0266.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple emergency vehicles present\", \"possible vehicle damage\"],\n  \"confidence\": 0.8"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0524.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_houses\", \"trees_in_flood_water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1619.jpg",
+    "true_label": "normal",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water overflow\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0377.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"dust\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0399.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.85,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"snow\", \"multiple vehicles involved\"],\n  \"confidence\": 0.85\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0176.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered around\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0005.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"immersion of buildings\", \"risk of structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0198.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"trees submerged\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4064.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0519.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooded roads\", \"immersed vehicles\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0164.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"submerged vehicles\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0199.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0007.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"injured individuals\", \"damaged vehicles\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4075.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0192.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3089.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0480.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_houses\", \"trees_in_flooded_area\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0465.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered on the ground\", \"structural damage to buildings\"],\n  \"confidence\":"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0121.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"structural damage\", \"potential debris\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0316.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0287.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2691.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0472.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"lava flow\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0450.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0213.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0170.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple overturned vehicles\", \"congested traffic\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0392.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"snow-covered road\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0474.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered on rooftops\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0107.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.85,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"emergency responders present\"],\n  \"confidence\": 0.85\n}\n"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0297.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding water\", \"damaged infrastructure\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0281.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"people in danger\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0203.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"burnt vehicle\", \"damaged vehicles\", \"road debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0185.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"emergency responders\", \"tow trucks\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0496.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3712.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0292.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris scattered around\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1692.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0419.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"downed vehicles\", \"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0047.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0199.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"illuminated area suggesting fire\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0482.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"damaged vehicles\", \"obstructed road\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0280.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0073.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads and properties\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0256.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"multiple vehicles involved\", \"emergency personnel present\"],\n  \"confidence\": 0.8\n}\n``"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0409.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0321.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning vegetation\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0176.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"black smoke rising from a building\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0495.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water covering roads\", \"structures submerged\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0502.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"collapsed bridge structure\", \"emergency vehicles on scene\", \"construction workers\"]"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0500.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water flooding residential area\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0311.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"fire_trucks\", \"cones\"],\n  \"confidence\": 0.8\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0091.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"black smoke\", \"burning vehicle\"],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0426.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"flames\", \"smoke\"],\n  \"confidence\": 0.95\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0256.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0002.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_houses\", \"potential_drowning_risk\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0165.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "raw": "{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"burning trees\"],\n  \"confidence\": 0.9\n}"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0489.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"flooding\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4232.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0286.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"large flames\", \"thick smoke\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0272.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"scattered debris\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0137.jpg",
+    "true_label": "fire",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"fire\",\n  \"hazards\": [\"smoke\", \"flames\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0344.jpg",
+    "true_label": "collapsed_building",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"collapsed_building\",\n  \"hazards\": [\"debris\", \"structural damage\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0148.jpg",
+    "true_label": "flood",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"flood\",\n  \"hazards\": [\"water_submerged_buildings\", \"trees_in_flood_water\"],\n  \"confidence\": 0.95\n}\n```"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0427.jpg",
+    "true_label": "traffic_accident",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "raw": "```json\n{\n  \"emergency_type\": \"traffic_accident\",\n  \"hazards\": [\"crashed vehicles\", \"debris scattered on road\", \"emergency personnel present\"],\n  \"con"
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4095.jpg",
+    "true_label": "normal",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "raw": "```json\n{\n  \"emergency_type\": \"normal\",\n  \"hazards\": [],\n  \"confidence\": 0.9\n}\n```"
+  }
+]

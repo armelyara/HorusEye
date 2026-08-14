@@ -1,0 +1,281 @@
+{
+  "by_condition": {
+    "clean": {
+      "accuracy": 0.9759036144578314,
+      "f1_macro": 0.9757062706270627,
+      "ece": 0.045799999999999855,
+      "auroc": 0.7960023515579071,
+      "n": 250,
+      "per_class": {
+        "fire": {
+          "precision": 0.9411764705882353,
+          "recall": 0.9795918367346939,
+          "f1": 0.96,
+          "support": 49
+        },
+        "flood": {
+          "precision": 0.9803921568627451,
+          "recall": 1.0,
+          "f1": 0.99009900990099,
+          "support": 50
+        },
+        "collapsed_building": {
+          "precision": 0.9803921568627451,
+          "recall": 1.0,
+          "f1": 0.99009900990099,
+          "support": 50
+        },
+        "traffic_accident": {
+          "precision": 0.98,
+          "recall": 0.98,
+          "f1": 0.98,
+          "support": 50
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 0.92,
+          "f1": 0.9583333333333334,
+          "support": 50
+        }
+      },
+      "confusion_matrix": [
+        [
+          48,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          50,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          49,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          46
+        ]
+      ],
+      "classes_present": [
+        "fire",
+        "flood",
+        "collapsed_building",
+        "traffic_accident",
+        "normal"
+      ]
+    },
+    "fog": {
+      "accuracy": 0.9466666666666667,
+      "f1_macro": 0.9556703750252137,
+      "ece": 0.0456666666666666,
+      "auroc": 0.8661971830985915,
+      "n": 150,
+      "per_class": {
+        "fire": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "flood": {
+          "precision": 0.9090909090909091,
+          "recall": 1.0,
+          "f1": 0.9523809523809523,
+          "support": 50
+        },
+        "collapsed_building": {
+          "precision": 1.0,
+          "recall": 0.98,
+          "f1": 0.98989898989899,
+          "support": 50
+        },
+        "traffic_accident": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 0.86,
+          "f1": 0.924731182795699,
+          "support": 50
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          50,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          49,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          4,
+          0,
+          0,
+          43
+        ]
+      ],
+      "classes_present": [
+        "flood",
+        "collapsed_building",
+        "normal"
+      ]
+    },
+    "smoke": {
+      "accuracy": 0.8590604026845637,
+      "f1_macro": 0.8863900288797689,
+      "ece": 0.06833333333333334,
+      "auroc": 0.8181818181818182,
+      "n": 150,
+      "per_class": {
+        "fire": {
+          "precision": 0.8679245283018868,
+          "recall": 0.9387755102040817,
+          "f1": 0.9019607843137256,
+          "support": 49
+        },
+        "flood": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "collapsed_building": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "traffic_accident": {
+          "precision": 0.92,
+          "recall": 0.92,
+          "f1": 0.92,
+          "support": 50
+        },
+        "normal": {
+          "precision": 1.0,
+          "recall": 0.72,
+          "f1": 0.8372093023255813,
+          "support": 50
+        }
+      },
+      "confusion_matrix": [
+        [
+          46,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          1,
+          46,
+          0
+        ],
+        [
+          4,
+          7,
+          0,
+          3,
+          36
+        ]
+      ],
+      "classes_present": [
+        "fire",
+        "traffic_accident",
+        "normal"
+      ]
+    }
+  },
+  "global": {
+    "ece": 0.041727272727272544,
+    "auroc": 0.8466361097940045,
+    "n": 550
+  },
+  "config": {
+    "severity": 0.5,
+    "num_per_class": 50,
+    "plausible_veils": {
+      "fire": [
+        "clean",
+        "smoke"
+      ],
+      "traffic_accident": [
+        "clean",
+        "smoke"
+      ],
+      "flood": [
+        "clean",
+        "fog"
+      ],
+      "collapsed_building": [
+        "clean",
+        "fog"
+      ],
+      "normal": [
+        "clean",
+        "smoke",
+        "fog"
+      ]
+    }
+  }
+}

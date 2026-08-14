@@ -1,0 +1,4402 @@
+[
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0016.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0016.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0168.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0168.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0332.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0332.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0261.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0261.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0222.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0222.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0138.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0138.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0331.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0331.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0379.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0379.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0344.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0344.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0438.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0438.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0137.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0137.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0470.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0470.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0351.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0351.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0133.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0133.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0040.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0040.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0485.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0485.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0083.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "unknown",
+    "confidence": 0.0,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0083.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "unknown",
+    "confidence": 0.0,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0471.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0471.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0286.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0286.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0165.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0165.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0313.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0313.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0270.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0270.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0383.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0383.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0358.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0358.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0426.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0426.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0091.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0091.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0450.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0450.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0496.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0496.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0364.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0364.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0468.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0468.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0462.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0462.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0300.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0300.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0280.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0280.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0227.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0227.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0049.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0049.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0483.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0483.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0196.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0196.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0357.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0357.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0349.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0349.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0147.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0147.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0192.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0192.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0436.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0436.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0472.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0472.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0356.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0356.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0107.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0107.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0199.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0199.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.7,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0287.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0287.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0428.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0428.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0176.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0176.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0321.jpg",
+    "true_label": "fire",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/fire/fire_image0321.jpg",
+    "true_label": "fire",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0098.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0098.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0420.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0420.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0332.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0332.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0357.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0357.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0028.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0028.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0002.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0002.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0415.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0415.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0095.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0095.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0272.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0272.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0500.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0500.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0463.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0463.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0405.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0405.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0508.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0508.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0073.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0073.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0173.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0173.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0206.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0206.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0269.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0269.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0402.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0402.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0148.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0148.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0052.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0052.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0034.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0034.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0462.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0462.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0229.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0229.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0151.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0151.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0310.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0310.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0057.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0057.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0156.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0156.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0489.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0489.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0494.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0494.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0436.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0436.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0519.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0519.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0015.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0015.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0524.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0524.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0198.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0198.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0250.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0250.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0187.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0187.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0480.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0480.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0124.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0124.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0030.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0030.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0410.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0410.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0164.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0164.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0297.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0297.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0130.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0130.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0213.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0213.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0045.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0045.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0005.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0005.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0356.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0356.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0333.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0333.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0495.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0495.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0312.jpg",
+    "true_label": "flood",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/flooded_areas/flood_image0312.jpg",
+    "true_label": "flood",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0381.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0381.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0385.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0385.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0121.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0121.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0035.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0035.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0142.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0142.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0176.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0176.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0292.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0292.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0226.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0226.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0400.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0400.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0213.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0213.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0377.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0377.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0374.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0374.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0208.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0208.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0199.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0199.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0423.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0423.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0417.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0417.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0255.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0255.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0474.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0474.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0122.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0122.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0214.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0214.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0303.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0303.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0405.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0405.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0330.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0330.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0150.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0150.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0040.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0040.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0419.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0419.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0397.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0397.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0175.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0175.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0356.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0356.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0465.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0465.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0437.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0437.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0048.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0048.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0256.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0256.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0039.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0039.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0409.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0409.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0344.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0344.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0502.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0502.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0293.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0293.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0342.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0342.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0181.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0181.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0316.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0316.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0459.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0459.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0047.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0047.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0349.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0349.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0376.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0376.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0280.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0280.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0328.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0328.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0281.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0281.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0378.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0378.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0140.jpg",
+    "true_label": "collapsed_building",
+    "condition": "clean",
+    "pred_label": "collapsed_building",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/collapsed_building/collapsed_building_image0140.jpg",
+    "true_label": "collapsed_building",
+    "condition": "fog",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0066.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0066.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0340.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0340.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0246.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0246.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0007.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0007.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0281.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0281.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0266.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0266.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0250.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0250.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0427.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 1.0,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0427.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0121.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0121.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0115.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0115.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0482.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0482.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0018.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0018.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0399.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0399.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0203.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0203.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0055.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0055.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0466.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0466.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0070.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0070.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0451.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0451.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0256.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0256.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0253.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0253.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0170.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0170.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0334.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0334.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0107.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0107.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0283.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0283.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0257.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0257.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "collapsed_building",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0277.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0277.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0075.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0075.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0370.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0370.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0010.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0010.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0392.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0392.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0126.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0126.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0159.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0159.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0053.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0053.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0478.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0478.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0273.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0273.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0311.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0311.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0192.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0192.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0272.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0272.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0224.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0224.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0212.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0212.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0310.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0310.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0419.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0419.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0090.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0090.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0404.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0404.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0356.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0356.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0320.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0320.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0185.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0185.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0209.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0209.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0162.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0162.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0168.jpg",
+    "true_label": "traffic_accident",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/traffic_incident/traffic_incident_image0168.jpg",
+    "true_label": "traffic_accident",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1922.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1922.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1922.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0528.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0528.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0528.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2691.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2691.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2691.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2409.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2409.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2409.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4064.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4064.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4064.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4043.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4043.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4043.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2753.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2753.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2753.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1220.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1220.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1220.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1568.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1568.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1568.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3486.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3486.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.95,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3486.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4095.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4095.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4095.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2460.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2460.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2460.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0549.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0549.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0549.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4232.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4232.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4232.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2796.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2796.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2796.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3668.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3668.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3668.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2885.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2885.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2885.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3337.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3337.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3337.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3962.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3962.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3962.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0731.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0731.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0731.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3488.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3488.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3488.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0925.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0925.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0925.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3712.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3712.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3712.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1692.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1692.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1692.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0372.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0372.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0372.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3910.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3910.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3910.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4180.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4180.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4180.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2435.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2435.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2435.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3089.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3089.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3089.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4298.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4298.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4298.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3007.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3007.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3007.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1567.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1567.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1567.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0100.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0100.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0100.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4075.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4075.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4075.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3291.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3291.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3291.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1619.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "traffic_accident",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1619.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1619.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2981.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2981.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2981.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2803.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2803.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2803.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1724.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1724.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1724.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1670.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1670.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1670.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1096.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1096.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1096.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0012.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0012.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0012.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1144.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1144.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1144.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4210.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4210.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "flood",
+    "confidence": 0.8,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image4210.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1018.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1018.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1018.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3114.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3114.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3114.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1270.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1270.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image1270.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2113.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2113.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image2113.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3471.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3471.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "fire",
+    "confidence": 0.9,
+    "correct": 0
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image3471.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0656.jpg",
+    "true_label": "normal",
+    "condition": "clean",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0656.jpg",
+    "true_label": "normal",
+    "condition": "smoke",
+    "pred_label": "normal",
+    "confidence": 0.9,
+    "correct": 1
+  },
+  {
+    "path": "/kaggle/input/datasets/armelyara/aider-dataset/AIDER/normal/normal_image0656.jpg",
+    "true_label": "normal",
+    "condition": "fog",
+    "pred_label": "normal",
+    "confidence": 0.95,
+    "correct": 1
+  }
+]
