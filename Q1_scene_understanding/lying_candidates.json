@@ -2284,7 +2284,7 @@
         "man on bed"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 380900,
@@ -2303,7 +2303,7 @@
         "man lying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 148422,
@@ -2322,7 +2322,7 @@
         "person laying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 480939,
@@ -2341,7 +2341,7 @@
         "person laying on bench"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 219200,
@@ -2360,7 +2360,7 @@
         "person on ground"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 422804,
@@ -2379,7 +2379,7 @@
         "doll on top"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 386211,
@@ -2398,7 +2398,7 @@
         "right girl laying"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 278371,
@@ -2417,7 +2417,7 @@
         "laying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING "
     },
     {
       "image_id": 407400,
@@ -2436,7 +2436,7 @@
         "guy laying"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 515815,
@@ -2455,7 +2455,7 @@
         "left person"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 182728,
@@ -2474,7 +2474,7 @@
         "kid"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 279588,
@@ -2493,7 +2493,7 @@
         "man left"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 545841,
@@ -2512,7 +2512,7 @@
         "laying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 220109,
@@ -2531,7 +2531,7 @@
         "right person laying"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 430345,
@@ -2549,7 +2549,7 @@
         "person in center lying position"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 116723,
@@ -2568,7 +2568,7 @@
         "red shirt laying on the board"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 231019,
@@ -2586,7 +2586,7 @@
         "freddy kreuger"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 449291,
@@ -2605,7 +2605,7 @@
         "kid lying on floor"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 100579,
@@ -2624,7 +2624,7 @@
         "laying on stomach"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 42804,
@@ -2643,7 +2643,7 @@
         "right chick laying downblack white dots"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 222251,
@@ -2662,7 +2662,7 @@
         "person laying in chair"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 394620,
@@ -2681,7 +2681,7 @@
         "left person"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 475120,
@@ -2700,7 +2700,7 @@
         "dead guy on right"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 97913,
@@ -2719,7 +2719,7 @@
         "front far left laying down person"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 179823,
