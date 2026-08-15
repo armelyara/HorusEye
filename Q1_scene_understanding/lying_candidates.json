@@ -2738,7 +2738,7 @@
         "reclining man"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 102667,
@@ -2757,7 +2757,7 @@
         "bib"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 324261,
@@ -2775,7 +2775,7 @@
         "legs to left of woman"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 215081,
@@ -2793,7 +2793,7 @@
         "rightest person bending over"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 5508,
@@ -2812,7 +2812,7 @@
         "blond woman playing wii"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 218237,
@@ -2831,7 +2831,7 @@
         "guy laying"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 507875,
@@ -2850,7 +2850,7 @@
         "person lying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 489845,
@@ -2869,7 +2869,7 @@
         "kid lying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 271011,
@@ -2888,7 +2888,7 @@
         "guy lying down"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 86654,
@@ -2907,7 +2907,7 @@
         "boy"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 455719,
@@ -2926,7 +2926,7 @@
         "woman laying in two piece left side"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 232351,
@@ -2945,7 +2945,7 @@
         "girl playing the game on right"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 290658,
