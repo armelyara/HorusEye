@@ -36,7 +36,7 @@
         "player at very bottom"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 552116,
@@ -55,7 +55,7 @@
         "yellowblack soccer player on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 392657,
@@ -74,7 +74,7 @@
         "child on the floor"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 423234,
@@ -93,7 +93,7 @@
         "man on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 537579,
@@ -112,7 +112,7 @@
         "guy sliding"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 517869,
@@ -130,7 +130,7 @@
         "guy on the ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 68252,
@@ -149,7 +149,7 @@
         "sliding player"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 332273,
@@ -168,7 +168,7 @@
         "span"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 298721,
@@ -187,7 +187,7 @@
         "dead girl"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 225925,
