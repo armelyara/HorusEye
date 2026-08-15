@@ -1,0 +1,3312 @@
+{
+  "note": "CANDIDATS \u00e0 annoter manuellement. Regarde chaque image, remplis 'posture_TO_ANNOTATE' avec STANDING/SITTING/LYING. Le 'posture_hint' est une SUGGESTION bas\u00e9e sur le texte, PAS la v\u00e9rit\u00e9.",
+  "candidates": [
+    {
+      "image_id": 95676,
+      "file_name": "COCO_train2014_000000095676.jpg",
+      "ann_id": 497975,
+      "bbox": [
+        37.59,
+        238.8,
+        385.55,
+        135.91
+      ],
+      "bbox_ratio_wh": 2.84,
+      "expressions": [
+        "player sliding",
+        "on the ground player"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": "LYING"
+    },
+    {
+      "image_id": 18930,
+      "file_name": "COCO_train2014_000000018930.jpg",
+      "ann_id": 1216691,
+      "bbox": [
+        73.51,
+        525.41,
+        301.26,
+        108.1
+      ],
+      "bbox_ratio_wh": 2.79,
+      "expressions": [
+        "guy underneath that is falling",
+        "player on the ground",
+        "player at very bottom"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 552116,
+      "file_name": "COCO_train2014_000000552116.jpg",
+      "ann_id": 564712,
+      "bbox": [
+        76.58,
+        212.98,
+        279.5,
+        100.51
+      ],
+      "bbox_ratio_wh": 2.78,
+      "expressions": [
+        "man on ground in black and yellow",
+        "soccer player on ground",
+        "yellowblack soccer player on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 392657,
+      "file_name": "COCO_train2014_000000392657.jpg",
+      "ann_id": 507783,
+      "bbox": [
+        0.96,
+        150.71,
+        424.12,
+        166.97
+      ],
+      "bbox_ratio_wh": 2.54,
+      "expressions": [
+        "blue pj boy",
+        "boy on right",
+        "child on the floor"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 423234,
+      "file_name": "COCO_train2014_000000423234.jpg",
+      "ann_id": 1284882,
+      "bbox": [
+        140.3,
+        215.68,
+        293.72,
+        124.15
+      ],
+      "bbox_ratio_wh": 2.37,
+      "expressions": [
+        "man on ground",
+        "ground dudde",
+        "man on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 537579,
+      "file_name": "COCO_train2014_000000537579.jpg",
+      "ann_id": 491612,
+      "bbox": [
+        298.39,
+        166.15,
+        323.67,
+        138.9
+      ],
+      "bbox_ratio_wh": 2.33,
+      "expressions": [
+        "the player sliding on the ground",
+        "player sliding",
+        "guy sliding"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 517869,
+      "file_name": "COCO_train2014_000000517869.jpg",
+      "ann_id": 522543,
+      "bbox": [
+        19.15,
+        246.05,
+        282.43,
+        124.46
+      ],
+      "bbox_ratio_wh": 2.27,
+      "expressions": [
+        "person on ground",
+        "guy on the ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 68252,
+      "file_name": "COCO_train2014_000000068252.jpg",
+      "ann_id": 500817,
+      "bbox": [
+        176.93,
+        212.07,
+        345.91,
+        155.42
+      ],
+      "bbox_ratio_wh": 2.23,
+      "expressions": [
+        "man in red hat",
+        "player on the floor",
+        "sliding player"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 332273,
+      "file_name": "COCO_train2014_000000332273.jpg",
+      "ann_id": 519857,
+      "bbox": [
+        17.87,
+        365.05,
+        368.88,
+        177.42
+      ],
+      "bbox_ratio_wh": 2.08,
+      "expressions": [
+        "guy on ground span",
+        "guy on ground",
+        "span"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 298721,
+      "file_name": "COCO_train2014_000000298721.jpg",
+      "ann_id": 1708089,
+      "bbox": [
+        1.28,
+        270.6,
+        573.1,
+        288.47
+      ],
+      "bbox_ratio_wh": 1.99,
+      "expressions": [
+        "girl on floor",
+        "victim on ground",
+        "dead girl"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 225925,
+      "file_name": "COCO_train2014_000000225925.jpg",
+      "ann_id": 446003,
+      "bbox": [
+        51.27,
+        167.44,
+        230.5,
+        128.61
+      ],
+      "bbox_ratio_wh": 1.79,
+      "expressions": [
+        "guy sliding",
+        "guy on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 190906,
+      "file_name": "COCO_train2014_000000190906.jpg",
+      "ann_id": 2206359,
+      "bbox": [
+        205.06,
+        444.29,
+        255.93,
+        160.03
+      ],
+      "bbox_ratio_wh": 1.6,
+      "expressions": [
+        "guy on ground right",
+        "right side bottom guy on groud"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 78977,
+      "file_name": "COCO_train2014_000000078977.jpg",
+      "ann_id": 508479,
+      "bbox": [
+        104.87,
+        187.16,
+        229.02,
+        145.97
+      ],
+      "bbox_ratio_wh": 1.57,
+      "expressions": [
+        "red shirt",
+        "boy on ground",
+        "kid on ground blond"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 403473,
+      "file_name": "COCO_train2014_000000403473.jpg",
+      "ann_id": 1212124,
+      "bbox": [
+        348.84,
+        203.78,
+        291.16,
+        187.77
+      ],
+      "bbox_ratio_wh": 1.55,
+      "expressions": [
+        "kid on the floor",
+        "boy crawling on right",
+        "hands and knees"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 519218,
+      "file_name": "COCO_train2014_000000519218.jpg",
+      "ann_id": 1285365,
+      "bbox": [
+        144.14,
+        278.31,
+        150.37,
+        99.95
+      ],
+      "bbox_ratio_wh": 1.5,
+      "expressions": [
+        "the last person that would get landed on",
+        "girl in light blue shirt",
+        "kid on ground left side"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 522827,
+      "file_name": "COCO_train2014_000000522827.jpg",
+      "ann_id": 454222,
+      "bbox": [
+        94.29,
+        128.37,
+        363.52,
+        266.96
+      ],
+      "bbox_ratio_wh": 1.36,
+      "expressions": [
+        "guy crouching",
+        "guy doing a slide",
+        "guy on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 456082,
+      "file_name": "COCO_train2014_000000456082.jpg",
+      "ann_id": 2003940,
+      "bbox": [
+        47.58,
+        202.49,
+        269.98,
+        200.27
+      ],
+      "bbox_ratio_wh": 1.35,
+      "expressions": [
+        "on left",
+        "red shirt",
+        "knee on ground guy"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 132874,
+      "file_name": "COCO_train2014_000000132874.jpg",
+      "ann_id": 442630,
+      "bbox": [
+        393.71,
+        88.27,
+        245.93,
+        189.84
+      ],
+      "bbox_ratio_wh": 1.3,
+      "expressions": [
+        "dark shadow right",
+        "shadow on right",
+        "black thing on ground right of top hot dog"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 16659,
+      "file_name": "COCO_train2014_000000016659.jpg",
+      "ann_id": 513756,
+      "bbox": [
+        127.11,
+        177.96,
+        202.51,
+        155.28
+      ],
+      "bbox_ratio_wh": 1.3,
+      "expressions": [
+        "man on ground",
+        "runner",
+        "person on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 114801,
+      "file_name": "COCO_train2014_000000114801.jpg",
+      "ann_id": 462020,
+      "bbox": [
+        279.53,
+        184.28,
+        189.13,
+        150.78
+      ],
+      "bbox_ratio_wh": 1.25,
+      "expressions": [
+        "sliding into the base",
+        "player on the ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 69197,
+      "file_name": "COCO_train2014_000000069197.jpg",
+      "ann_id": 506925,
+      "bbox": [
+        416.51,
+        131.14,
+        173.68,
+        139.75
+      ],
+      "bbox_ratio_wh": 1.24,
+      "expressions": [
+        "person on ground",
+        "fallen down",
+        "right person"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 377701,
+      "file_name": "COCO_train2014_000000377701.jpg",
+      "ann_id": 1718016,
+      "bbox": [
+        151.75,
+        329.33,
+        178.65,
+        145.29
+      ],
+      "bbox_ratio_wh": 1.23,
+      "expressions": [
+        "boy with brown hair",
+        "boy at the bottom",
+        "boy in front on floor"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 522461,
+      "file_name": "COCO_train2014_000000522461.jpg",
+      "ann_id": 2150323,
+      "bbox": [
+        119.17,
+        231.87,
+        288.86,
+        238.34
+      ],
+      "bbox_ratio_wh": 1.21,
+      "expressions": [
+        "the girl that is on the floor in all white",
+        "person closest"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 184697,
+      "file_name": "COCO_train2014_000000184697.jpg",
+      "ann_id": 1269031,
+      "bbox": [
+        0.32,
+        197.34,
+        174.12,
+        145.21
+      ],
+      "bbox_ratio_wh": 1.2,
+      "expressions": [
+        "man falling in red",
+        "person crawling",
+        "man on left on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 378778,
+      "file_name": "COCO_train2014_000000378778.jpg",
+      "ann_id": 1723018,
+      "bbox": [
+        293.47,
+        188.66,
+        198.18,
+        169.6
+      ],
+      "bbox_ratio_wh": 1.17,
+      "expressions": [
+        "player on the floor",
+        "person falling down does not have a showing on shirt",
+        "puig"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 581839,
+      "file_name": "COCO_train2014_000000581839.jpg",
+      "ann_id": 485695,
+      "bbox": [
+        114.57,
+        237.84,
+        206.26,
+        179.65
+      ],
+      "bbox_ratio_wh": 1.15,
+      "expressions": [
+        "lady sitting on right",
+        "right girl on floor",
+        "woman sitting on right"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 259060,
+      "file_name": "COCO_train2014_000000259060.jpg",
+      "ann_id": 229482,
+      "bbox": [
+        278.56,
+        160.73,
+        187.0,
+        167.71
+      ],
+      "bbox_ratio_wh": 1.12,
+      "expressions": [
+        "guy on floor",
+        "dude sitting on the floor",
+        "man with glasses"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 544109,
+      "file_name": "COCO_train2014_000000544109.jpg",
+      "ann_id": 1726734,
+      "bbox": [
+        296.5,
+        197.82,
+        249.32,
+        228.36
+      ],
+      "bbox_ratio_wh": 1.09,
+      "expressions": [
+        "woman sitting on floor with legs apart",
+        "closest woman",
+        "woman on floor in front of photo"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 429688,
+      "file_name": "COCO_train2014_000000429688.jpg",
+      "ann_id": 570482,
+      "bbox": [
+        77.05,
+        365.67,
+        251.62,
+        233.81
+      ],
+      "bbox_ratio_wh": 1.08,
+      "expressions": [
+        "boy on the ground",
+        "man in white",
+        "white shirt middle"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 99336,
+      "file_name": "COCO_train2014_000000099336.jpg",
+      "ann_id": 546391,
+      "bbox": [
+        98.37,
+        217.59,
+        215.84,
+        199.61
+      ],
+      "bbox_ratio_wh": 1.08,
+      "expressions": [
+        "person on ground",
+        "player on the ground",
+        "guy on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 419194,
+      "file_name": "COCO_train2014_000000419194.jpg",
+      "ann_id": 229449,
+      "bbox": [
+        414.54,
+        2.89,
+        212.09,
+        197.63
+      ],
+      "bbox_ratio_wh": 1.07,
+      "expressions": [
+        "guy sitting in jeans",
+        "blue jeans right",
+        "sitting on ground right blue jeans legs out"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 97902,
+      "file_name": "COCO_train2014_000000097902.jpg",
+      "ann_id": 209455,
+      "bbox": [
+        11.28,
+        85.58,
+        306.03,
+        289.2
+      ],
+      "bbox_ratio_wh": 1.06,
+      "expressions": [
+        "man on the couch",
+        "hat guy",
+        "guy"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 62392,
+      "file_name": "COCO_train2014_000000062392.jpg",
+      "ann_id": 1678209,
+      "bbox": [
+        112.18,
+        391.19,
+        247.37,
+        235.87
+      ],
+      "bbox_ratio_wh": 1.05,
+      "expressions": [
+        "girl on ground",
+        "girl on ground",
+        "front girl"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 155268,
+      "file_name": "COCO_train2014_000000155268.jpg",
+      "ann_id": 447989,
+      "bbox": [
+        146.14,
+        129.52,
+        302.78,
+        296.48
+      ],
+      "bbox_ratio_wh": 1.02,
+      "expressions": [
+        "lady on floor",
+        "woman sitting on floor",
+        "center person"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 427238,
+      "file_name": "COCO_train2014_000000427238.jpg",
+      "ann_id": 492668,
+      "bbox": [
+        30.95,
+        301.01,
+        175.82,
+        174.42
+      ],
+      "bbox_ratio_wh": 1.01,
+      "expressions": [
+        "girl sitting to the left slumped on the bed",
+        "person on left on bed with green thing",
+        "chick on bed"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 318501,
+      "file_name": "COCO_train2014_000000318501.jpg",
+      "ann_id": 469716,
+      "bbox": [
+        158.2,
+        339.42,
+        291.96,
+        293.39
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "blue",
+        "girl on the ground",
+        "person sitting"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 488676,
+      "file_name": "COCO_train2014_000000488676.jpg",
+      "ann_id": 482876,
+      "bbox": [
+        110.71,
+        26.84,
+        283.06,
+        287.31
+      ],
+      "bbox_ratio_wh": 0.99,
+      "expressions": [
+        "kid feet not on ground",
+        "red juming",
+        "man in red shirt middle left"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 174399,
+      "file_name": "COCO_train2014_000000174399.jpg",
+      "ann_id": 1220632,
+      "bbox": [
+        223.69,
+        207.64,
+        177.43,
+        179.33
+      ],
+      "bbox_ratio_wh": 0.99,
+      "expressions": [
+        "person in white on the floor",
+        "guy sitting grass"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 163553,
+      "file_name": "COCO_train2014_000000163553.jpg",
+      "ann_id": 517541,
+      "bbox": [
+        453.95,
+        169.06,
+        186.05,
+        189.36
+      ],
+      "bbox_ratio_wh": 0.98,
+      "expressions": [
+        "catcher",
+        "man on right on ground",
+        "catcher"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 509626,
+      "file_name": "COCO_train2014_000000509626.jpg",
+      "ann_id": 1248632,
+      "bbox": [
+        349.65,
+        237.29,
+        178.92,
+        184.03
+      ],
+      "bbox_ratio_wh": 0.97,
+      "expressions": [
+        "player sitting",
+        "catcher",
+        "catcher sitting on ground"
+      ],
+      "posture_hint": "on_ground",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 491249,
+      "file_name": "COCO_train2014_000000491249.jpg",
+      "ann_id": 2031382,
+      "bbox": [
+        132.78,
+        3.32,
+        326.41,
+        98.48
+      ],
+      "bbox_ratio_wh": 3.31,
+      "expressions": [
+        "person sitting top middle",
+        "space directly above the dish"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 377570,
+      "file_name": "COCO_train2014_000000377570.jpg",
+      "ann_id": 201070,
+      "bbox": [
+        35.72,
+        183.07,
+        568.19,
+        291.35
+      ],
+      "bbox_ratio_wh": 1.95,
+      "expressions": [
+        "woman sitting in a chair",
+        "woman",
+        "woman"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 190087,
+      "file_name": "COCO_train2014_000000190087.jpg",
+      "ann_id": 1266184,
+      "bbox": [
+        11.14,
+        137.36,
+        320.19,
+        169.84
+      ],
+      "bbox_ratio_wh": 1.89,
+      "expressions": [
+        "weird but theyre both boxed",
+        "girl in purple top sitting at table",
+        "girl in purple"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 31590,
+      "file_name": "COCO_train2014_000000031590.jpg",
+      "ann_id": 543847,
+      "bbox": [
+        365.47,
+        282.81,
+        258.38,
+        143.81
+      ],
+      "bbox_ratio_wh": 1.8,
+      "expressions": [
+        "man on bottom right",
+        "man on right sitting"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 431207,
+      "file_name": "COCO_train2014_000000431207.jpg",
+      "ann_id": 1254567,
+      "bbox": [
+        0.0,
+        57.09,
+        640.0,
+        372.3
+      ],
+      "bbox_ratio_wh": 1.72,
+      "expressions": [
+        "everybody sitting down",
+        "pink shirt girl"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 305224,
+      "file_name": "COCO_train2014_000000305224.jpg",
+      "ann_id": 1222933,
+      "bbox": [
+        231.57,
+        0.75,
+        250.68,
+        146.14
+      ],
+      "bbox_ratio_wh": 1.72,
+      "expressions": [
+        "the leg at very top of pic",
+        "top person",
+        "leg of person sitting on green chair in background"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 529240,
+      "file_name": "COCO_train2014_000000529240.jpg",
+      "ann_id": 2156842,
+      "bbox": [
+        264.25,
+        273.06,
+        245.53,
+        146.43
+      ],
+      "bbox_ratio_wh": 1.68,
+      "expressions": [
+        "a guy has his baack towards the camera",
+        "man sitting",
+        "close guy"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 211388,
+      "file_name": "COCO_train2014_000000211388.jpg",
+      "ann_id": 228716,
+      "bbox": [
+        260.63,
+        450.7,
+        164.38,
+        98.04
+      ],
+      "bbox_ratio_wh": 1.68,
+      "expressions": [
+        "girl",
+        "sitting down",
+        "woman sitting"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 430067,
+      "file_name": "COCO_train2014_000000430067.jpg",
+      "ann_id": 1734892,
+      "bbox": [
+        412.02,
+        0.0,
+        187.38,
+        112.89
+      ],
+      "bbox_ratio_wh": 1.66,
+      "expressions": [
+        "person behind the one holding napkins onright",
+        "person sitting right corner"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 56677,
+      "file_name": "COCO_train2014_000000056677.jpg",
+      "ann_id": 514574,
+      "bbox": [
+        85.0,
+        268.27,
+        200.1,
+        121.3
+      ],
+      "bbox_ratio_wh": 1.65,
+      "expressions": [
+        "the young child on the left sitting near the old person",
+        "girl in front",
+        "kid sitting"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 495931,
+      "file_name": "COCO_train2014_000000495931.jpg",
+      "ann_id": 1719876,
+      "bbox": [
+        147.71,
+        372.72,
+        186.66,
+        115.4
+      ],
+      "bbox_ratio_wh": 1.62,
+      "expressions": [
+        "person sitting",
+        "person under umbrella",
+        "person under the umbrella"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 401313,
+      "file_name": "COCO_train2014_000000401313.jpg",
+      "ann_id": 516242,
+      "bbox": [
+        0.0,
+        0.0,
+        640.0,
+        397.25
+      ],
+      "bbox_ratio_wh": 1.61,
+      "expressions": [
+        "man",
+        "man",
+        "man sitting"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 133492,
+      "file_name": "COCO_train2014_000000133492.jpg",
+      "ann_id": 1312894,
+      "bbox": [
+        91.65,
+        175.39,
+        237.11,
+        153.03
+      ],
+      "bbox_ratio_wh": 1.55,
+      "expressions": [
+        "a soccer player wearing white",
+        "person sitting down",
+        "douchebag with arms out"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 343655,
+      "file_name": "COCO_train2014_000000343655.jpg",
+      "ann_id": 433899,
+      "bbox": [
+        260.76,
+        1.07,
+        379.24,
+        265.53
+      ],
+      "bbox_ratio_wh": 1.43,
+      "expressions": [
+        "guys arm a little blurry on right",
+        "top right dude sitting",
+        "the arm not holding the sandwich"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 234612,
+      "file_name": "COCO_train2014_000000234612.jpg",
+      "ann_id": 542447,
+      "bbox": [
+        363.51,
+        195.24,
+        276.49,
+        196.31
+      ],
+      "bbox_ratio_wh": 1.41,
+      "expressions": [
+        "man right",
+        "guy chillin",
+        "the male sitting in the chair in a white shirt holding a wine glass"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 154911,
+      "file_name": "COCO_train2014_000000154911.jpg",
+      "ann_id": 464414,
+      "bbox": [
+        7.55,
+        244.85,
+        271.82,
+        194.16
+      ],
+      "bbox_ratio_wh": 1.4,
+      "expressions": [
+        "man in black bending over left side",
+        "guy in black sitting to left leaned over",
+        "far left person seated"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 132386,
+      "file_name": "COCO_train2014_000000132386.jpg",
+      "ann_id": 470290,
+      "bbox": [
+        201.12,
+        163.51,
+        220.9,
+        159.78
+      ],
+      "bbox_ratio_wh": 1.38,
+      "expressions": [
+        "woman on right with legs straight out in front of her",
+        "sitting woman with white skirt"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 468519,
+      "file_name": "COCO_train2014_000000468519.jpg",
+      "ann_id": 207943,
+      "bbox": [
+        212.36,
+        160.32,
+        287.64,
+        211.52
+      ],
+      "bbox_ratio_wh": 1.36,
+      "expressions": [
+        "man sitting in the bottom right corner with the maroon hat",
+        "guys head front maroon cap",
+        "mans head nearest"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 577725,
+      "file_name": "COCO_train2014_000000577725.jpg",
+      "ann_id": 205480,
+      "bbox": [
+        239.33,
+        169.44,
+        264.21,
+        197.21
+      ],
+      "bbox_ratio_wh": 1.34,
+      "expressions": [
+        "main guy on the tv",
+        "man front center",
+        "seated man"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 213642,
+      "file_name": "COCO_train2014_000000213642.jpg",
+      "ann_id": 496378,
+      "bbox": [
+        178.49,
+        388.2,
+        216.77,
+        163.18
+      ],
+      "bbox_ratio_wh": 1.33,
+      "expressions": [
+        "person in middle",
+        "skier on knees dark pants",
+        "person kneeling"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 570581,
+      "file_name": "COCO_train2014_000000570581.jpg",
+      "ann_id": 463547,
+      "bbox": [
+        56.48,
+        14.36,
+        244.11,
+        187.63
+      ],
+      "bbox_ratio_wh": 1.3,
+      "expressions": [
+        "dude back on bench",
+        "guy sitting left",
+        "hat bench guy"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 340171,
+      "file_name": "COCO_train2014_000000340171.jpg",
+      "ann_id": 500326,
+      "bbox": [
+        149.23,
+        0.44,
+        172.83,
+        134.21
+      ],
+      "bbox_ratio_wh": 1.29,
+      "expressions": [
+        "person sitting with legs crossed on the top in blue jeans",
+        "top center of photo crossed legs",
+        "the person up top in middle of screen with legs crossed"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 215077,
+      "file_name": "COCO_train2014_000000215077.jpg",
+      "ann_id": 538455,
+      "bbox": [
+        379.7,
+        178.47,
+        229.28,
+        177.25
+      ],
+      "bbox_ratio_wh": 1.29,
+      "expressions": [
+        "person with white floppy hat",
+        "man kneelingright",
+        "guy baout to get hit in teh head witha bat"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 521070,
+      "file_name": "COCO_train2014_000000521070.jpg",
+      "ann_id": 467601,
+      "bbox": [
+        307.19,
+        31.68,
+        190.96,
+        149.36
+      ],
+      "bbox_ratio_wh": 1.28,
+      "expressions": [
+        "girl sitting",
+        "girl sitting up",
+        "girl in pink sitting on bed"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 277775,
+      "file_name": "COCO_train2014_000000277775.jpg",
+      "ann_id": 516496,
+      "bbox": [
+        324.3,
+        267.97,
+        257.71,
+        205.69
+      ],
+      "bbox_ratio_wh": 1.25,
+      "expressions": [
+        "bottom right guy",
+        "guy sitting",
+        "guy sitting"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 207447,
+      "file_name": "COCO_train2014_000000207447.jpg",
+      "ann_id": 211475,
+      "bbox": [
+        243.51,
+        110.02,
+        255.64,
+        204.68
+      ],
+      "bbox_ratio_wh": 1.25,
+      "expressions": [
+        "the old woman sitting down",
+        "old lady in the middle in white",
+        "person wrapper up in chair"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 172392,
+      "file_name": "COCO_train2014_000000172392.jpg",
+      "ann_id": 1713295,
+      "bbox": [
+        409.32,
+        328.57,
+        188.86,
+        151.43
+      ],
+      "bbox_ratio_wh": 1.25,
+      "expressions": [
+        "person sitting",
+        "sitting against fence",
+        "girl sitting"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 5294,
+      "file_name": "COCO_train2014_000000005294.jpg",
+      "ann_id": 1276260,
+      "bbox": [
+        144.78,
+        95.59,
+        280.29,
+        226.46
+      ],
+      "bbox_ratio_wh": 1.24,
+      "expressions": [
+        "middle man legs crossed",
+        "second set of pants from the front sitting",
+        "center legs"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 176403,
+      "file_name": "COCO_train2014_000000176403.jpg",
+      "ann_id": 532430,
+      "bbox": [
+        0.0,
+        268.32,
+        195.23,
+        158.68
+      ],
+      "bbox_ratio_wh": 1.23,
+      "expressions": [
+        "black guy blue shirt",
+        "black guy sitting lower left",
+        "man on left sitted"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 477259,
+      "file_name": "COCO_train2014_000000477259.jpg",
+      "ann_id": 1231419,
+      "bbox": [
+        75.51,
+        52.85,
+        448.38,
+        367.64
+      ],
+      "bbox_ratio_wh": 1.22,
+      "expressions": [
+        "sitting guy nearest",
+        "person in front",
+        "first guy in pic"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 186550,
+      "file_name": "COCO_train2014_000000186550.jpg",
+      "ann_id": 516365,
+      "bbox": [
+        159.79,
+        464.47,
+        214.43,
+        175.53
+      ],
+      "bbox_ratio_wh": 1.22,
+      "expressions": [
+        "boys head at bottom",
+        "blond head in front sitting down",
+        "back head infront"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 145139,
+      "file_name": "COCO_train2014_000000145139.jpg",
+      "ann_id": 229510,
+      "bbox": [
+        45.48,
+        240.47,
+        245.62,
+        200.83
+      ],
+      "bbox_ratio_wh": 1.22,
+      "expressions": [
+        "girl sitting in back",
+        "boy on left with rabbit",
+        "bigger kid in back"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 556569,
+      "file_name": "COCO_train2014_000000556569.jpg",
+      "ann_id": 1232621,
+      "bbox": [
+        185.64,
+        266.64,
+        166.25,
+        138.54
+      ],
+      "bbox_ratio_wh": 1.2,
+      "expressions": [
+        "blueh shirt bottom",
+        "green woman sitting",
+        "light green blue shirt sitting fromt"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 46170,
+      "file_name": "COCO_train2014_000000046170.jpg",
+      "ann_id": 228787,
+      "bbox": [
+        200.27,
+        299.32,
+        210.07,
+        175.24
+      ],
+      "bbox_ratio_wh": 1.2,
+      "expressions": [
+        "sitting girl",
+        "black shirt sitting down",
+        "person in black shirt"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 324705,
+      "file_name": "COCO_train2014_000000324705.jpg",
+      "ann_id": 1742260,
+      "bbox": [
+        308.04,
+        161.1,
+        314.8,
+        264.9
+      ],
+      "bbox_ratio_wh": 1.19,
+      "expressions": [
+        "guy sitting at bottom right",
+        "botom right guy",
+        "on right"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 716,
+      "file_name": "COCO_train2014_000000000716.jpg",
+      "ann_id": 225429,
+      "bbox": [
+        407.6,
+        133.24,
+        226.67,
+        190.33
+      ],
+      "bbox_ratio_wh": 1.19,
+      "expressions": [
+        "man on right",
+        "man in beige shirt sitting on the right side",
+        "right guy above child"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 409382,
+      "file_name": "COCO_train2014_000000409382.jpg",
+      "ann_id": 454376,
+      "bbox": [
+        309.44,
+        367.2,
+        154.03,
+        130.65
+      ],
+      "bbox_ratio_wh": 1.18,
+      "expressions": [
+        "right bottom person",
+        "guy on right sitting down"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 175480,
+      "file_name": "COCO_train2014_000000175480.jpg",
+      "ann_id": 441094,
+      "bbox": [
+        0.0,
+        108.46,
+        216.93,
+        187.5
+      ],
+      "bbox_ratio_wh": 1.16,
+      "expressions": [
+        "child sitting on left",
+        "left kid",
+        "left child"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 113152,
+      "file_name": "COCO_train2014_000000113152.jpg",
+      "ann_id": 199583,
+      "bbox": [
+        182.86,
+        8.44,
+        155.1,
+        133.87
+      ],
+      "bbox_ratio_wh": 1.16,
+      "expressions": [
+        "rock next to left side of his head",
+        "person seating on back upper left with plaid shirt",
+        "man sitting on edge of pier"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 451707,
+      "file_name": "COCO_train2014_000000451707.jpg",
+      "ann_id": 2160900,
+      "bbox": [
+        147.29,
+        137.58,
+        175.16,
+        151.81
+      ],
+      "bbox_ratio_wh": 1.15,
+      "expressions": [
+        "second man from right",
+        "sitting black shirt with white gloves behind pinwheel",
+        "middle man"
+      ],
+      "posture_hint": "sitting",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 515550,
+      "file_name": "COCO_train2014_000000515550.jpg",
+      "ann_id": 1686779,
+      "bbox": [
+        243.22,
+        329.55,
+        269.04,
+        97.45
+      ],
+      "bbox_ratio_wh": 2.76,
+      "expressions": [
+        "man at bottom with black shirt and glasses",
+        "glasses front",
+        "guy with glasses bending over at bottom"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 78553,
+      "file_name": "COCO_train2014_000000078553.jpg",
+      "ann_id": 1692932,
+      "bbox": [
+        1.92,
+        332.96,
+        202.46,
+        89.24
+      ],
+      "bbox_ratio_wh": 2.27,
+      "expressions": [
+        "person on left leaning over only partially visible",
+        "person lower left corner bending over",
+        "bottom left with glasses"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 122001,
+      "file_name": "COCO_train2014_000000122001.jpg",
+      "ann_id": 453635,
+      "bbox": [
+        48.03,
+        180.92,
+        369.95,
+        187.08
+      ],
+      "bbox_ratio_wh": 1.98,
+      "expressions": [
+        "woman leaning back",
+        "lady in black",
+        "customer"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 486899,
+      "file_name": "COCO_train2014_000000486899.jpg",
+      "ann_id": 1284107,
+      "bbox": [
+        133.28,
+        332.27,
+        209.49,
+        117.57
+      ],
+      "bbox_ratio_wh": 1.78,
+      "expressions": [
+        "guy ducking down oldman",
+        "guy hunched over on bottom with blue shirt",
+        "blue shirt behind child"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 551840,
+      "file_name": "COCO_train2014_000000551840.jpg",
+      "ann_id": 1285011,
+      "bbox": [
+        366.14,
+        133.02,
+        273.13,
+        182.09
+      ],
+      "bbox_ratio_wh": 1.5,
+      "expressions": [
+        "guy leaning over",
+        "boy on steps",
+        "right boy"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 126814,
+      "file_name": "COCO_train2014_000000126814.jpg",
+      "ann_id": 1261885,
+      "bbox": [
+        276.13,
+        298.79,
+        193.08,
+        135.91
+      ],
+      "bbox_ratio_wh": 1.42,
+      "expressions": [
+        "boy in the white shirt in front tilting head",
+        "front buy in white",
+        "kid up front in white shirt leaning"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 146645,
+      "file_name": "COCO_train2014_000000146645.jpg",
+      "ann_id": 493354,
+      "bbox": [
+        139.15,
+        64.72,
+        335.46,
+        238.38
+      ],
+      "bbox_ratio_wh": 1.41,
+      "expressions": [
+        "lady reaching",
+        "woman bending",
+        "center woman in white"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 67200,
+      "file_name": "COCO_train2014_000000067200.jpg",
+      "ann_id": 491237,
+      "bbox": [
+        64.56,
+        214.17,
+        306.39,
+        220.31
+      ],
+      "bbox_ratio_wh": 1.39,
+      "expressions": [
+        "guy on the bottom",
+        "man crouched in front on base",
+        "dude with hard hat on"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 180778,
+      "file_name": "COCO_train2014_000000180778.jpg",
+      "ann_id": 514861,
+      "bbox": [
+        337.73,
+        104.39,
+        164.01,
+        120.85
+      ],
+      "bbox_ratio_wh": 1.36,
+      "expressions": [
+        "girl in white",
+        "red head broad looking at laptop suspiciously",
+        "girl leaning over looking at screen"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 427852,
+      "file_name": "COCO_train2014_000000427852.jpg",
+      "ann_id": 1718343,
+      "bbox": [
+        293.39,
+        0.0,
+        166.12,
+        122.97
+      ],
+      "bbox_ratio_wh": 1.35,
+      "expressions": [
+        "person at top leaning over",
+        "black shirt",
+        "blurry person middle back black shirt"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 529309,
+      "file_name": "COCO_train2014_000000529309.jpg",
+      "ann_id": 430385,
+      "bbox": [
+        83.29,
+        10.37,
+        423.12,
+        319.74
+      ],
+      "bbox_ratio_wh": 1.32,
+      "expressions": [
+        "man bending over",
+        "black guy",
+        "guy in blue"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 205202,
+      "file_name": "COCO_train2014_000000205202.jpg",
+      "ann_id": 523460,
+      "bbox": [
+        271.74,
+        116.59,
+        278.17,
+        220.82
+      ],
+      "bbox_ratio_wh": 1.26,
+      "expressions": [
+        "girl leaning",
+        "girl"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 502717,
+      "file_name": "COCO_train2014_000000502717.jpg",
+      "ann_id": 500418,
+      "bbox": [
+        252.36,
+        111.31,
+        387.64,
+        309.93
+      ],
+      "bbox_ratio_wh": 1.25,
+      "expressions": [
+        "plaid shirt right corner",
+        "plaid shirt leaning over",
+        "plaid shirt"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 202855,
+      "file_name": "COCO_train2014_000000202855.jpg",
+      "ann_id": 1231809,
+      "bbox": [
+        93.84,
+        57.17,
+        232.99,
+        188.76
+      ],
+      "bbox_ratio_wh": 1.23,
+      "expressions": [
+        "elbows on table",
+        "woman leaning on table",
+        "woman with elbows on the table"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 163281,
+      "file_name": "COCO_train2014_000000163281.jpg",
+      "ann_id": 503378,
+      "bbox": [
+        224.0,
+        168.1,
+        296.0,
+        244.0
+      ],
+      "bbox_ratio_wh": 1.21,
+      "expressions": [
+        "falling kid",
+        "little girl in front bending down",
+        "player falling"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 444344,
+      "file_name": "COCO_train2014_000000444344.jpg",
+      "ann_id": 1706560,
+      "bbox": [
+        344.66,
+        45.2,
+        168.7,
+        141.26
+      ],
+      "bbox_ratio_wh": 1.19,
+      "expressions": [
+        "boy gon na eat the pizza",
+        "guy ducking",
+        "guy smiling leaning over pizza"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 284195,
+      "file_name": "COCO_train2014_000000284195.jpg",
+      "ann_id": 222787,
+      "bbox": [
+        295.91,
+        273.22,
+        183.17,
+        153.78
+      ],
+      "bbox_ratio_wh": 1.19,
+      "expressions": [
+        "bending person in center",
+        "man in red and black",
+        "front person"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 252069,
+      "file_name": "COCO_train2014_000000252069.jpg",
+      "ann_id": 230501,
+      "bbox": [
+        0.06,
+        34.59,
+        251.44,
+        211.58
+      ],
+      "bbox_ratio_wh": 1.19,
+      "expressions": [
+        "bending over to help",
+        "chick",
+        "girl in pink"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 264165,
+      "file_name": "COCO_train2014_000000264165.jpg",
+      "ann_id": 188059,
+      "bbox": [
+        34.01,
+        58.21,
+        388.82,
+        336.88
+      ],
+      "bbox_ratio_wh": 1.15,
+      "expressions": [
+        "guy",
+        "man leaning over",
+        "man"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 40911,
+      "file_name": "COCO_train2014_000000040911.jpg",
+      "ann_id": 2160200,
+      "bbox": [
+        279.32,
+        151.25,
+        261.65,
+        228.91
+      ],
+      "bbox_ratio_wh": 1.14,
+      "expressions": [
+        "person cooking on right",
+        "bald man on the right",
+        "the chef in middle leaning over dish"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 500768,
+      "file_name": "COCO_train2014_000000500768.jpg",
+      "ann_id": 219298,
+      "bbox": [
+        231.55,
+        151.21,
+        307.93,
+        275.44
+      ],
+      "bbox_ratio_wh": 1.12,
+      "expressions": [
+        "guy leaning on elbows",
+        "man holding chin",
+        "guy with head on hands"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 41305,
+      "file_name": "COCO_train2014_000000041305.jpg",
+      "ann_id": 1255228,
+      "bbox": [
+        247.01,
+        106.79,
+        201.71,
+        182.29
+      ],
+      "bbox_ratio_wh": 1.11,
+      "expressions": [
+        "girl grabbing food",
+        "woman hunched over the cooking surface",
+        "gray shirt girlleaning over wok"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 318203,
+      "file_name": "COCO_train2014_000000318203.jpg",
+      "ann_id": 194743,
+      "bbox": [
+        205.1,
+        89.23,
+        413.42,
+        383.36
+      ],
+      "bbox_ratio_wh": 1.08,
+      "expressions": [
+        "man not in mirroe",
+        "man",
+        "man bending over"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 536054,
+      "file_name": "COCO_train2014_000000536054.jpg",
+      "ann_id": 1206484,
+      "bbox": [
+        0.0,
+        244.85,
+        216.81,
+        202.79
+      ],
+      "bbox_ratio_wh": 1.07,
+      "expressions": [
+        "legs on left",
+        "black pants on bottom leaning",
+        "black object lower left corner"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 345844,
+      "file_name": "COCO_train2014_000000345844.jpg",
+      "ann_id": 2156100,
+      "bbox": [
+        267.29,
+        65.44,
+        280.6,
+        262.85
+      ],
+      "bbox_ratio_wh": 1.07,
+      "expressions": [
+        "blurry guy leaning forward",
+        "center blurry person leaning forward",
+        "third guy from left to right"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 396460,
+      "file_name": "COCO_train2014_000000396460.jpg",
+      "ann_id": 1216830,
+      "bbox": [
+        468.31,
+        271.84,
+        171.69,
+        162.56
+      ],
+      "bbox_ratio_wh": 1.06,
+      "expressions": [
+        "person on right leaning forward red patch",
+        "the guy on the right theres something red behind his head",
+        "brown hair"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 128848,
+      "file_name": "COCO_train2014_000000128848.jpg",
+      "ann_id": 208853,
+      "bbox": [
+        1.08,
+        203.87,
+        283.68,
+        269.66
+      ],
+      "bbox_ratio_wh": 1.05,
+      "expressions": [
+        "man on left in white shirt",
+        "leaning guy in plaid cap",
+        "man bendin on the left"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 535060,
+      "file_name": "COCO_train2014_000000535060.jpg",
+      "ann_id": 482748,
+      "bbox": [
+        0.0,
+        97.6,
+        243.64,
+        234.4
+      ],
+      "bbox_ratio_wh": 1.04,
+      "expressions": [
+        "man bending over",
+        "man bending down",
+        "man left bending over"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 519429,
+      "file_name": "COCO_train2014_000000519429.jpg",
+      "ann_id": 1224210,
+      "bbox": [
+        3.23,
+        51.98,
+        303.53,
+        298.17
+      ],
+      "bbox_ratio_wh": 1.02,
+      "expressions": [
+        "bending man on left with white shirt",
+        "older man bending over table on the left",
+        "man on left bending over"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 422100,
+      "file_name": "COCO_train2014_000000422100.jpg",
+      "ann_id": 470335,
+      "bbox": [
+        136.24,
+        30.22,
+        300.31,
+        294.56
+      ],
+      "bbox_ratio_wh": 1.02,
+      "expressions": [
+        "guy about to faceplant",
+        "front skater writing on shirt",
+        "man in front on skateboard leaning"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 534772,
+      "file_name": "COCO_train2014_000000534772.jpg",
+      "ann_id": 1329583,
+      "bbox": [
+        51.58,
+        250.02,
+        159.24,
+        158.98
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "person in blue hunched over",
+        "blue shirt blue hat bottom center",
+        "blue under bat"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 492967,
+      "file_name": "COCO_train2014_000000492967.jpg",
+      "ann_id": 428161,
+      "bbox": [
+        281.15,
+        62.37,
+        358.85,
+        359.83
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "woman leaning in from right",
+        "woman in bottom right corner",
+        "the ugly women"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 359098,
+      "file_name": "COCO_train2014_000000359098.jpg",
+      "ann_id": 221082,
+      "bbox": [
+        466.01,
+        162.08,
+        171.12,
+        171.12
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "peron bending over in back pink shirt red hat",
+        "half head behind girls hair",
+        "the girl on the rightcan see head and shoulder"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 300721,
+      "file_name": "COCO_train2014_000000300721.jpg",
+      "ann_id": 1733965,
+      "bbox": [
+        233.17,
+        14.39,
+        406.83,
+        407.81
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "dude bending",
+        "man in front",
+        "right man"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 275775,
+      "file_name": "COCO_train2014_000000275775.jpg",
+      "ann_id": 483401,
+      "bbox": [
+        362.57,
+        186.09,
+        156.75,
+        156.76
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "yeah catcher",
+        "the crouched down catcher",
+        "catcher"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 84801,
+      "file_name": "COCO_train2014_000000084801.jpg",
+      "ann_id": 225365,
+      "bbox": [
+        339.85,
+        137.35,
+        268.04,
+        268.05
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "dat ass",
+        "mans butt",
+        "man bending over"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 563717,
+      "file_name": "COCO_train2014_000000563717.jpg",
+      "ann_id": 448769,
+      "bbox": [
+        384.0,
+        211.69,
+        155.33,
+        157.48
+      ],
+      "bbox_ratio_wh": 0.99,
+      "expressions": [
+        "catcher",
+        "catcher bending down",
+        "catcher"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 409834,
+      "file_name": "COCO_train2014_000000409834.jpg",
+      "ann_id": 2157732,
+      "bbox": [
+        296.73,
+        126.99,
+        194.99,
+        196.05
+      ],
+      "bbox_ratio_wh": 0.99,
+      "expressions": [
+        "the man in black suit",
+        "leaning man bored",
+        "brown jacket gray hair watch on wrist"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 328917,
+      "file_name": "COCO_train2014_000000328917.jpg",
+      "ann_id": 234301,
+      "bbox": [
+        1.07,
+        0.1,
+        317.86,
+        321.08
+      ],
+      "bbox_ratio_wh": 0.99,
+      "expressions": [
+        "man in jeans bending down by little boy",
+        "man with blue shirt",
+        "left guy"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 304150,
+      "file_name": "COCO_train2014_000000304150.jpg",
+      "ann_id": 1240874,
+      "bbox": [
+        81.08,
+        118.38,
+        185.95,
+        187.03
+      ],
+      "bbox_ratio_wh": 0.99,
+      "expressions": [
+        "lady next to man left",
+        "person in brown jacket to left of guy in blue shirt",
+        "lady leaning"
+      ],
+      "posture_hint": "bent",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 453979,
+      "file_name": "COCO_train2014_000000453979.jpg",
+      "ann_id": 445754,
+      "bbox": [
+        11.95,
+        286.76,
+        425.54,
+        82.72
+      ],
+      "bbox_ratio_wh": 5.14,
+      "expressions": [
+        "person laying down",
+        "man laying",
+        "man on bed"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 380900,
+      "file_name": "COCO_train2014_000000380900.jpg",
+      "ann_id": 562904,
+      "bbox": [
+        15.93,
+        280.08,
+        432.63,
+        85.1
+      ],
+      "bbox_ratio_wh": 5.08,
+      "expressions": [
+        "man",
+        "laying on bed under laptop",
+        "man lying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 148422,
+      "file_name": "COCO_train2014_000000148422.jpg",
+      "ann_id": 477438,
+      "bbox": [
+        20.2,
+        243.13,
+        432.57,
+        107.94
+      ],
+      "bbox_ratio_wh": 4.01,
+      "expressions": [
+        "person laying down",
+        "guy lying down",
+        "person laying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 480939,
+      "file_name": "COCO_train2014_000000480939.jpg",
+      "ann_id": 495075,
+      "bbox": [
+        14.69,
+        155.51,
+        330.83,
+        85.7
+      ],
+      "bbox_ratio_wh": 3.86,
+      "expressions": [
+        "girl",
+        "blue pants sleeping in public",
+        "person laying on bench"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 219200,
+      "file_name": "COCO_train2014_000000219200.jpg",
+      "ann_id": 191299,
+      "bbox": [
+        0.96,
+        123.49,
+        608.35,
+        193.83
+      ],
+      "bbox_ratio_wh": 3.14,
+      "expressions": [
+        "laying down guy",
+        "man on groundby force",
+        "person on ground"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 422804,
+      "file_name": "COCO_train2014_000000422804.jpg",
+      "ann_id": 1735428,
+      "bbox": [
+        0.0,
+        16.18,
+        435.78,
+        140.22
+      ],
+      "bbox_ratio_wh": 3.11,
+      "expressions": [
+        "doll on top of clocok",
+        "the doll laying down on top",
+        "doll on top"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 386211,
+      "file_name": "COCO_train2014_000000386211.jpg",
+      "ann_id": 501665,
+      "bbox": [
+        206.08,
+        122.3,
+        293.92,
+        101.92
+      ],
+      "bbox_ratio_wh": 2.88,
+      "expressions": [
+        "girl laying down",
+        "laying down",
+        "right girl laying"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 278371,
+      "file_name": "COCO_train2014_000000278371.jpg",
+      "ann_id": 425426,
+      "bbox": [
+        45.16,
+        155.86,
+        511.55,
+        182.49
+      ],
+      "bbox_ratio_wh": 2.8,
+      "expressions": [
+        "person on stretcher",
+        "person lying down",
+        "laying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 407400,
+      "file_name": "COCO_train2014_000000407400.jpg",
+      "ann_id": 437770,
+      "bbox": [
+        2.27,
+        117.04,
+        475.7,
+        176.69
+      ],
+      "bbox_ratio_wh": 2.69,
+      "expressions": [
+        "guy laying down",
+        "man lying down",
+        "guy laying"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 515815,
+      "file_name": "COCO_train2014_000000515815.jpg",
+      "ann_id": 201409,
+      "bbox": [
+        34.61,
+        219.06,
+        275.39,
+        103.04
+      ],
+      "bbox_ratio_wh": 2.67,
+      "expressions": [
+        "no picture",
+        "person reclining left",
+        "left person"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 182728,
+      "file_name": "COCO_train2014_000000182728.jpg",
+      "ann_id": 202557,
+      "bbox": [
+        92.12,
+        146.65,
+        336.8,
+        127.62
+      ],
+      "bbox_ratio_wh": 2.64,
+      "expressions": [
+        "kid",
+        "person laying down",
+        "kid"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 279588,
+      "file_name": "COCO_train2014_000000279588.jpg",
+      "ann_id": 482332,
+      "bbox": [
+        0.33,
+        251.28,
+        294.21,
+        119.17
+      ],
+      "bbox_ratio_wh": 2.47,
+      "expressions": [
+        "man laying down in black shirt",
+        "guy on left in black shirt",
+        "man left"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 545841,
+      "file_name": "COCO_train2014_000000545841.jpg",
+      "ann_id": 509439,
+      "bbox": [
+        72.87,
+        269.07,
+        458.64,
+        192.89
+      ],
+      "bbox_ratio_wh": 2.38,
+      "expressions": [
+        "girl laying",
+        "girl laying",
+        "laying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 220109,
+      "file_name": "COCO_train2014_000000220109.jpg",
+      "ann_id": 461765,
+      "bbox": [
+        199.13,
+        232.51,
+        440.69,
+        193.49
+      ],
+      "bbox_ratio_wh": 2.28,
+      "expressions": [
+        "person with hat",
+        "hat and glasses laying down guy",
+        "right person laying"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 430345,
+      "file_name": "COCO_train2014_000000430345.jpg",
+      "ann_id": 200508,
+      "bbox": [
+        234.13,
+        119.94,
+        259.08,
+        123.79
+      ],
+      "bbox_ratio_wh": 2.09,
+      "expressions": [
+        "girl being carried",
+        "person in center lying position"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 116723,
+      "file_name": "COCO_train2014_000000116723.jpg",
+      "ann_id": 1714080,
+      "bbox": [
+        264.47,
+        157.24,
+        334.68,
+        163.49
+      ],
+      "bbox_ratio_wh": 2.05,
+      "expressions": [
+        "woman lying on board",
+        "on surfboard",
+        "red shirt laying on the board"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 231019,
+      "file_name": "COCO_train2014_000000231019.jpg",
+      "ann_id": 539003,
+      "bbox": [
+        174.76,
+        245.42,
+        353.33,
+        178.58
+      ],
+      "bbox_ratio_wh": 1.98,
+      "expressions": [
+        "man laying flat on bed",
+        "freddy kreuger"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 449291,
+      "file_name": "COCO_train2014_000000449291.jpg",
+      "ann_id": 201304,
+      "bbox": [
+        254.56,
+        359.26,
+        223.28,
+        113.26
+      ],
+      "bbox_ratio_wh": 1.97,
+      "expressions": [
+        "child laying on the floor",
+        "child on floor in front",
+        "kid lying on floor"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 100579,
+      "file_name": "COCO_train2014_000000100579.jpg",
+      "ann_id": 525799,
+      "bbox": [
+        279.73,
+        209.71,
+        218.77,
+        114.28
+      ],
+      "bbox_ratio_wh": 1.91,
+      "expressions": [
+        "person with legs up",
+        "leggs up",
+        "laying on stomach"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 42804,
+      "file_name": "COCO_train2014_000000042804.jpg",
+      "ann_id": 1320552,
+      "bbox": [
+        381.0,
+        212.39,
+        257.47,
+        135.69
+      ],
+      "bbox_ratio_wh": 1.9,
+      "expressions": [
+        "girl in black right side on top of purple girl",
+        "head by knee of checked shorts",
+        "right chick laying downblack white dots"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 222251,
+      "file_name": "COCO_train2014_000000222251.jpg",
+      "ann_id": 214545,
+      "bbox": [
+        418.36,
+        218.78,
+        196.71,
+        106.51
+      ],
+      "bbox_ratio_wh": 1.85,
+      "expressions": [
+        "girl in green shirt layin",
+        "person lying down",
+        "person laying in chair"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 394620,
+      "file_name": "COCO_train2014_000000394620.jpg",
+      "ann_id": 502290,
+      "bbox": [
+        3.37,
+        88.48,
+        296.63,
+        168.54
+      ],
+      "bbox_ratio_wh": 1.76,
+      "expressions": [
+        "dude",
+        "man laying on couch",
+        "left person"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 475120,
+      "file_name": "COCO_train2014_000000475120.jpg",
+      "ann_id": 223470,
+      "bbox": [
+        332.59,
+        225.16,
+        224.45,
+        135.69
+      ],
+      "bbox_ratio_wh": 1.65,
+      "expressions": [
+        "guy lying on right",
+        "person laying on right",
+        "dead guy on right"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 97913,
+      "file_name": "COCO_train2014_000000097913.jpg",
+      "ann_id": 1215999,
+      "bbox": [
+        0.0,
+        272.14,
+        306.22,
+        187.05
+      ],
+      "bbox_ratio_wh": 1.64,
+      "expressions": [
+        "kid laying left",
+        "left person",
+        "front far left laying down person"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 179823,
+      "file_name": "COCO_train2014_000000179823.jpg",
+      "ann_id": 1237152,
+      "bbox": [
+        195.07,
+        265.16,
+        264.96,
+        163.74
+      ],
+      "bbox_ratio_wh": 1.62,
+      "expressions": [
+        "man laying down",
+        "man laying down",
+        "reclining man"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 102667,
+      "file_name": "COCO_train2014_000000102667.jpg",
+      "ann_id": 229105,
+      "bbox": [
+        393.45,
+        205.82,
+        202.95,
+        132.11
+      ],
+      "bbox_ratio_wh": 1.54,
+      "expressions": [
+        "right man blue white",
+        "man in blue thanks for playing",
+        "bib"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 324261,
+      "file_name": "COCO_train2014_000000324261.jpg",
+      "ann_id": 522090,
+      "bbox": [
+        29.16,
+        224.15,
+        307.79,
+        203.51
+      ],
+      "bbox_ratio_wh": 1.51,
+      "expressions": [
+        "legs lying on bed",
+        "legs to left of woman"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 215081,
+      "file_name": "COCO_train2014_000000215081.jpg",
+      "ann_id": 2165769,
+      "bbox": [
+        429.76,
+        207.58,
+        208.7,
+        140.26
+      ],
+      "bbox_ratio_wh": 1.49,
+      "expressions": [
+        "man lying down wearing a purple shirt",
+        "rightest person bending over"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 5508,
+      "file_name": "COCO_train2014_000000005508.jpg",
+      "ann_id": 198457,
+      "bbox": [
+        103.55,
+        229.75,
+        320.36,
+        214.65
+      ],
+      "bbox_ratio_wh": 1.49,
+      "expressions": [
+        "girl with arm out",
+        "blond girl pointing in middle",
+        "blond woman playing wii"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 218237,
+      "file_name": "COCO_train2014_000000218237.jpg",
+      "ann_id": 493420,
+      "bbox": [
+        126.2,
+        142.38,
+        487.55,
+        331.15
+      ],
+      "bbox_ratio_wh": 1.47,
+      "expressions": [
+        "guy with shirt",
+        "guy with shirt",
+        "guy laying"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 507875,
+      "file_name": "COCO_train2014_000000507875.jpg",
+      "ann_id": 203043,
+      "bbox": [
+        231.39,
+        192.77,
+        248.61,
+        169.94
+      ],
+      "bbox_ratio_wh": 1.46,
+      "expressions": [
+        "legs on top bunk",
+        "sleeping bum",
+        "person lying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 489845,
+      "file_name": "COCO_train2014_000000489845.jpg",
+      "ann_id": 1222200,
+      "bbox": [
+        0.31,
+        293.27,
+        194.85,
+        136.73
+      ],
+      "bbox_ratio_wh": 1.43,
+      "expressions": [
+        "kid on the left",
+        "far left child",
+        "kid lying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 271011,
+      "file_name": "COCO_train2014_000000271011.jpg",
+      "ann_id": 460771,
+      "bbox": [
+        144.86,
+        167.98,
+        270.56,
+        194.92
+      ],
+      "bbox_ratio_wh": 1.39,
+      "expressions": [
+        "man laying second to left black helmet",
+        "red coat blue goggles sitting middle guy sitting",
+        "guy lying down"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 86654,
+      "file_name": "COCO_train2014_000000086654.jpg",
+      "ann_id": 446120,
+      "bbox": [
+        74.54,
+        44.66,
+        357.49,
+        259.84
+      ],
+      "bbox_ratio_wh": 1.38,
+      "expressions": [
+        "child on left",
+        "stupid kid playing with his food",
+        "boy"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 455719,
+      "file_name": "COCO_train2014_000000455719.jpg",
+      "ann_id": 497435,
+      "bbox": [
+        0.0,
+        329.07,
+        279.57,
+        222.53
+      ],
+      "bbox_ratio_wh": 1.26,
+      "expressions": [
+        "lady laying down on left",
+        "far left girl",
+        "woman laying in two piece left side"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 232351,
+      "file_name": "COCO_train2014_000000232351.jpg",
+      "ann_id": 506582,
+      "bbox": [
+        189.99,
+        83.48,
+        418.37,
+        338.72
+      ],
+      "bbox_ratio_wh": 1.24,
+      "expressions": [
+        "girl",
+        "girl standing",
+        "girl playing the game on right"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 290658,
+      "file_name": "COCO_train2014_000000290658.jpg",
+      "ann_id": 479196,
+      "bbox": [
+        228.88,
+        155.74,
+        215.26,
+        177.88
+      ],
+      "bbox_ratio_wh": 1.21,
+      "expressions": [
+        "the kid",
+        "kid playing video game",
+        "child"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 144353,
+      "file_name": "COCO_train2014_000000144353.jpg",
+      "ann_id": 1313034,
+      "bbox": [
+        502.18,
+        313.11,
+        137.82,
+        113.89
+      ],
+      "bbox_ratio_wh": 1.21,
+      "expressions": [
+        "cap bottom right",
+        "right most person lying down",
+        "bottom right corner of the photo"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 150435,
+      "file_name": "COCO_train2014_000000150435.jpg",
+      "ann_id": 480010,
+      "bbox": [
+        202.95,
+        221.14,
+        184.76,
+        161.78
+      ],
+      "bbox_ratio_wh": 1.14,
+      "expressions": [
+        "young person with glasses",
+        "man in tank top playing the wii",
+        "tank top guy leaning forward"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 167300,
+      "file_name": "COCO_train2014_000000167300.jpg",
+      "ann_id": 477493,
+      "bbox": [
+        289.08,
+        133.75,
+        350.56,
+        311.73
+      ],
+      "bbox_ratio_wh": 1.12,
+      "expressions": [
+        "baby lying down",
+        "baby in blue",
+        "the little kid laying in bed"
+      ],
+      "posture_hint": "lying",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 577583,
+      "file_name": "COCO_train2014_000000577583.jpg",
+      "ann_id": 512572,
+      "bbox": [
+        0.0,
+        43.36,
+        240.57,
+        101.63
+      ],
+      "bbox_ratio_wh": 2.37,
+      "expressions": [
+        "person in white sleeping far away",
+        "sleeping guy in back",
+        "man sleeping top"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 421825,
+      "file_name": "COCO_train2014_000000421825.jpg",
+      "ann_id": 440482,
+      "bbox": [
+        232.08,
+        440.79,
+        199.73,
+        100.16
+      ],
+      "bbox_ratio_wh": 1.99,
+      "expressions": [
+        "baby in the crib",
+        "sleeping babby",
+        "in bed kid"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 13565,
+      "file_name": "COCO_train2014_000000013565.jpg",
+      "ann_id": 519746,
+      "bbox": [
+        5.33,
+        237.8,
+        422.93,
+        213.06
+      ],
+      "bbox_ratio_wh": 1.99,
+      "expressions": [
+        "man left",
+        "man sleeping",
+        "upside down guy"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 57810,
+      "file_name": "COCO_train2014_000000057810.jpg",
+      "ann_id": 514199,
+      "bbox": [
+        177.54,
+        176.86,
+        248.19,
+        142.4
+      ],
+      "bbox_ratio_wh": 1.74,
+      "expressions": [
+        "child asleep in colorful pajamas",
+        "ki",
+        "front kid face"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 527257,
+      "file_name": "COCO_train2014_000000527257.jpg",
+      "ann_id": 519449,
+      "bbox": [
+        0.0,
+        86.22,
+        412.58,
+        317.69
+      ],
+      "bbox_ratio_wh": 1.3,
+      "expressions": [
+        "sleepy boy",
+        "left",
+        "the boy sleeping on the left ps the teddy bear was correct"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 128665,
+      "file_name": "COCO_train2014_000000128665.jpg",
+      "ann_id": 475848,
+      "bbox": [
+        0.0,
+        100.5,
+        612.0,
+        504.25
+      ],
+      "bbox_ratio_wh": 1.21,
+      "expressions": [
+        "sleeping child",
+        "baby",
+        "baby"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 506701,
+      "file_name": "COCO_train2014_000000506701.jpg",
+      "ann_id": 2155317,
+      "bbox": [
+        59.58,
+        130.99,
+        325.13,
+        290.6
+      ],
+      "bbox_ratio_wh": 1.12,
+      "expressions": [
+        "left child",
+        "sleeping child",
+        "curly haired kid"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 440154,
+      "file_name": "COCO_train2014_000000440154.jpg",
+      "ann_id": 464526,
+      "bbox": [
+        173.07,
+        119.71,
+        232.1,
+        228.35
+      ],
+      "bbox_ratio_wh": 1.02,
+      "expressions": [
+        "half asleep granny in front middle",
+        "pink shirt woman front",
+        "the old woman looks pissed off in the front"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 545793,
+      "file_name": "COCO_train2014_000000545793.jpg",
+      "ann_id": 499692,
+      "bbox": [
+        139.45,
+        196.19,
+        229.85,
+        229.85
+      ],
+      "bbox_ratio_wh": 1.0,
+      "expressions": [
+        "the man",
+        "sleeping man on the left",
+        "guy with head down"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 493526,
+      "file_name": "COCO_train2014_000000493526.jpg",
+      "ann_id": 1189051,
+      "bbox": [
+        320.49,
+        86.2,
+        319.51,
+        340.8
+      ],
+      "bbox_ratio_wh": 0.94,
+      "expressions": [
+        "mans head",
+        "man sleeping under umbrella",
+        "right guy"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 277857,
+      "file_name": "COCO_train2014_000000277857.jpg",
+      "ann_id": 1706209,
+      "bbox": [
+        456.96,
+        43.38,
+        163.88,
+        200.52
+      ],
+      "bbox_ratio_wh": 0.82,
+      "expressions": [
+        "woman on right in red and black",
+        "girl on right",
+        "woman sleeping lol"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 33631,
+      "file_name": "COCO_train2014_000000033631.jpg",
+      "ann_id": 222600,
+      "bbox": [
+        94.04,
+        138.18,
+        192.87,
+        258.11
+      ],
+      "bbox_ratio_wh": 0.75,
+      "expressions": [
+        "guy in red",
+        "man in red wearing hat",
+        "passed out guy"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 459993,
+      "file_name": "COCO_train2014_000000459993.jpg",
+      "ann_id": 459774,
+      "bbox": [
+        66.16,
+        31.64,
+        362.84,
+        595.42
+      ],
+      "bbox_ratio_wh": 0.61,
+      "expressions": [
+        "baby",
+        "baby",
+        "a sleeping baby"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 230756,
+      "file_name": "COCO_train2014_000000230756.jpg",
+      "ann_id": 224507,
+      "bbox": [
+        205.9,
+        195.68,
+        164.71,
+        291.65
+      ],
+      "bbox_ratio_wh": 0.56,
+      "expressions": [
+        "man with white beard",
+        "old men sleeping",
+        "bald white bead guy"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    },
+    {
+      "image_id": 422279,
+      "file_name": "COCO_train2014_000000422279.jpg",
+      "ann_id": 444445,
+      "bbox": [
+        465.38,
+        3.68,
+        174.62,
+        419.32
+      ],
+      "bbox_ratio_wh": 0.42,
+      "expressions": [
+        "person on right",
+        "sleeping woman",
+        "woman"
+      ],
+      "posture_hint": "sleeping",
+      "posture_TO_ANNOTATE": ""
+    }
+  ]
+}
