@@ -2983,7 +2983,7 @@
         "bottom right corner of the photo"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 150435,
@@ -3002,7 +3002,7 @@
         "tank top guy leaning forward"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 167300,
@@ -3021,7 +3021,7 @@
         "the little kid laying in bed"
       ],
       "posture_hint": "lying",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 577583,
@@ -3040,7 +3040,7 @@
         "man sleeping top"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 421825,
@@ -3059,7 +3059,7 @@
         "in bed kid"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 13565,
@@ -3078,7 +3078,7 @@
         "upside down guy"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 57810,
