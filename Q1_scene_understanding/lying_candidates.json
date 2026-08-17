@@ -205,7 +205,7 @@
         "guy on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 190906,
@@ -223,7 +223,7 @@
         "right side bottom guy on groud"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 78977,
@@ -242,7 +242,7 @@
         "kid on ground blond"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 403473,
@@ -261,7 +261,7 @@
         "hands and knees"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 519218,
@@ -280,7 +280,7 @@
         "kid on ground left side"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 522827,
@@ -299,7 +299,7 @@
         "guy on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 456082,
@@ -318,7 +318,7 @@
         "knee on ground guy"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 132874,
@@ -3097,7 +3097,7 @@
         "front kid face"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 527257,
@@ -3116,7 +3116,7 @@
         "the boy sleeping on the left ps the teddy bear was correct"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 128665,
@@ -3135,7 +3135,7 @@
         "baby"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 506701,
@@ -3154,7 +3154,7 @@
         "curly haired kid"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 440154,
@@ -3173,7 +3173,7 @@
         "the old woman looks pissed off in the front"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 545793,
@@ -3192,7 +3192,7 @@
         "guy with head down"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 493526,
@@ -3211,7 +3211,7 @@
         "right guy"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 277857,
@@ -3230,7 +3230,7 @@
         "woman sleeping lol"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 33631,
@@ -3249,7 +3249,7 @@
         "passed out guy"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 459993,
@@ -3268,7 +3268,7 @@
         "a sleeping baby"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 230756,
@@ -3287,7 +3287,7 @@
         "bald white bead guy"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 422279,
@@ -3306,7 +3306,7 @@
         "woman"
       ],
       "posture_hint": "sleeping",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     }
   ]
 }
