@@ -321,25 +321,6 @@
       "posture_TO_ANNOTATE": "STANDING"
     },
     {
-      "image_id": 132874,
-      "file_name": "COCO_train2014_000000132874.jpg",
-      "ann_id": 442630,
-      "bbox": [
-        393.71,
-        88.27,
-        245.93,
-        189.84
-      ],
-      "bbox_ratio_wh": 1.3,
-      "expressions": [
-        "dark shadow right",
-        "shadow on right",
-        "black thing on ground right of top hot dog"
-      ],
-      "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
-    },
-    {
       "image_id": 16659,
       "file_name": "COCO_train2014_000000016659.jpg",
       "ann_id": 513756,
@@ -356,7 +337,7 @@
         "person on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 114801,
@@ -374,7 +355,7 @@
         "player on the ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 69197,
@@ -393,7 +374,7 @@
         "right person"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 377701,
@@ -412,7 +393,7 @@
         "boy in front on floor"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 522461,
@@ -430,7 +411,7 @@
         "person closest"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 184697,
@@ -449,7 +430,7 @@
         "man on left on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 378778,
@@ -468,7 +449,7 @@
         "puig"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 581839,
@@ -487,7 +468,7 @@
         "woman sitting on right"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 259060,
@@ -506,7 +487,7 @@
         "man with glasses"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 544109,
@@ -525,7 +506,7 @@
         "woman on floor in front of photo"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 429688,
@@ -544,7 +525,7 @@
         "white shirt middle"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 99336,
@@ -563,7 +544,7 @@
         "guy on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 419194,
@@ -582,7 +563,7 @@
         "sitting on ground right blue jeans legs out"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 97902,
@@ -601,7 +582,7 @@
         "guy"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 62392,
@@ -620,7 +601,7 @@
         "front girl"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 155268,
@@ -639,7 +620,7 @@
         "center person"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 427238,
@@ -658,7 +639,7 @@
         "chick on bed"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 318501,
@@ -677,7 +658,7 @@
         "person sitting"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 488676,
@@ -696,7 +677,7 @@
         "man in red shirt middle left"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 174399,
@@ -714,7 +695,7 @@
         "guy sitting grass"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 163553,
@@ -733,7 +714,7 @@
         "catcher"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 509626,
@@ -752,25 +733,7 @@
         "catcher sitting on ground"
       ],
       "posture_hint": "on_ground",
-      "posture_TO_ANNOTATE": ""
-    },
-    {
-      "image_id": 491249,
-      "file_name": "COCO_train2014_000000491249.jpg",
-      "ann_id": 2031382,
-      "bbox": [
-        132.78,
-        3.32,
-        326.41,
-        98.48
-      ],
-      "bbox_ratio_wh": 3.31,
-      "expressions": [
-        "person sitting top middle",
-        "space directly above the dish"
-      ],
-      "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 377570,
@@ -789,7 +752,7 @@
         "woman"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 190087,
@@ -808,7 +771,7 @@
         "girl in purple"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 31590,
@@ -826,7 +789,7 @@
         "man on right sitting"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 431207,
@@ -844,7 +807,7 @@
         "pink shirt girl"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 305224,
@@ -863,7 +826,7 @@
         "leg of person sitting on green chair in background"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 529240,
@@ -882,7 +845,7 @@
         "close guy"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 211388,
@@ -901,7 +864,7 @@
         "woman sitting"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 430067,
@@ -919,7 +882,7 @@
         "person sitting right corner"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 56677,
@@ -938,7 +901,7 @@
         "kid sitting"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 495931,
@@ -957,7 +920,7 @@
         "person under the umbrella"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 401313,
@@ -976,7 +939,7 @@
         "man sitting"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 133492,
@@ -995,26 +958,7 @@
         "douchebag with arms out"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
-    },
-    {
-      "image_id": 343655,
-      "file_name": "COCO_train2014_000000343655.jpg",
-      "ann_id": 433899,
-      "bbox": [
-        260.76,
-        1.07,
-        379.24,
-        265.53
-      ],
-      "bbox_ratio_wh": 1.43,
-      "expressions": [
-        "guys arm a little blurry on right",
-        "top right dude sitting",
-        "the arm not holding the sandwich"
-      ],
-      "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 234612,
@@ -1033,7 +977,7 @@
         "the male sitting in the chair in a white shirt holding a wine glass"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 154911,
@@ -1052,7 +996,7 @@
         "far left person seated"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 132386,
@@ -1070,7 +1014,7 @@
         "sitting woman with white skirt"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 468519,
