@@ -1280,7 +1280,7 @@
         "bigger kid in back"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 556569,
@@ -1299,7 +1299,7 @@
         "light green blue shirt sitting fromt"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 46170,
@@ -1318,7 +1318,7 @@
         "person in black shirt"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 324705,
@@ -1337,7 +1337,7 @@
         "on right"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 716,
@@ -1356,7 +1356,7 @@
         "right guy above child"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 409382,
@@ -1374,7 +1374,7 @@
         "guy on right sitting down"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 175480,
@@ -1393,7 +1393,7 @@
         "left child"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 113152,
@@ -1412,7 +1412,7 @@
         "man sitting on edge of pier"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 451707,
@@ -1431,7 +1431,7 @@
         "middle man"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 515550,
@@ -1450,7 +1450,7 @@
         "guy with glasses bending over at bottom"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 78553,
@@ -1469,7 +1469,7 @@
         "bottom left with glasses"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 122001,
@@ -1488,7 +1488,7 @@
         "customer"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 486899,
@@ -1507,7 +1507,7 @@
         "blue shirt behind child"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 551840,
@@ -1526,7 +1526,7 @@
         "right boy"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 126814,
@@ -1545,7 +1545,7 @@
         "kid up front in white shirt leaning"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 146645,
@@ -1564,7 +1564,7 @@
         "center woman in white"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 67200,
@@ -1583,7 +1583,7 @@
         "dude with hard hat on"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "LYING"
     },
     {
       "image_id": 180778,
@@ -1602,26 +1602,7 @@
         "girl leaning over looking at screen"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
-    },
-    {
-      "image_id": 427852,
-      "file_name": "COCO_train2014_000000427852.jpg",
-      "ann_id": 1718343,
-      "bbox": [
-        293.39,
-        0.0,
-        166.12,
-        122.97
-      ],
-      "bbox_ratio_wh": 1.35,
-      "expressions": [
-        "person at top leaning over",
-        "black shirt",
-        "blurry person middle back black shirt"
-      ],
-      "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 529309,
@@ -1640,7 +1621,7 @@
         "guy in blue"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 205202,
@@ -1658,7 +1639,7 @@
         "girl"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 502717,
@@ -1677,7 +1658,7 @@
         "plaid shirt"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 202855,
@@ -1696,7 +1677,7 @@
         "woman with elbows on the table"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 163281,
@@ -1715,7 +1696,7 @@
         "player falling"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 444344,
@@ -1734,7 +1715,7 @@
         "guy smiling leaning over pizza"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 284195,
@@ -1753,7 +1734,7 @@
         "front person"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 252069,
@@ -1772,7 +1753,7 @@
         "girl in pink"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 264165,
@@ -1791,7 +1772,7 @@
         "man"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 40911,
@@ -1810,7 +1791,7 @@
         "the chef in middle leaning over dish"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 500768,
@@ -1829,7 +1810,7 @@
         "guy with head on hands"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 41305,
@@ -1848,7 +1829,7 @@
         "gray shirt girlleaning over wok"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 318203,
@@ -1867,7 +1848,7 @@
         "man bending over"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 536054,
@@ -1886,7 +1867,7 @@
         "black object lower left corner"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 345844,
@@ -1905,7 +1886,7 @@
         "third guy from left to right"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 396460,
@@ -1924,7 +1905,7 @@
         "brown hair"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 128848,
@@ -1943,7 +1924,7 @@
         "man bendin on the left"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 535060,
@@ -1962,7 +1943,7 @@
         "man left bending over"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 519429,
@@ -1981,7 +1962,7 @@
         "man on left bending over"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 422100,
@@ -2000,7 +1981,7 @@
         "man in front on skateboard leaning"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 534772,
@@ -2019,7 +2000,7 @@
         "blue under bat"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 492967,
@@ -2038,7 +2019,7 @@
         "the ugly women"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 359098,
@@ -2057,7 +2038,7 @@
         "the girl on the rightcan see head and shoulder"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 300721,
@@ -2076,7 +2057,7 @@
         "right man"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 275775,
@@ -2095,7 +2076,7 @@
         "catcher"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 84801,
@@ -2114,7 +2095,7 @@
         "man bending over"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 563717,
@@ -2133,7 +2114,7 @@
         "catcher"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 409834,
@@ -2152,7 +2133,7 @@
         "brown jacket gray hair watch on wrist"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 328917,
@@ -2171,7 +2152,7 @@
         "left guy"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 304150,
@@ -2190,7 +2171,7 @@
         "lady leaning"
       ],
       "posture_hint": "bent",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 453979,
