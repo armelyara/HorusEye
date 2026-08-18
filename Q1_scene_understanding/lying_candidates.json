@@ -1033,7 +1033,7 @@
         "mans head nearest"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 577725,
@@ -1052,7 +1052,7 @@
         "seated man"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 213642,
@@ -1071,7 +1071,7 @@
         "person kneeling"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 570581,
@@ -1090,26 +1090,7 @@
         "hat bench guy"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
-    },
-    {
-      "image_id": 340171,
-      "file_name": "COCO_train2014_000000340171.jpg",
-      "ann_id": 500326,
-      "bbox": [
-        149.23,
-        0.44,
-        172.83,
-        134.21
-      ],
-      "bbox_ratio_wh": 1.29,
-      "expressions": [
-        "person sitting with legs crossed on the top in blue jeans",
-        "top center of photo crossed legs",
-        "the person up top in middle of screen with legs crossed"
-      ],
-      "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 215077,
@@ -1128,7 +1109,7 @@
         "guy baout to get hit in teh head witha bat"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 521070,
@@ -1147,7 +1128,7 @@
         "girl in pink sitting on bed"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 277775,
@@ -1166,7 +1147,7 @@
         "guy sitting"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 207447,
@@ -1185,7 +1166,7 @@
         "person wrapper up in chair"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 172392,
@@ -1204,7 +1185,7 @@
         "girl sitting"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 5294,
@@ -1223,7 +1204,7 @@
         "center legs"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 176403,
@@ -1242,7 +1223,7 @@
         "man on left sitted"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 477259,
@@ -1261,7 +1242,7 @@
         "first guy in pic"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "SITTING"
     },
     {
       "image_id": 186550,
@@ -1280,7 +1261,7 @@
         "back head infront"
       ],
       "posture_hint": "sitting",
-      "posture_TO_ANNOTATE": ""
+      "posture_TO_ANNOTATE": "STANDING"
     },
     {
       "image_id": 145139,
