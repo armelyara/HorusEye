@@ -1,0 +1,2657 @@
+{
+  "metadata": {
+    "description": "HorusEye Q1 level 2 - unified posture dataset",
+    "total": 220,
+    "distribution": {
+      "STANDING": 68,
+      "SITTING": 96,
+      "LYING": 56
+    },
+    "sources": {
+      "rq3_original": 50,
+      "lying_candidates": 170
+    }
+  },
+  "samples": [
+    {
+      "file_name": "000002.jpg",
+      "bbox": [
+        117.82,
+        300.49,
+        175.1,
+        180.51
+      ],
+      "posture": "STANDING",
+      "expression": "little girl",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000003.jpg",
+      "bbox": [
+        289.68,
+        110.25,
+        290.76,
+        365.35
+      ],
+      "posture": "STANDING",
+      "expression": "green woman",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000004.jpg",
+      "bbox": [
+        151.7,
+        173.83,
+        218.08,
+        434.57
+      ],
+      "posture": "SITTING",
+      "expression": "mom",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000005.jpg",
+      "bbox": [
+        160.0,
+        246.34,
+        110.89,
+        240.79
+      ],
+      "posture": "SITTING",
+      "expression": "child sitting on womans lap",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000006.jpg",
+      "bbox": [
+        0.0,
+        31.51,
+        318.49,
+        344.95
+      ],
+      "posture": "SITTING",
+      "expression": "left guy",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000007.jpg",
+      "bbox": [
+        213.48,
+        6.4,
+        138.21,
+        223.59
+      ],
+      "posture": "STANDING",
+      "expression": "lady on right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000008.jpg",
+      "bbox": [
+        31.2,
+        291.61,
+        167.04,
+        207.45
+      ],
+      "posture": "STANDING",
+      "expression": "bottom box left dude",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000009.jpg",
+      "bbox": [
+        38.2,
+        73.03,
+        162.92,
+        167.42
+      ],
+      "posture": "STANDING",
+      "expression": "woman in top picture on the left",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000010.jpg",
+      "bbox": [
+        115.21,
+        257.38,
+        256.79,
+        234.8
+      ],
+      "posture": "STANDING",
+      "expression": "bottom right guy",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000013.jpg",
+      "bbox": [
+        307.3,
+        25.54,
+        128.11,
+        310.54
+      ],
+      "posture": "STANDING",
+      "expression": "man standing",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000014.jpg",
+      "bbox": [
+        76.04,
+        88.18,
+        251.6,
+        266.97
+      ],
+      "posture": "SITTING",
+      "expression": "person in chair at left",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000015.jpg",
+      "bbox": [
+        145.23,
+        439.94,
+        192.67,
+        200.06
+      ],
+      "posture": "STANDING",
+      "expression": "gurl",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000016.jpg",
+      "bbox": [
+        331.97,
+        267.99,
+        94.03,
+        364.78
+      ],
+      "posture": "STANDING",
+      "expression": "woman in shorts",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000017.jpg",
+      "bbox": [
+        34.23,
+        120.46,
+        158.15,
+        247.86
+      ],
+      "posture": "SITTING",
+      "expression": "psn boy",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000018.jpg",
+      "bbox": [
+        382.61,
+        244.48,
+        241.15,
+        226.14
+      ],
+      "posture": "SITTING",
+      "expression": "boy in black shirt front right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000019.jpg",
+      "bbox": [
+        414.48,
+        116.27,
+        194.86,
+        144.26
+      ],
+      "posture": "SITTING",
+      "expression": "kid on right in back blondish hair",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000020.jpg",
+      "bbox": [
+        184.94,
+        91.28,
+        127.9,
+        181.84
+      ],
+      "posture": "SITTING",
+      "expression": "girl pink",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000021.jpg",
+      "bbox": [
+        0.0,
+        43.36,
+        240.57,
+        101.63
+      ],
+      "posture": "LYING",
+      "expression": "person in white sleeping far away",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000022.jpg",
+      "bbox": [
+        1.86,
+        110.71,
+        223.28,
+        245.61
+      ],
+      "posture": "LYING",
+      "expression": "lady on left laying on bed",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000025.jpg",
+      "bbox": [
+        95.0,
+        198.99,
+        155.18,
+        258.01
+      ],
+      "posture": "STANDING",
+      "expression": "left person with elbow bent",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000026.jpg",
+      "bbox": [
+        174.9,
+        129.43,
+        278.71,
+        321.59
+      ],
+      "posture": "STANDING",
+      "expression": "girl brushing teeth",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000031.jpg",
+      "bbox": [
+        545.04,
+        133.19,
+        94.96,
+        249.76
+      ],
+      "posture": "STANDING",
+      "expression": "man in black coat",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000032.jpg",
+      "bbox": [
+        341.94,
+        86.92,
+        166.3,
+        366.9
+      ],
+      "posture": "STANDING",
+      "expression": "hitter",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000033.jpg",
+      "bbox": [
+        0.0,
+        27.33,
+        247.37,
+        612.67
+      ],
+      "posture": "STANDING",
+      "expression": "u2 man on left",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000034.jpg",
+      "bbox": [
+        245.6,
+        122.08,
+        181.4,
+        515.75
+      ],
+      "posture": "STANDING",
+      "expression": "lady",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000035.jpg",
+      "bbox": [
+        73.71,
+        56.06,
+        260.59,
+        400.75
+      ],
+      "posture": "STANDING",
+      "expression": "woman on left",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000036.jpg",
+      "bbox": [
+        215.72,
+        14.94,
+        419.15,
+        447.06
+      ],
+      "posture": "STANDING",
+      "expression": "man right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000047.jpg",
+      "bbox": [
+        340.85,
+        86.29,
+        161.8,
+        273.98
+      ],
+      "posture": "STANDING",
+      "expression": "blue shirt",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000048.jpg",
+      "bbox": [
+        216.81,
+        104.9,
+        121.89,
+        358.11
+      ],
+      "posture": "STANDING",
+      "expression": "guy in middle of pic white shirt",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000049.jpg",
+      "bbox": [
+        431.46,
+        279.37,
+        202.79,
+        190.92
+      ],
+      "posture": "STANDING",
+      "expression": "back of head of person at the bottom",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000051.jpg",
+      "bbox": [
+        357.82,
+        109.41,
+        105.9,
+        302.3
+      ],
+      "posture": "STANDING",
+      "expression": "the batter",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000052.jpg",
+      "bbox": [
+        408.0,
+        190.91,
+        117.16,
+        184.7
+      ],
+      "posture": "SITTING",
+      "expression": "second person from right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000053.jpg",
+      "bbox": [
+        439.31,
+        211.02,
+        172.69,
+        259.72
+      ],
+      "posture": "SITTING",
+      "expression": "man on right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000055.jpg",
+      "bbox": [
+        9.19,
+        203.84,
+        269.19,
+        139.86
+      ],
+      "posture": "SITTING",
+      "expression": "man in jersey",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000059.jpg",
+      "bbox": [
+        0.0,
+        207.67,
+        166.41,
+        255.8
+      ],
+      "posture": "SITTING",
+      "expression": "far left guy",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000060.jpg",
+      "bbox": [
+        418.09,
+        390.58,
+        192.53,
+        154.03
+      ],
+      "posture": "SITTING",
+      "expression": "chair under the guy on the right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000066.jpg",
+      "bbox": [
+        152.33,
+        194.67,
+        137.72,
+        394.02
+      ],
+      "posture": "STANDING",
+      "expression": "pitcher",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000067.jpg",
+      "bbox": [
+        278.97,
+        132.64,
+        94.47,
+        213.67
+      ],
+      "posture": "STANDING",
+      "expression": "guy in back",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000072.jpg",
+      "bbox": [
+        529.76,
+        169.44,
+        88.61,
+        249.64
+      ],
+      "posture": "STANDING",
+      "expression": "guy far right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000098.jpg",
+      "bbox": [
+        82.71,
+        59.15,
+        377.95,
+        367.85
+      ],
+      "posture": "STANDING",
+      "expression": "woman",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000118.jpg",
+      "bbox": [
+        108.53,
+        204.95,
+        188.99,
+        163.7
+      ],
+      "posture": "SITTING",
+      "expression": "women sitting downs umbrella",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000127.jpg",
+      "bbox": [
+        347.2,
+        35.87,
+        146.89,
+        220.63
+      ],
+      "posture": "STANDING",
+      "expression": "guy near wall",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000131.jpg",
+      "bbox": [
+        342.56,
+        112.27,
+        163.12,
+        309.93
+      ],
+      "posture": "STANDING",
+      "expression": "heavy guy jeans hand out",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000143.jpg",
+      "bbox": [
+        429.76,
+        196.57,
+        134.84,
+        184.43
+      ],
+      "posture": "STANDING",
+      "expression": "guy on right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000144.jpg",
+      "bbox": [
+        22.72,
+        1.2,
+        138.99,
+        223.63
+      ],
+      "posture": "STANDING",
+      "expression": "mans head on the left with hat on",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000151.jpg",
+      "bbox": [
+        318.1,
+        0.0,
+        128.01,
+        341.01
+      ],
+      "posture": "STANDING",
+      "expression": "blue shirt sad man",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000173.jpg",
+      "bbox": [
+        248.39,
+        128.08,
+        197.76,
+        204.92
+      ],
+      "posture": "STANDING",
+      "expression": "the mans hair on right",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000200.jpg",
+      "bbox": [
+        204.03,
+        67.3,
+        264.79,
+        289.56
+      ],
+      "posture": "SITTING",
+      "expression": "elephant driver",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000211.jpg",
+      "bbox": [
+        399.65,
+        197.99,
+        189.67,
+        194.45
+      ],
+      "posture": "SITTING",
+      "expression": "white shirt not facing us",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "000215.jpg",
+      "bbox": [
+        108.88,
+        17.72,
+        275.37,
+        408.28
+      ],
+      "posture": "STANDING",
+      "expression": "yeah haha number 33",
+      "source": "rq3_original_50"
+    },
+    {
+      "file_name": "COCO_train2014_000000095676.jpg",
+      "bbox": [
+        37.59,
+        238.8,
+        385.55,
+        135.91
+      ],
+      "posture": "LYING",
+      "expression": "player sliding",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000018930.jpg",
+      "bbox": [
+        73.51,
+        525.41,
+        301.26,
+        108.1
+      ],
+      "posture": "LYING",
+      "expression": "guy underneath that is falling",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000552116.jpg",
+      "bbox": [
+        76.58,
+        212.98,
+        279.5,
+        100.51
+      ],
+      "posture": "LYING",
+      "expression": "man on ground in black and yellow",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000392657.jpg",
+      "bbox": [
+        0.96,
+        150.71,
+        424.12,
+        166.97
+      ],
+      "posture": "LYING",
+      "expression": "blue pj boy",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000423234.jpg",
+      "bbox": [
+        140.3,
+        215.68,
+        293.72,
+        124.15
+      ],
+      "posture": "LYING",
+      "expression": "man on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000537579.jpg",
+      "bbox": [
+        298.39,
+        166.15,
+        323.67,
+        138.9
+      ],
+      "posture": "LYING",
+      "expression": "the player sliding on the ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000517869.jpg",
+      "bbox": [
+        19.15,
+        246.05,
+        282.43,
+        124.46
+      ],
+      "posture": "SITTING",
+      "expression": "person on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000068252.jpg",
+      "bbox": [
+        176.93,
+        212.07,
+        345.91,
+        155.42
+      ],
+      "posture": "LYING",
+      "expression": "man in red hat",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000332273.jpg",
+      "bbox": [
+        17.87,
+        365.05,
+        368.88,
+        177.42
+      ],
+      "posture": "LYING",
+      "expression": "guy on ground span",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000298721.jpg",
+      "bbox": [
+        1.28,
+        270.6,
+        573.1,
+        288.47
+      ],
+      "posture": "LYING",
+      "expression": "girl on floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000225925.jpg",
+      "bbox": [
+        51.27,
+        167.44,
+        230.5,
+        128.61
+      ],
+      "posture": "LYING",
+      "expression": "guy sliding",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000190906.jpg",
+      "bbox": [
+        205.06,
+        444.29,
+        255.93,
+        160.03
+      ],
+      "posture": "SITTING",
+      "expression": "guy on ground right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000078977.jpg",
+      "bbox": [
+        104.87,
+        187.16,
+        229.02,
+        145.97
+      ],
+      "posture": "SITTING",
+      "expression": "red shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000403473.jpg",
+      "bbox": [
+        348.84,
+        203.78,
+        291.16,
+        187.77
+      ],
+      "posture": "LYING",
+      "expression": "kid on the floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000519218.jpg",
+      "bbox": [
+        144.14,
+        278.31,
+        150.37,
+        99.95
+      ],
+      "posture": "LYING",
+      "expression": "the last person that would get landed on",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000522827.jpg",
+      "bbox": [
+        94.29,
+        128.37,
+        363.52,
+        266.96
+      ],
+      "posture": "SITTING",
+      "expression": "guy crouching",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000456082.jpg",
+      "bbox": [
+        47.58,
+        202.49,
+        269.98,
+        200.27
+      ],
+      "posture": "STANDING",
+      "expression": "on left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000016659.jpg",
+      "bbox": [
+        127.11,
+        177.96,
+        202.51,
+        155.28
+      ],
+      "posture": "LYING",
+      "expression": "man on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000114801.jpg",
+      "bbox": [
+        279.53,
+        184.28,
+        189.13,
+        150.78
+      ],
+      "posture": "LYING",
+      "expression": "sliding into the base",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000069197.jpg",
+      "bbox": [
+        416.51,
+        131.14,
+        173.68,
+        139.75
+      ],
+      "posture": "LYING",
+      "expression": "person on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000377701.jpg",
+      "bbox": [
+        151.75,
+        329.33,
+        178.65,
+        145.29
+      ],
+      "posture": "SITTING",
+      "expression": "boy with brown hair",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000522461.jpg",
+      "bbox": [
+        119.17,
+        231.87,
+        288.86,
+        238.34
+      ],
+      "posture": "SITTING",
+      "expression": "the girl that is on the floor in all white",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000184697.jpg",
+      "bbox": [
+        0.32,
+        197.34,
+        174.12,
+        145.21
+      ],
+      "posture": "STANDING",
+      "expression": "man falling in red",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000378778.jpg",
+      "bbox": [
+        293.47,
+        188.66,
+        198.18,
+        169.6
+      ],
+      "posture": "SITTING",
+      "expression": "player on the floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000581839.jpg",
+      "bbox": [
+        114.57,
+        237.84,
+        206.26,
+        179.65
+      ],
+      "posture": "SITTING",
+      "expression": "lady sitting on right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000259060.jpg",
+      "bbox": [
+        278.56,
+        160.73,
+        187.0,
+        167.71
+      ],
+      "posture": "SITTING",
+      "expression": "guy on floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000544109.jpg",
+      "bbox": [
+        296.5,
+        197.82,
+        249.32,
+        228.36
+      ],
+      "posture": "SITTING",
+      "expression": "woman sitting on floor with legs apart",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000429688.jpg",
+      "bbox": [
+        77.05,
+        365.67,
+        251.62,
+        233.81
+      ],
+      "posture": "SITTING",
+      "expression": "boy on the ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000099336.jpg",
+      "bbox": [
+        98.37,
+        217.59,
+        215.84,
+        199.61
+      ],
+      "posture": "LYING",
+      "expression": "person on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000419194.jpg",
+      "bbox": [
+        414.54,
+        2.89,
+        212.09,
+        197.63
+      ],
+      "posture": "SITTING",
+      "expression": "guy sitting in jeans",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000097902.jpg",
+      "bbox": [
+        11.28,
+        85.58,
+        306.03,
+        289.2
+      ],
+      "posture": "SITTING",
+      "expression": "man on the couch",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000062392.jpg",
+      "bbox": [
+        112.18,
+        391.19,
+        247.37,
+        235.87
+      ],
+      "posture": "SITTING",
+      "expression": "girl on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000155268.jpg",
+      "bbox": [
+        146.14,
+        129.52,
+        302.78,
+        296.48
+      ],
+      "posture": "SITTING",
+      "expression": "lady on floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000427238.jpg",
+      "bbox": [
+        30.95,
+        301.01,
+        175.82,
+        174.42
+      ],
+      "posture": "SITTING",
+      "expression": "girl sitting to the left slumped on the bed",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000318501.jpg",
+      "bbox": [
+        158.2,
+        339.42,
+        291.96,
+        293.39
+      ],
+      "posture": "SITTING",
+      "expression": "blue",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000488676.jpg",
+      "bbox": [
+        110.71,
+        26.84,
+        283.06,
+        287.31
+      ],
+      "posture": "STANDING",
+      "expression": "kid feet not on ground",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000174399.jpg",
+      "bbox": [
+        223.69,
+        207.64,
+        177.43,
+        179.33
+      ],
+      "posture": "SITTING",
+      "expression": "person in white on the floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000163553.jpg",
+      "bbox": [
+        453.95,
+        169.06,
+        186.05,
+        189.36
+      ],
+      "posture": "STANDING",
+      "expression": "catcher",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000509626.jpg",
+      "bbox": [
+        349.65,
+        237.29,
+        178.92,
+        184.03
+      ],
+      "posture": "SITTING",
+      "expression": "player sitting",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000377570.jpg",
+      "bbox": [
+        35.72,
+        183.07,
+        568.19,
+        291.35
+      ],
+      "posture": "SITTING",
+      "expression": "woman sitting in a chair",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000190087.jpg",
+      "bbox": [
+        11.14,
+        137.36,
+        320.19,
+        169.84
+      ],
+      "posture": "SITTING",
+      "expression": "weird but theyre both boxed",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000031590.jpg",
+      "bbox": [
+        365.47,
+        282.81,
+        258.38,
+        143.81
+      ],
+      "posture": "SITTING",
+      "expression": "man on bottom right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000431207.jpg",
+      "bbox": [
+        0.0,
+        57.09,
+        640.0,
+        372.3
+      ],
+      "posture": "SITTING",
+      "expression": "everybody sitting down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000305224.jpg",
+      "bbox": [
+        231.57,
+        0.75,
+        250.68,
+        146.14
+      ],
+      "posture": "SITTING",
+      "expression": "the leg at very top of pic",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000529240.jpg",
+      "bbox": [
+        264.25,
+        273.06,
+        245.53,
+        146.43
+      ],
+      "posture": "STANDING",
+      "expression": "a guy has his baack towards the camera",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000211388.jpg",
+      "bbox": [
+        260.63,
+        450.7,
+        164.38,
+        98.04
+      ],
+      "posture": "SITTING",
+      "expression": "girl",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000430067.jpg",
+      "bbox": [
+        412.02,
+        0.0,
+        187.38,
+        112.89
+      ],
+      "posture": "SITTING",
+      "expression": "person behind the one holding napkins onright",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000056677.jpg",
+      "bbox": [
+        85.0,
+        268.27,
+        200.1,
+        121.3
+      ],
+      "posture": "SITTING",
+      "expression": "the young child on the left sitting near the old person",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000495931.jpg",
+      "bbox": [
+        147.71,
+        372.72,
+        186.66,
+        115.4
+      ],
+      "posture": "SITTING",
+      "expression": "person sitting",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000401313.jpg",
+      "bbox": [
+        0.0,
+        0.0,
+        640.0,
+        397.25
+      ],
+      "posture": "SITTING",
+      "expression": "man",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000133492.jpg",
+      "bbox": [
+        91.65,
+        175.39,
+        237.11,
+        153.03
+      ],
+      "posture": "SITTING",
+      "expression": "a soccer player wearing white",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000234612.jpg",
+      "bbox": [
+        363.51,
+        195.24,
+        276.49,
+        196.31
+      ],
+      "posture": "SITTING",
+      "expression": "man right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000154911.jpg",
+      "bbox": [
+        7.55,
+        244.85,
+        271.82,
+        194.16
+      ],
+      "posture": "SITTING",
+      "expression": "man in black bending over left side",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000132386.jpg",
+      "bbox": [
+        201.12,
+        163.51,
+        220.9,
+        159.78
+      ],
+      "posture": "SITTING",
+      "expression": "woman on right with legs straight out in front of her",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000468519.jpg",
+      "bbox": [
+        212.36,
+        160.32,
+        287.64,
+        211.52
+      ],
+      "posture": "SITTING",
+      "expression": "man sitting in the bottom right corner with the maroon hat",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000577725.jpg",
+      "bbox": [
+        239.33,
+        169.44,
+        264.21,
+        197.21
+      ],
+      "posture": "SITTING",
+      "expression": "main guy on the tv",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000213642.jpg",
+      "bbox": [
+        178.49,
+        388.2,
+        216.77,
+        163.18
+      ],
+      "posture": "STANDING",
+      "expression": "person in middle",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000570581.jpg",
+      "bbox": [
+        56.48,
+        14.36,
+        244.11,
+        187.63
+      ],
+      "posture": "SITTING",
+      "expression": "dude back on bench",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000215077.jpg",
+      "bbox": [
+        379.7,
+        178.47,
+        229.28,
+        177.25
+      ],
+      "posture": "STANDING",
+      "expression": "person with white floppy hat",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000521070.jpg",
+      "bbox": [
+        307.19,
+        31.68,
+        190.96,
+        149.36
+      ],
+      "posture": "SITTING",
+      "expression": "girl sitting",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000277775.jpg",
+      "bbox": [
+        324.3,
+        267.97,
+        257.71,
+        205.69
+      ],
+      "posture": "SITTING",
+      "expression": "bottom right guy",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000207447.jpg",
+      "bbox": [
+        243.51,
+        110.02,
+        255.64,
+        204.68
+      ],
+      "posture": "SITTING",
+      "expression": "the old woman sitting down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000172392.jpg",
+      "bbox": [
+        409.32,
+        328.57,
+        188.86,
+        151.43
+      ],
+      "posture": "SITTING",
+      "expression": "person sitting",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000005294.jpg",
+      "bbox": [
+        144.78,
+        95.59,
+        280.29,
+        226.46
+      ],
+      "posture": "SITTING",
+      "expression": "middle man legs crossed",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000176403.jpg",
+      "bbox": [
+        0.0,
+        268.32,
+        195.23,
+        158.68
+      ],
+      "posture": "SITTING",
+      "expression": "black guy blue shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000477259.jpg",
+      "bbox": [
+        75.51,
+        52.85,
+        448.38,
+        367.64
+      ],
+      "posture": "SITTING",
+      "expression": "sitting guy nearest",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000186550.jpg",
+      "bbox": [
+        159.79,
+        464.47,
+        214.43,
+        175.53
+      ],
+      "posture": "STANDING",
+      "expression": "boys head at bottom",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000145139.jpg",
+      "bbox": [
+        45.48,
+        240.47,
+        245.62,
+        200.83
+      ],
+      "posture": "SITTING",
+      "expression": "girl sitting in back",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000556569.jpg",
+      "bbox": [
+        185.64,
+        266.64,
+        166.25,
+        138.54
+      ],
+      "posture": "SITTING",
+      "expression": "blueh shirt bottom",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000046170.jpg",
+      "bbox": [
+        200.27,
+        299.32,
+        210.07,
+        175.24
+      ],
+      "posture": "SITTING",
+      "expression": "sitting girl",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000324705.jpg",
+      "bbox": [
+        308.04,
+        161.1,
+        314.8,
+        264.9
+      ],
+      "posture": "SITTING",
+      "expression": "guy sitting at bottom right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000000716.jpg",
+      "bbox": [
+        407.6,
+        133.24,
+        226.67,
+        190.33
+      ],
+      "posture": "SITTING",
+      "expression": "man on right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000409382.jpg",
+      "bbox": [
+        309.44,
+        367.2,
+        154.03,
+        130.65
+      ],
+      "posture": "SITTING",
+      "expression": "right bottom person",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000175480.jpg",
+      "bbox": [
+        0.0,
+        108.46,
+        216.93,
+        187.5
+      ],
+      "posture": "SITTING",
+      "expression": "child sitting on left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000113152.jpg",
+      "bbox": [
+        182.86,
+        8.44,
+        155.1,
+        133.87
+      ],
+      "posture": "SITTING",
+      "expression": "rock next to left side of his head",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000451707.jpg",
+      "bbox": [
+        147.29,
+        137.58,
+        175.16,
+        151.81
+      ],
+      "posture": "SITTING",
+      "expression": "second man from right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000515550.jpg",
+      "bbox": [
+        243.22,
+        329.55,
+        269.04,
+        97.45
+      ],
+      "posture": "STANDING",
+      "expression": "man at bottom with black shirt and glasses",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000078553.jpg",
+      "bbox": [
+        1.92,
+        332.96,
+        202.46,
+        89.24
+      ],
+      "posture": "STANDING",
+      "expression": "person on left leaning over only partially visible",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000122001.jpg",
+      "bbox": [
+        48.03,
+        180.92,
+        369.95,
+        187.08
+      ],
+      "posture": "SITTING",
+      "expression": "woman leaning back",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000486899.jpg",
+      "bbox": [
+        133.28,
+        332.27,
+        209.49,
+        117.57
+      ],
+      "posture": "STANDING",
+      "expression": "guy ducking down oldman",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000551840.jpg",
+      "bbox": [
+        366.14,
+        133.02,
+        273.13,
+        182.09
+      ],
+      "posture": "STANDING",
+      "expression": "guy leaning over",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000126814.jpg",
+      "bbox": [
+        276.13,
+        298.79,
+        193.08,
+        135.91
+      ],
+      "posture": "SITTING",
+      "expression": "boy in the white shirt in front tilting head",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000146645.jpg",
+      "bbox": [
+        139.15,
+        64.72,
+        335.46,
+        238.38
+      ],
+      "posture": "SITTING",
+      "expression": "lady reaching",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000067200.jpg",
+      "bbox": [
+        64.56,
+        214.17,
+        306.39,
+        220.31
+      ],
+      "posture": "LYING",
+      "expression": "guy on the bottom",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000180778.jpg",
+      "bbox": [
+        337.73,
+        104.39,
+        164.01,
+        120.85
+      ],
+      "posture": "SITTING",
+      "expression": "girl in white",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000529309.jpg",
+      "bbox": [
+        83.29,
+        10.37,
+        423.12,
+        319.74
+      ],
+      "posture": "STANDING",
+      "expression": "man bending over",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000205202.jpg",
+      "bbox": [
+        271.74,
+        116.59,
+        278.17,
+        220.82
+      ],
+      "posture": "SITTING",
+      "expression": "girl leaning",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000502717.jpg",
+      "bbox": [
+        252.36,
+        111.31,
+        387.64,
+        309.93
+      ],
+      "posture": "STANDING",
+      "expression": "plaid shirt right corner",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000202855.jpg",
+      "bbox": [
+        93.84,
+        57.17,
+        232.99,
+        188.76
+      ],
+      "posture": "STANDING",
+      "expression": "elbows on table",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000163281.jpg",
+      "bbox": [
+        224.0,
+        168.1,
+        296.0,
+        244.0
+      ],
+      "posture": "STANDING",
+      "expression": "falling kid",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000444344.jpg",
+      "bbox": [
+        344.66,
+        45.2,
+        168.7,
+        141.26
+      ],
+      "posture": "SITTING",
+      "expression": "boy gon na eat the pizza",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000284195.jpg",
+      "bbox": [
+        295.91,
+        273.22,
+        183.17,
+        153.78
+      ],
+      "posture": "STANDING",
+      "expression": "bending person in center",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000252069.jpg",
+      "bbox": [
+        0.06,
+        34.59,
+        251.44,
+        211.58
+      ],
+      "posture": "STANDING",
+      "expression": "bending over to help",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000264165.jpg",
+      "bbox": [
+        34.01,
+        58.21,
+        388.82,
+        336.88
+      ],
+      "posture": "STANDING",
+      "expression": "guy",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000040911.jpg",
+      "bbox": [
+        279.32,
+        151.25,
+        261.65,
+        228.91
+      ],
+      "posture": "STANDING",
+      "expression": "person cooking on right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000500768.jpg",
+      "bbox": [
+        231.55,
+        151.21,
+        307.93,
+        275.44
+      ],
+      "posture": "SITTING",
+      "expression": "guy leaning on elbows",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000041305.jpg",
+      "bbox": [
+        247.01,
+        106.79,
+        201.71,
+        182.29
+      ],
+      "posture": "SITTING",
+      "expression": "girl grabbing food",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000318203.jpg",
+      "bbox": [
+        205.1,
+        89.23,
+        413.42,
+        383.36
+      ],
+      "posture": "STANDING",
+      "expression": "man not in mirroe",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000536054.jpg",
+      "bbox": [
+        0.0,
+        244.85,
+        216.81,
+        202.79
+      ],
+      "posture": "SITTING",
+      "expression": "legs on left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000345844.jpg",
+      "bbox": [
+        267.29,
+        65.44,
+        280.6,
+        262.85
+      ],
+      "posture": "SITTING",
+      "expression": "blurry guy leaning forward",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000396460.jpg",
+      "bbox": [
+        468.31,
+        271.84,
+        171.69,
+        162.56
+      ],
+      "posture": "STANDING",
+      "expression": "person on right leaning forward red patch",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000128848.jpg",
+      "bbox": [
+        1.08,
+        203.87,
+        283.68,
+        269.66
+      ],
+      "posture": "SITTING",
+      "expression": "man on left in white shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000535060.jpg",
+      "bbox": [
+        0.0,
+        97.6,
+        243.64,
+        234.4
+      ],
+      "posture": "STANDING",
+      "expression": "man bending over",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000519429.jpg",
+      "bbox": [
+        3.23,
+        51.98,
+        303.53,
+        298.17
+      ],
+      "posture": "STANDING",
+      "expression": "bending man on left with white shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000422100.jpg",
+      "bbox": [
+        136.24,
+        30.22,
+        300.31,
+        294.56
+      ],
+      "posture": "STANDING",
+      "expression": "guy about to faceplant",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000534772.jpg",
+      "bbox": [
+        51.58,
+        250.02,
+        159.24,
+        158.98
+      ],
+      "posture": "SITTING",
+      "expression": "person in blue hunched over",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000492967.jpg",
+      "bbox": [
+        281.15,
+        62.37,
+        358.85,
+        359.83
+      ],
+      "posture": "STANDING",
+      "expression": "woman leaning in from right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000359098.jpg",
+      "bbox": [
+        466.01,
+        162.08,
+        171.12,
+        171.12
+      ],
+      "posture": "SITTING",
+      "expression": "peron bending over in back pink shirt red hat",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000300721.jpg",
+      "bbox": [
+        233.17,
+        14.39,
+        406.83,
+        407.81
+      ],
+      "posture": "STANDING",
+      "expression": "dude bending",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000275775.jpg",
+      "bbox": [
+        362.57,
+        186.09,
+        156.75,
+        156.76
+      ],
+      "posture": "SITTING",
+      "expression": "yeah catcher",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000084801.jpg",
+      "bbox": [
+        339.85,
+        137.35,
+        268.04,
+        268.05
+      ],
+      "posture": "STANDING",
+      "expression": "dat ass",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000563717.jpg",
+      "bbox": [
+        384.0,
+        211.69,
+        155.33,
+        157.48
+      ],
+      "posture": "SITTING",
+      "expression": "catcher",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000409834.jpg",
+      "bbox": [
+        296.73,
+        126.99,
+        194.99,
+        196.05
+      ],
+      "posture": "STANDING",
+      "expression": "the man in black suit",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000328917.jpg",
+      "bbox": [
+        1.07,
+        0.1,
+        317.86,
+        321.08
+      ],
+      "posture": "STANDING",
+      "expression": "man in jeans bending down by little boy",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000304150.jpg",
+      "bbox": [
+        81.08,
+        118.38,
+        185.95,
+        187.03
+      ],
+      "posture": "SITTING",
+      "expression": "lady next to man left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000453979.jpg",
+      "bbox": [
+        11.95,
+        286.76,
+        425.54,
+        82.72
+      ],
+      "posture": "LYING",
+      "expression": "person laying down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000380900.jpg",
+      "bbox": [
+        15.93,
+        280.08,
+        432.63,
+        85.1
+      ],
+      "posture": "LYING",
+      "expression": "man",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000148422.jpg",
+      "bbox": [
+        20.2,
+        243.13,
+        432.57,
+        107.94
+      ],
+      "posture": "LYING",
+      "expression": "person laying down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000480939.jpg",
+      "bbox": [
+        14.69,
+        155.51,
+        330.83,
+        85.7
+      ],
+      "posture": "LYING",
+      "expression": "girl",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000219200.jpg",
+      "bbox": [
+        0.96,
+        123.49,
+        608.35,
+        193.83
+      ],
+      "posture": "LYING",
+      "expression": "laying down guy",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000422804.jpg",
+      "bbox": [
+        0.0,
+        16.18,
+        435.78,
+        140.22
+      ],
+      "posture": "LYING",
+      "expression": "doll on top of clocok",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000386211.jpg",
+      "bbox": [
+        206.08,
+        122.3,
+        293.92,
+        101.92
+      ],
+      "posture": "LYING",
+      "expression": "girl laying down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000278371.jpg",
+      "bbox": [
+        45.16,
+        155.86,
+        511.55,
+        182.49
+      ],
+      "posture": "LYING",
+      "expression": "person on stretcher",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000407400.jpg",
+      "bbox": [
+        2.27,
+        117.04,
+        475.7,
+        176.69
+      ],
+      "posture": "LYING",
+      "expression": "guy laying down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000515815.jpg",
+      "bbox": [
+        34.61,
+        219.06,
+        275.39,
+        103.04
+      ],
+      "posture": "LYING",
+      "expression": "no picture",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000182728.jpg",
+      "bbox": [
+        92.12,
+        146.65,
+        336.8,
+        127.62
+      ],
+      "posture": "LYING",
+      "expression": "kid",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000279588.jpg",
+      "bbox": [
+        0.33,
+        251.28,
+        294.21,
+        119.17
+      ],
+      "posture": "LYING",
+      "expression": "man laying down in black shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000545841.jpg",
+      "bbox": [
+        72.87,
+        269.07,
+        458.64,
+        192.89
+      ],
+      "posture": "LYING",
+      "expression": "girl laying",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000220109.jpg",
+      "bbox": [
+        199.13,
+        232.51,
+        440.69,
+        193.49
+      ],
+      "posture": "LYING",
+      "expression": "person with hat",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000430345.jpg",
+      "bbox": [
+        234.13,
+        119.94,
+        259.08,
+        123.79
+      ],
+      "posture": "LYING",
+      "expression": "girl being carried",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000116723.jpg",
+      "bbox": [
+        264.47,
+        157.24,
+        334.68,
+        163.49
+      ],
+      "posture": "LYING",
+      "expression": "woman lying on board",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000231019.jpg",
+      "bbox": [
+        174.76,
+        245.42,
+        353.33,
+        178.58
+      ],
+      "posture": "LYING",
+      "expression": "man laying flat on bed",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000449291.jpg",
+      "bbox": [
+        254.56,
+        359.26,
+        223.28,
+        113.26
+      ],
+      "posture": "LYING",
+      "expression": "child laying on the floor",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000100579.jpg",
+      "bbox": [
+        279.73,
+        209.71,
+        218.77,
+        114.28
+      ],
+      "posture": "LYING",
+      "expression": "person with legs up",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000042804.jpg",
+      "bbox": [
+        381.0,
+        212.39,
+        257.47,
+        135.69
+      ],
+      "posture": "LYING",
+      "expression": "girl in black right side on top of purple girl",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000222251.jpg",
+      "bbox": [
+        418.36,
+        218.78,
+        196.71,
+        106.51
+      ],
+      "posture": "LYING",
+      "expression": "girl in green shirt layin",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000394620.jpg",
+      "bbox": [
+        3.37,
+        88.48,
+        296.63,
+        168.54
+      ],
+      "posture": "LYING",
+      "expression": "dude",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000475120.jpg",
+      "bbox": [
+        332.59,
+        225.16,
+        224.45,
+        135.69
+      ],
+      "posture": "LYING",
+      "expression": "guy lying on right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000097913.jpg",
+      "bbox": [
+        0.0,
+        272.14,
+        306.22,
+        187.05
+      ],
+      "posture": "LYING",
+      "expression": "kid laying left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000179823.jpg",
+      "bbox": [
+        195.07,
+        265.16,
+        264.96,
+        163.74
+      ],
+      "posture": "LYING",
+      "expression": "man laying down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000102667.jpg",
+      "bbox": [
+        393.45,
+        205.82,
+        202.95,
+        132.11
+      ],
+      "posture": "SITTING",
+      "expression": "right man blue white",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000324261.jpg",
+      "bbox": [
+        29.16,
+        224.15,
+        307.79,
+        203.51
+      ],
+      "posture": "SITTING",
+      "expression": "legs lying on bed",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000215081.jpg",
+      "bbox": [
+        429.76,
+        207.58,
+        208.7,
+        140.26
+      ],
+      "posture": "STANDING",
+      "expression": "man lying down wearing a purple shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000005508.jpg",
+      "bbox": [
+        103.55,
+        229.75,
+        320.36,
+        214.65
+      ],
+      "posture": "SITTING",
+      "expression": "girl with arm out",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000218237.jpg",
+      "bbox": [
+        126.2,
+        142.38,
+        487.55,
+        331.15
+      ],
+      "posture": "SITTING",
+      "expression": "guy with shirt",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000507875.jpg",
+      "bbox": [
+        231.39,
+        192.77,
+        248.61,
+        169.94
+      ],
+      "posture": "LYING",
+      "expression": "legs on top bunk",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000489845.jpg",
+      "bbox": [
+        0.31,
+        293.27,
+        194.85,
+        136.73
+      ],
+      "posture": "LYING",
+      "expression": "kid on the left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000271011.jpg",
+      "bbox": [
+        144.86,
+        167.98,
+        270.56,
+        194.92
+      ],
+      "posture": "SITTING",
+      "expression": "man laying second to left black helmet",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000086654.jpg",
+      "bbox": [
+        74.54,
+        44.66,
+        357.49,
+        259.84
+      ],
+      "posture": "SITTING",
+      "expression": "child on left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000455719.jpg",
+      "bbox": [
+        0.0,
+        329.07,
+        279.57,
+        222.53
+      ],
+      "posture": "SITTING",
+      "expression": "lady laying down on left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000232351.jpg",
+      "bbox": [
+        189.99,
+        83.48,
+        418.37,
+        338.72
+      ],
+      "posture": "STANDING",
+      "expression": "girl",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000290658.jpg",
+      "bbox": [
+        228.88,
+        155.74,
+        215.26,
+        177.88
+      ],
+      "posture": "SITTING",
+      "expression": "the kid",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000144353.jpg",
+      "bbox": [
+        502.18,
+        313.11,
+        137.82,
+        113.89
+      ],
+      "posture": "STANDING",
+      "expression": "cap bottom right",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000150435.jpg",
+      "bbox": [
+        202.95,
+        221.14,
+        184.76,
+        161.78
+      ],
+      "posture": "STANDING",
+      "expression": "young person with glasses",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000167300.jpg",
+      "bbox": [
+        289.08,
+        133.75,
+        350.56,
+        311.73
+      ],
+      "posture": "LYING",
+      "expression": "baby lying down",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000577583.jpg",
+      "bbox": [
+        0.0,
+        43.36,
+        240.57,
+        101.63
+      ],
+      "posture": "LYING",
+      "expression": "person in white sleeping far away",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000421825.jpg",
+      "bbox": [
+        232.08,
+        440.79,
+        199.73,
+        100.16
+      ],
+      "posture": "LYING",
+      "expression": "baby in the crib",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000013565.jpg",
+      "bbox": [
+        5.33,
+        237.8,
+        422.93,
+        213.06
+      ],
+      "posture": "LYING",
+      "expression": "man left",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000057810.jpg",
+      "bbox": [
+        177.54,
+        176.86,
+        248.19,
+        142.4
+      ],
+      "posture": "LYING",
+      "expression": "child asleep in colorful pajamas",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000527257.jpg",
+      "bbox": [
+        0.0,
+        86.22,
+        412.58,
+        317.69
+      ],
+      "posture": "LYING",
+      "expression": "sleepy boy",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000128665.jpg",
+      "bbox": [
+        0.0,
+        100.5,
+        612.0,
+        504.25
+      ],
+      "posture": "LYING",
+      "expression": "sleeping child",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000506701.jpg",
+      "bbox": [
+        59.58,
+        130.99,
+        325.13,
+        290.6
+      ],
+      "posture": "LYING",
+      "expression": "left child",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000440154.jpg",
+      "bbox": [
+        173.07,
+        119.71,
+        232.1,
+        228.35
+      ],
+      "posture": "SITTING",
+      "expression": "half asleep granny in front middle",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000545793.jpg",
+      "bbox": [
+        139.45,
+        196.19,
+        229.85,
+        229.85
+      ],
+      "posture": "SITTING",
+      "expression": "the man",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000493526.jpg",
+      "bbox": [
+        320.49,
+        86.2,
+        319.51,
+        340.8
+      ],
+      "posture": "LYING",
+      "expression": "mans head",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000277857.jpg",
+      "bbox": [
+        456.96,
+        43.38,
+        163.88,
+        200.52
+      ],
+      "posture": "LYING",
+      "expression": "woman on right in red and black",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000033631.jpg",
+      "bbox": [
+        94.04,
+        138.18,
+        192.87,
+        258.11
+      ],
+      "posture": "SITTING",
+      "expression": "guy in red",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000459993.jpg",
+      "bbox": [
+        66.16,
+        31.64,
+        362.84,
+        595.42
+      ],
+      "posture": "STANDING",
+      "expression": "baby",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000230756.jpg",
+      "bbox": [
+        205.9,
+        195.68,
+        164.71,
+        291.65
+      ],
+      "posture": "STANDING",
+      "expression": "man with white beard",
+      "source": "lying_candidates_170"
+    },
+    {
+      "file_name": "COCO_train2014_000000422279.jpg",
+      "bbox": [
+        465.38,
+        3.68,
+        174.62,
+        419.32
+      ],
+      "posture": "SITTING",
+      "expression": "person on right",
+      "source": "lying_candidates_170"
+    }
+  ]
+}
